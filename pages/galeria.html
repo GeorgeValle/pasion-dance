@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- comienza la linea de favicones -->
+    <link rel="shortcut icon" href="../assets/favicons/favicon.ico" />
+    <link
+      rel="apple-touch-icon"
+      sizes="57x57"
+      href="../assets/favicons/apple-icon-57x57.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="60x60"
+      href="../assets/favicons/apple-icon-60x60.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="../assets/favicons/apple-icon-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="../assets/favicons/apple-icon-76x76.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="../assets/favicons/apple-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="../assets/favicons/apple-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="../assets/favicons/apple-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="../assets/favicons/apple-icon-152x152.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="../assets/favicons/apple-icon-180x180.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="../assets/favicons/android-icon-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../assets/favicons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="../assets/favicons/favicon-96x96.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../assets/favicons/favicon-16x16.png"
+    />
+    <link rel="manifest" href="../assets/favicons/manifest.json" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta
+      name="msapplication-TileImage"
+      content="../assets/favicons/ms-icon-144x144.png"
+    />
+    <meta name="theme-color" content="#ffffff" />
+    <!-- termina la linea de favicones-->
+
+    <!--Importo el css normalizador para el reset-->
+    <link rel="stylesheet" href="../styles/normalize.css" />
+
+    <link rel="stylesheet" href="../styles/styles.css" />
+
+    <title>Galería</title>
+  </head>
+  <body>
+    
+
+    <main>
+
+
+      <header>
+        <!-- Imagen de logo - Imagen de banner -->
+        <div class="logoHeader">
+          
+          <img
+            class="logoHeader__banner"
+            src="../assets/images/bannerheader.webp"
+            alt="Banner"
+          />
+        </div>
+        <!-- inicio del menu de navegación -->
+  
+        <nav class="menu">
+          
+            <img
+              class="logo_nav"
+              src="../assets/images/logo-academia-webp.webp"
+              alt=" logo pasion dance"
+            />
+            <ul class="menu_items">
+              <li><a href="../index.html" >Inicio</a></li>
+              <li><a href="novedades.html" >Novedades</a></li>
+              <li><a href="biografia.html">Biografía</a></li>
+              <li><a href="academia.html" >Academia</a></li>
+              <li><a href="galeria.html" class="active_label">Galería</a></li>
+              <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+            
+            <!-- <input type="checkbox"  id="check">
+            <label  for="check" class="check_btn">
+            </label> -->
+              <span class="btn_menu"><i class="fas fa-bars"></i></span>
+            
+              <!-- <img src="assets/images/bars-solid.svg" alt="icono Menu" /></label> -->
+          
+        </nav>
+      </header>
+     
+          <h1 class="title_galery">Galería de Imagenes</h1>
+          <span class="linea"></span>
+          
+          <section class="contenido1">
+            <article class="galery_grid"> 
+           
+            <a href="#foto1"><img src="../assets/images/foto1.webp" alt="Foto 1"></a>
+            <a href="#foto2"><img src="../assets/images/foto2.jpg" alt="Foto 2"></a>
+            <a href="#foto3"><img src="../assets/images/foto3.jpg" alt="Foto 3"></a>
+            <a href="#foto4"><img src="../assets/images/foto4.png" alt="Foto 4"></a>
+            <a href="#foto5"><img src="../assets/images/foto5.jpg" alt="Foto 5"></a>
+            <a href="#foto6"><img src="../assets/images/foto6.jpg" alt="Foto 6"></a>
+            <a href="#foto7"><img src="../assets/images/foto7.png" alt="Foto 7"></a>
+            <a href="#foto8"><img src="../assets/images/foto8.png" alt="Foto 8"></a>
+            <a href="#foto9"><img src="../assets/images/foto9.jpg" alt="Foto 9"></a>
+            <a href="#foto10"><img src="../assets/images/foto10.webp" alt="Foto 10"></a>
+            <a href="#foto11"><img src="../assets/images/foto11.jpg" alt="Foto 11"></a>
+            <a href="#foto12"><img src="../assets/images/foto12.jpg" alt="Foto 12"></a>
+          </article>
+          </section>
+          <section class="contenido2">
+              <article class="ligth-box" id=foto1>
+                <a href="#foto12" class="next">&#60;</a>
+                <img src="../assets/images/foto1.webp" alt="Foto 1"></a>
+                <a href="#foto2" class="next">&#62;</a>
+                <a href="#" class="close">X</a>
+             </article>
+
+              <article class="ligth-box" id=foto2>
+                <a href="#foto1" class="next">&#60;</a>
+                <img src="../assets/images/foto2.jpg" alt="Foto 2"></a>
+                <a href="#foto3" class="next">&#62;</a>
+                <a href="#" class="close">X</a>
+              </article>
+
+              <article class="ligth-box" id=foto3>
+                <a href="#foto2" class="next">&#60;</a>
+                <img src="../assets/images/foto3.jpg" alt="Foto 3"></a>
+                <a href="#foto4" class="next">&#62;</a>
+                <a href="#" class="close">X</a>
+              </article>
+
+              <article class="ligth-box" id=foto4>
+                <a href="#foto3" class="next">&#60;</a>
+                <img src="../assets/images/foto4.png" alt="Foto 4"></a>
+                <a href="#foto5" class="next">&#62;</a>
+                <a href="#" class="close">X</a>
+              </article>
+
+              <article class="ligth-box" id=foto5>
+                <a href="#foto4" class="next">&#60;</a>
+                <img src="../assets/images/foto5.jpg" alt="Foto 5"></a>
+                <a href="#foto6" class="next">&#62;</a>
+                <a href="#" class="close">X</a>
+              </article>
+
+              <article class="ligth-box" id=foto6>
+                <a href="#foto5" class="next">&#60;</a>
+                <img src="../assets/images/foto6.jpg" alt="Foto 6"></a>
+                <a href="#foto7" class="next">&#62;</a>
+                <a href="#" class="close">X</a>
+              </article>
+
+
+              <article class="ligth-box" id=foto7>
+                <a href="#foto6" class="next">&#60;</a>
+                <img src="../assets/images/foto7.png" alt="Foto 7"></a>
+                <a href="#foto8" class="next">&#62;</a>
+                <a href="#" class="close">X</a>
+              </article>
+
+              <article class="ligth-box" id=foto8>
+                <a href="#foto7" class="next">&#60;</a>
+                <img src="../assets/images/foto8.png" alt="Foto 8"></a>
+                <a href="#foto9" class="next">&#62;</a>
+                <a href="#" class="close">X</a>
+              </article>
+
+              <article class="ligth-box" id=foto9>
+                <a href="#foto8" class="next">&#60;</a>
+                <img src="../assets/images/foto9.jpg" alt="Foto 9"></a>
+                <a href="#foto10" class="next">&#62;</a>
+                <a href="#" class="close">X</a>
+              </article>
+
+
+              <article class="ligth-box" id=foto10>
+                <a href="#foto9" class="next">&#60;</a>
+                <img src="../assets/images/foto10.webp" alt="Foto 10"></a>
+                <a href="#foto11" class="next">&#62;</a>
+                <a href="#" class="close">X</a>
+              </article>
+
+
+              <article class="ligth-box" id=foto11>
+                <a href="#foto10" class="next">&#60;</a>
+                <img src="../assets/images/foto11.jpg" alt="Foto 11"></a>
+                <a href="#foto12" class="next">&#62;</a>
+                <a href="#" class="close">X</a>
+              </article>
+
+
+                <article class="ligth-box" id=foto12>
+                  <a href="#foto11" class="next">&#60;</a>
+                  <img src="../assets/images/foto12.jpg" alt="Foto 12"></a>
+                  <a href="#foto1" class="next">&#62;</a>
+                  <a href="#" class="close">X</a>
+                </article>
+
+
+
+
+
+
+
+
+              
+
+          </section>
+            
+
+            
+
+
+          <footer class="footer">
+
+            <div class="group1">
+              <div class="footer_title">
+                <h4 >Síguenos</h4>
+              </div>
+            
+      
+              <div class="footer_iconos">
+                <a
+                href="https://www.facebook.com/Pasion-Dance-405170219929209"
+                target="_blank"
+                >
+                <img
+                  src="../assets/iconos/facebook-icon.png"
+                  alt="Enlace a Facebook"
+                  
+                 /></a>
+      
+                <a
+                href="https://www.instagram.com/academia_pasiondance/?hl=es-la"
+                target="_blank"
+                >
+                <img
+                  src="../assets/iconos/instagram-icon.png"
+                  alt="Enlace a Instagram"
+                  
+               /></a>
+      
+                 <a href="https://www.web.whatsapp.com" target="_blank">
+                <img
+                  src="../assets/iconos/whatsapp-icon.png"
+                  alt="Enlace a whatsapp"
+                  
+                /></a>
+      
+                <a href="https://www.youtube.com/watch?v" target="_blank">
+                <img
+                  src="../assets/iconos/youtube-icon.png"
+                  alt="Enlace a YouTube"
+                  
+                /></a>
+      
+                <a href="https://www.tiktok.com/@aldanacastillo28" target="_blank">
+                <img
+                  src="../assets/iconos/tiktok-icon.png"
+                  alt="Enlace a Tik Tok"
+                  
+                /></a>
+      
+              
+              </div>
+            </div>
+            <div class="footer_copyright">
+              <h5>Academia Pasion Dance 2022 &#169;</h5>
+              <h5>Todos los derechos reservados</h5>
+            </div>
+          </footer>
+         
+          <!--  que cierra el grid -->
+       
+     
+    </main>
+
+    
+  </body>
+  <script src="https://kit.fontawesome.com/4418d537a8.js" crossorigin="anonymous"></script>
+
+    <script src="../js/animaciones.js" defer></script>
+</html>

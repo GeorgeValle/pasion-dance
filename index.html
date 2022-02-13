@@ -88,6 +88,14 @@
 
     <!-- termina la linea de favicones-->
 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" 
+    rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" 
+    crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" 
+integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" 
+crossorigin="anonymous" defer></script>
+
 
     <!--Importo el css normalizador para el reset-->
     <link rel="stylesheet" href="styles/normalize.css" />
@@ -95,7 +103,7 @@
     <link rel="stylesheet" href="styles/styles.css" />
 
     <!-- se importa el link js para los iconos-->
-    <script src="https://kit.fontawesome.com/4418d537a8.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/4418d537a8.js" crossorigin="anonymous" defer></script>
 
     <script src="js/animaciones.js" defer></script>
 
@@ -109,44 +117,59 @@
 
     <main>
       <header>
-        <!-- Imagen de logo - Imagen de banner -->
-        <div class="logoHeader">
+        <!-- Imagen de logo - Imagen de banner, contenedor fluid de bootstraps -->
+        <div class="cointener-fluid" >
           <!-- <img
             class="logoHeader__logo"
             src="assets/images/logo-academia-webp.webp"
             alt=" logo pasion dance"
           /> -->
           <img
-            class="logoHeader__banner"
+            class="logoHeader__banner img-fluid mx-auto d-block"
             src="assets/images/bannerheader.webp"
             alt="Banner"
           />
         </div>
         <!-- inicio del menu de navegación -->
   
-        <nav class="menu">
+        <nav class="menu navbar navbar-expand-lg navbar-dark bg-dark ">
+          <div class="container-fluid">
           
             <img
-              class="logo_nav"
+              class="logo_nav navbar-brand"
               src="assets/images/logo-academia-webp.webp"
               alt=" logo pasion dance"
             />
-            <ul class="menu_items">
-              <li><a href="#menu" class="active_label">Inicio</a></li>
-              <li><a href="pages/novedades.html">Novedades</a></li>
-              <li><a href="pages/biografia.html">Biografía</a></li>
-              <li><a href="pages/academia.html">Academia</a></li>
-              <li><a href="pages/galeria.html">Galería</a></li>
-              <li><a href="pages/contacto.html">Contacto</a></li>
-            </ul>
-            
+            <div class="offcanvas offcanvas-end navbar-dark bg-dark" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+              <div class="offcanvas-header">
+                <button type="button" class="btn-close text-reset btn-close" 
+                data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+                <div class="offcanvas-body">
+                  <ul class="menu-items navbar-nav justify-content-end flex-grow-1 pe-3" >
+                    <li class="nav-item"><a href="#menu" class="active_label nav-link active" aria-current="page">Inicio</a></li>
+                    <li class="nav-item"><a href="pages/novedades.html" class="nav-link">Novedades</a></li>
+                    <li class="nav-item"><a href="pages/biografia.html" class="nav-link">Biografía</a></li>
+                    <li class="nav-item"><a href="pages/academia.html" class="nav-link">Academia</a></li>
+                    <li class="nav-item"><a href="pages/galeria.html" class="nav-link">Galería</a></li>
+                    <li class="nav-item"><a href="pages/contacto.html" class="nav-link">Contacto</a></li>
+                  </ul>
+                </div>
+            </div>
             <!-- <input type="checkbox"  id="check">
             <label  for="check" class="check_btn">
             </label> -->
-              <span class="btn_menu"><i class="fas fa-bars"></i></span>
+              
+            <button class="navbar-toggler" type="button" 
+            data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" 
+            aria-controls="offcanvasNavbar">
+
+             <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- <span class="btn_menu"><i class="fas fa-bars"></i></span> -->
             
               <!-- <img src="assets/images/bars-solid.svg" alt="icono Menu" /></label> -->
-          
+          </div>
         </nav>
       </header>
        <section>
@@ -267,6 +290,6 @@
 
     
 
-    
+   
   </body>
 </html>

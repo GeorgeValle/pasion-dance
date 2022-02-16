@@ -88,14 +88,24 @@
 
     <!-- termina la linea de favicones-->
 
-
     <!--Importo el css normalizador para el reset-->
     <link rel="stylesheet" href="styles/normalize.css" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" 
+    rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" 
+    crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" 
+integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" 
+crossorigin="anonymous" defer></script>
+
+
+    
 
     <link rel="stylesheet" href="styles/styles.css" />
 
     <!-- se importa el link js para los iconos-->
-    <script src="https://kit.fontawesome.com/4418d537a8.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/4418d537a8.js" crossorigin="anonymous" defer></script>
 
     <script src="js/animaciones.js" defer></script>
 
@@ -109,50 +119,67 @@
 
     <main>
       <header>
-        <!-- Imagen de logo - Imagen de banner -->
-        <div class="logoHeader">
+        <!-- Imagen de logo - Imagen de banner, contenedor fluid de bootstraps -->
+        <div class="container-fluid" >
           <!-- <img
             class="logoHeader__logo"
             src="assets/images/logo-academia-webp.webp"
             alt=" logo pasion dance"
           /> -->
           <img
-            class="logoHeader__banner"
+            class="logoHeader__banner img-fluid mx-auto d-block"
             src="assets/images/bannerheader.webp"
             alt="Banner"
           />
         </div>
-        <!-- inicio del menu de navegación -->
+        
+        <!-- ***** inicio del menu de navegación *****-->
   
-        <nav class="menu">
+        <nav class="menu  navbar navbar-expand-lg navbar-dark bg-dark ">
+          <div class="container-fluid ">
           
             <img
-              class="logo_nav"
+              class="logo_nav navbar-brand"
               src="assets/images/logo-academia-webp.webp"
               alt=" logo pasion dance"
             />
-            <ul class="menu_items">
-              <li><a href="#menu" class="active_label">Inicio</a></li>
-              <li><a href="pages/novedades.html">Novedades</a></li>
-              <li><a href="pages/biografia.html">Biografía</a></li>
-              <li><a href="pages/academia.html">Academia</a></li>
-              <li><a href="pages/galeria.html">Galería</a></li>
-              <li><a href="pages/contacto.html">Contacto</a></li>
-            </ul>
-            
+            <div class="offcanvas offcanvas-end navbar-dark bg-dark" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+              <div class="offcanvas-header">
+                <button type="button" class="btn-close text-reset btn-close" 
+                data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+                <div class="offcanvas-body">
+                  <ul class="menu-items  navbar-nav justify-content-end flex-grow-1 pe-3" >
+                    <li class="nav-item"><a href="#menu" class="active_label nav-link active" aria-current="page">Inicio</a></li>
+                    <li class="nav-item"><a href="pages/novedades.html" class="nav-link">Novedades</a></li>
+                    <li class="nav-item"><a href="pages/biografia.html" class="nav-link">Biografía</a></li>
+                    <li class="nav-item"><a href="pages/academia.html" class="nav-link">Academia</a></li>
+                    <li class="nav-item"><a href="pages/galeria.html" class="nav-link">Galería</a></li>
+                    <li class="nav-item"><a href="pages/contacto.html" class="nav-link">Contacto</a></li>
+                  </ul>
+                </div>
+            </div>
             <!-- <input type="checkbox"  id="check">
             <label  for="check" class="check_btn">
             </label> -->
-              <span class="btn_menu"><i class="fas fa-bars"></i></span>
+              
+            <button class="navbar-toggler" type="button" 
+            data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" 
+            aria-controls="offcanvasNavbar">
+
+             <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- <span class="btn_menu"><i class="fas fa-bars"></i></span> -->
             
               <!-- <img src="assets/images/bars-solid.svg" alt="icono Menu" /></label> -->
-          
+          </div>
         </nav>
       </header>
        <section>
-        <article class= "contenido1">
+        <!-- el slider
+          <article class= "contenido1">
           <div class="slider_header" id="sliderHeader"> 
-            <!-- el slider -->
+              
 
             <ul class="slider">
               <li id="slide1">
@@ -168,21 +195,86 @@
 
             <ul class="menuslider">
               <li>
-                <a href="#slide1">1</a>
+                <a href="#slide1">-</a>
               </li>
               <li>
-                <a href="#slide2">2</a>
+                <a href="#slide2">-</a>
               </li>
               <li>
-                <a href="#slide3">3</a>
+                <a href="#slide3">-</a>
               </li>
             </ul>
           </div>
+        </article> -->
+
+         <!-- ****** inicio de Slider********** -->
+        <article id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="10000">
+              <img src="assets/images/slider1.jpg" class="d-block w-100" alt="Imagen 1">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Aprendé árabe</h5>
+                <p>convertite en una experta en danzas orientales.</p>
+              </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+              <img src="assets/images/slider2.jpg" class="d-block w-100" alt="Iamgen 2">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Aprendé hip Hop</h5>
+                <p>dominá los pasos de este y otros ritmos callejeros.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="assets/images/slider3.jpg" class="d-block w-100" alt="Imagen 3.">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Aprendé tribales</h5>
+                <p>ponte en la piel y en los trajes de otras culturas.</p>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" 
+          data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" 
+          data-bs-target="#carouselExampleDark" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
         </article>
+        <!-- ****** fin de Slider********** -->
+        
+        <h3 class="text-center bg-dark">La pasion mueve el ritmo de tus sentidos</h3>
+
       </section> 
 
       <section>
-        <article class="contenido2">
+        <article class="contenido2 container-fluid mt-4">
+          <div class="card bg-dark mx-auto" style="width: 18rem;">
+            <img src="assets/images/foto-profe.jpg" class="card-img-top img-fluid " alt="Foto profesora.">
+            <div class="card-body">
+            <h5 class="card-title text-center bg-primary">Aldana Castillo</h5>
+              <p class="card-text text-center">profesora de la academia.</p>
+            </div>
+          </div>
+          </article>
+          
+          <article class="contenido3 container-fluid mt-4">
+          <div class="card bg-dark mx-auto" style="width: 18rem;">
+            <img src="assets/images/foto-alumnas.jpg" class="card-img-top img-fluid " alt="Foto Alumnas">
+            <div class="card-body">
+            <h5 class="card-title text-center bg-primary">Alumnas en certamen</h5>
+              <p class="card-text text-center">con sus trajes para la competencia de hip hop.</p>
+            </div>
+          </div>
+          </article>
+        <!-- <article class="contenido2">
           <div class="fotos_index1">
             <img
               src="assets/images/foto-profe.jpg"
@@ -202,71 +294,75 @@
             class="foto_index2--modified"
             alt="Foto Alumnas"
           />
-        </div>
+        </div> -->
+     
+
+
       </section>
 
-      <footer class="footer">
-
-        <div class="group1">
-          <div class="footer_title">
-            <h4 >Síguenos</h4>
-          </div>
+      <footer>
+        <div class="container-fluid bg-dark pt-1 mt-1">
+          <div class="group1 ">
+            <div class="footer_title  mb-3">
+              <h4 class="text-center">Síguenos</h4>
+            </div>
         
   
-          <div class="footer_iconos">
-            <a
-            href="https://www.facebook.com/Pasion-Dance-405170219929209"
-            target="_blank"
-            >
-            <img
-              src="assets/iconos/facebook-icon.png"
-              alt="Enlace a Facebook"
+            <div class="footer_iconos d-flex justify-content-center px-2 mb-3 lh-1 mr-3 gx-1 text-center">
+              <a
+              href="https://www.facebook.com/Pasion-Dance-405170219929209"
+              target="_blank"
+             >
+             <img
+                src="assets/iconos/facebook-icon.png"
+                alt="Enlace a Facebook" 
+              
+               /></a>
+  
+             <a
+             href="https://www.instagram.com/academia_pasiondance/?hl=es-la"
+             target="_blank"
+             >
+             <img
+               src="assets/iconos/instagram-icon.png" 
+               alt="Enlace a Instagram"
               
              /></a>
   
-            <a
-            href="https://www.instagram.com/academia_pasiondance/?hl=es-la"
-            target="_blank"
-            >
-            <img
-              src="assets/iconos/instagram-icon.png"
-              alt="Enlace a Instagram"
+               <a href="https://www.web.whatsapp.com" target="_blank">
+             <img
+                src="assets/iconos/whatsapp-icon.png"
+                alt="Enlace a whatsapp"
               
-           /></a>
+             /></a>
   
-             <a href="https://www.web.whatsapp.com" target="_blank">
-            <img
-              src="assets/iconos/whatsapp-icon.png"
-              alt="Enlace a whatsapp"
+             <a href="https://www.youtube.com/watch?v" target="_blank">
+              <img
+               src="assets/iconos/youtube-icon.png"
+               alt="Enlace a YouTube"
               
-            /></a>
+             /></a>
   
-            <a href="https://www.youtube.com/watch?v" target="_blank">
-            <img
-              src="assets/iconos/youtube-icon.png"
-              alt="Enlace a YouTube"
+             <a href="https://www.tiktok.com/@aldanacastillo28" target="_blank">
+             <img
+               src="assets/iconos/tiktok-icon.png"
+               alt="Enlace a Tik Tok"
               
-            /></a>
-  
-            <a href="https://www.tiktok.com/@aldanacastillo28" target="_blank">
-            <img
-              src="assets/iconos/tiktok-icon.png"
-              alt="Enlace a Tik Tok"
-              
-            /></a>
+             /></a>
   
           
-          </div>
-        </div>
-        <div class="footer_copyright">
-          <h5>Academia Pasion Dance 2022 &#169;</h5>
-          <h5>Todos los derechos reservados</h5>
+             </div>
+            </div>
+            <div class="footer_copyright text-center">
+              <h5 class="text-center">Academia Pasion Dance 2022 &#169;</h5>
+              <h5 class="text-center">Todos los derechos reservados</h5>
+            </div>
         </div>
       </footer>
     </main>
 
     
 
-    
+   
   </body>
 </html>

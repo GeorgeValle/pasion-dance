@@ -1,422 +1,350 @@
- 
- @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
- 
- body{
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap");
+/* separacion entre sections */
+body {
   /* background-color: #4642B8; */
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#30cfd0), to(#330867));
   background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
-  min-height: 100vh; /*para que no desconfigurar el gradient*/
-   font-family: Arial,sans-; 
-  color: white; 
-} 
+  min-height: 100vh;
+  /*para que no desconfigurar el gradient*/
+  font-family: Arial,sans-;
+  color: white;
+}
 
-
-
-  /*es como contenedor global a la etiqueta main, para realizar
+/*es como contenedor global a la etiqueta main, para realizar
   el grid area padre*/
-  main {
-    display: grid;
-    grid-gap: 10px;
-    
+main {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 10px;
+  /*especifico la ubicacion de las grid areas vista desktop*/
+      grid-template-areas: "header" "con1" "con2" "con3" "footer";
+}
 
-    /*especifico la ubicacion de las grid areas vista desktop*/
-    grid-template-areas: 
-      "header"
-      "con1"
-      "con2"
-      "con3"
-      "footer";
-    }
-  /*se nombra las grid areas*/
+/*se nombra las grid areas*/
+header {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: header;
+}
 
-  header{
-    grid-area: header;
-  }
-  .contenido1{
-    grid-area: con1;
-  }
-  .contenido2{
-    grid-area: con2;
-  }
-  .contenido3{
-    grid-area: con3;
-  }
-  footer{
-    grid-area:footer;
-  }
+.contenido1 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: con1;
+}
 
+.contenido2 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: con2;
+}
 
-  /* comienza el slider del index */
-  
+.contenido3 {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  grid-area: con3;
+}
 
+footer {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+  grid-area: footer;
+}
 
-/* se comienza el experimento en el menú de navegación */
-
- .menu{
-  /*background-color:#000;
-  color:#fff;
-  height:75px;
-  width: 100vw;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;*/
+/* ++++++++++++++++++++++++++++++++ */
+/* configuraciones manuales del nav */
+nav {
   border-bottom: 1px solid #fff;
   border-top: 1px solid #fff;
-  /* box-shadow: 5px 0 10px rgba(0, 0, 0, .6); */
   padding: 0.5rem;
-  margin-left: 0,5rem; 
-} 
+  margin-left: 0,5rem;
+}
 
-.logo_nav{
+nav img {
   max-width: 12%;
   /* float: right; */
 }
-a.active_label, a:hover{
+
+nav a.active_label, nav a:hover {
   background-color: #42B881;
+  -webkit-transition: .5;
   transition: .5;
 }
 
-
-
-
-/* para darle formato al texto en el centro */
-
-.body_title{
-  
-  
-  width: 100%;
-  max-width: 200px;
-  margin-left: 10px;
-  /* margin-right: auto; */
+@media (max-width: 576px) {
+  .logo_nav {
+    max-width: 20%;
+  }
+  li.active_label {
+    background-color: #71b896;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
 }
 
-
-
-/*----------comineza el footer -------- */
-
-
-
-
-.footer_iconos a{
- 
-   display: inline-block;
-  
+/*----------comienza el footer -------- */
+.footer_iconos a {
+  display: inline-block;
   line-height: 32px;
-  
   margin-right: 5px;
   /* text-align: center;  */
+  -webkit-transition: all 300ms ease;
   transition: all 300ms ease;
-
-
-  
 }
 
 /* tamaño de los iconos del fototer y
- de las redes sociales de contactos */
+  de las redes sociales de contactos */
 .footer_iconos a img, .redes_sociales img {
-  
   width: 32px;
   height: 32px;
-
-  
-
 }
 
-
-
+/* termina footer*/
+/* comienza el slider del index */
 /* *****inicio de la galeria de fotos****** */
-
-.title_galery{
-  
-  color:#fff;
+.title_galery {
+  color: #fff;
   /* background-color: dark; */
   font-weight: 700;
   /* text-align: center; */
   padding: 10px 0 10px 0;
   margin: 1em 0 1em 0;
   /* text-shadow: 1px 2px 2px black, 0 0 25px blue, 0 0 5px blue; */
-
 }
-/* para trazar un a linea */
 
-
-.galery_grid{
+.galery_grid {
+  display: -ms-grid;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  -ms-grid-columns: (minmax(350px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   width: 95%;
-  
   margin: auto;
   grid-gap: 10px;
   padding: 40px 0;
   overflow: hidden;
-  
-
   /* grid-template-columns: repeat(4, 1fr); */
-
 }
 
-.galery_grid img{
-
+.galery_grid img {
   width: 50%;
   vertical-align: top;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
   transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
   margin: 10px 20px 0 0;
-  box-shadow: 0 4px 8px 0 lightskyblue, 0 6px 20px 0 rgba(0,0,0,0,19);
-  
-  width:350px;
-
+  -webkit-box-shadow: 0 4px 8px 0 lightskyblue, 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 4px 8px 0 lightskyblue, 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  width: 350px;
 }
 
-.galery_grid > a{
+.galery_grid > a {
   display: block;
   position: relative;
-  overflow:hidden;
-  box-shadow: 0 0 6xp rgba(0,0,0,.5);
-
+  overflow: hidden;
+  -webkit-box-shadow: 0 0 6xp rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 6xp rgba(0, 0, 0, 0.5);
 }
 
-
-.galery_grid a:hover img{
-  filter: blur(2px);
-  transform: rotate(10deg) scale(1.3);
-
+.galery_grid a:hover img {
+  -webkit-filter: blur(2px);
+          filter: blur(2px);
+  -webkit-transform: rotate(10deg) scale(1.3);
+          transform: rotate(10deg) scale(1.3);
 }
 
-.ligth-box{
+.ligth-box {
   position: fixed;
   top: 0;
   left: 0;
-  background: rgba(0,0,0,.5);
+  background: rgba(0, 0, 0, 0.5);
+  -webkit-transition: -webkit-transform .3s ease-in-out;
+  transition: -webkit-transform .3s ease-in-out;
   transition: transform .3s ease-in-out;
+  transition: transform .3s ease-in-out, -webkit-transform .3s ease-in-out;
   width: 100%;
   height: 100vh;
   z-index: 1000;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  transform: scale(0);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transform: scale(0);
+          transform: scale(0);
 }
 
-
-.ligth-box img{
+.ligth-box img {
   width: 75vw;
   max-height: 70vh;
 }
 
-.ligth-box:target{
-  transform: scale(1);
+.ligth-box:target {
+  -webkit-transform: scale(1);
+          transform: scale(1);
 }
 
-.close{
+.close {
   display: block;
   position: absolute;
   top: 40px;
   right: 40px;
-  background:#262463;
+  background: #262463;
   color: #fff;
   text-decoration: none;
   width: 40px;
   height: 40px;
   text-align: center;
   line-height: 40px;
-  border-radius: 50%
-
+  border-radius: 50%;
 }
 
-.next{
+.next {
   display: block;
   background: #262463;
   color: #fff;
-  height:30 px;
-  width:30px;
+  height: 30 px;
+  width: 30px;
   line-height: 30px;
   text-decoration: none;
   text-align: center;
 }
 
 /* inicio de formato a las noticias de la seccion novedades */
-
-
-
 /* con esta pseudo clase le doy 
 animacion a las cards de novedades */
-.roti:hover{
-  transform: rotate(5deg)
-  scale(1.1);
+.roti:hover {
+  -webkit-transform: rotate(5deg) scale(1.1);
+          transform: rotate(5deg) scale(1.1);
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
   transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
 }
 
-
 /*inicio de formato de biografía y academía*/
-
-.section_conten{
-  /* para separar el section del header */
+.section_conten {
+  /* para separar el section de otros componentes */
   margin-top: 40px;
 }
 
-
-
 /* inicio de form de contacto - mapa - redes sociales*/
-
 .form, .mapa, .redes_sociales {
   font-family: "Montserrat", sans-serif;
   /* background-color: #fff; */
   width: 90%;
   max-width: 400px;
-  border-radius: 1em; /*los bordes redondeados*/
+  border-radius: 1em;
+  /*los bordes redondeados*/
   padding: 3.5em 1.5em;
   margin-left: auto;
   margin-right: auto;
   margin-top: 30px;
   margin-bottom: 30px;
-
 }
 
-
-.form_container, .redes_sociales, .mapa_container{
+.form_container, .redes_sociales, .mapa_container {
   width: 100%;
-  display:flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   gap: 1em;
-  flex-wrap: wrap;
-  
-  flex-direction: column;
-  justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 /* titulos de los 3 recuadros de contacto */
-.form_title, .mapa_title, .redes_sociales h2{
+.form_title, .mapa_title, .redes_sociales h2 {
   padding: 0.5em 1em;
   /* background-color:#262463; */
   /* text-align: center; */
-  color:white;
+  color: white;
 }
 
-
-
-.form_input{
-   font-family: inherit; /*para que herede la fuente los inputs*/
-   padding: 0.8em 1em; /*padding arriba y a los lados*/
-   outline: none; /*no se va a remarcar*/
-   border: none; /*saco el border*/
-   border:1px solid #bbb0bb;
-   border-radius: 0.2em;
-} 
-
-.form_input--message{
-  resize: none; /*para que los usuarios no puedan redimensionar */
-  padding: 1.8em 1em; /*agrando el textarea */
-  margin-bottom: 5em; /*separado del submit*/
+.form_input {
+  font-family: inherit;
+  /*para que herede la fuente los inputs*/
+  padding: 0.8em 1em;
+  /*padding arriba y a los lados*/
+  outline: none;
+  /*no se va a remarcar*/
+  border: none;
+  /*saco el border*/
+  border: 1px solid #bbb0bb;
+  border-radius: 0.2em;
 }
 
-.form_cta{ 
-  font-family: inherit; /*para que herede la fuente el submit*/
-  font-size: 1rem; 
+.form_input--message {
+  resize: none;
+  /*para que los usuarios no puedan redimensionar */
+  padding: 1.8em 1em;
+  /*agrando el textarea */
+  margin-bottom: 5em;
+  /*separado del submit*/
+}
+
+.form_cta {
+  font-family: inherit;
+  /*para que herede la fuente el submit*/
+  font-size: 1rem;
   color: white;
   /* background-color: #262463; */
   border: none;
-   font-weight: 700;
-   padding: 1em 0;
-   border-radius: 1.2em;
-   cursor: pointer;
-
+  font-weight: 700;
+  padding: 1em 0;
+  border-radius: 1.2em;
+  cursor: pointer;
 }
 
-
-@media(max-width: 576px){ /*medida de 576px fold */
-
-/* cambio en el banner */
-  /* .logoHeader__banner{
-    max-width: 576px;
-    width: 100%;
-    display:block;
-    margin:auto;
-  } */
-  .logo_nav{
-    max-width: 14%;
+@media (max-width: 576px) {
+  /*medida de 576px fold */
+  /* cambio de la pagina novedades  no hizo falta por su auto-responsive */
+  /* inicio para cambiar tamaño de contacto */
+  .form, .mapa {
+    /*, .redes_sociales { */
+    max-width: 100%;
+    border-radius: 1em;
+    /*los bordes redondeados*/
+    padding: 2.5em .5em;
+    margin-top: 20px;
+    margin-bottom: 20px;
   }
-
-
-/* cambio de la pagina novedades  */
-  
- /* inicio para cambiar tamaño de contacto */
-
- .form, .mapa{ /*, .redes_sociales { */
-  
-  
-  max-width: 100%;
-  border-radius: 1em; /*los bordes redondeados*/
-  padding: 2.5em .5em;
- 
-  margin-top: 20px;
-  margin-bottom: 20px;
-
+  .form_input {
+    font-family: inherit;
+    /*para que herede la fuente los inputs*/
+    padding: 0.8em 1em;
+    /*padding arriba y a los lados*/
+    outline: none;
+    /*no se va a remarcar*/
+    border: none;
+    /*saco el border*/
+    border: 1px solid #bbb0bb;
+    border-radius: 0.2em;
+  }
+  .form_input--message {
+    margin-bottom: 4em;
+    /*separado del submit*/
+  }
 }
 
-
-
-
-
-.form_input{
-   font-family: inherit; /*para que herede la fuente los inputs*/
-   padding: 0.8em 1em; /*padding arriba y a los lados*/
-   outline: none; /*no se va a remarcar*/
-   border: none; /*saco el border*/
-   border:1px solid #bbb0bb;
-   border-radius: 0.2em;
-} 
-
-.form_input--message{
-  
-  margin-bottom: 4em; /*separado del submit*/
-}
-
-
-
-
-  
-  
-  .navbar-nav li a:hover{
-    color: red;
-    background: none;
-  }
-  
-  li.active_label{
-    background-color: #71b896;
-    transition: .4s;
-  }
-
-
-
-} /*cierre del media query 576Px */
-
-
-  
- /* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) { 
-  
-
-
-
-
-
-
-
-
-
-  } /* cierre de media 768px */
-
-  /* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {
-  
-  
-
-} /* cierre de media 992px */
-
-
-
-
-
-
-
-
+/*cierre del media query 576Px */
+/* Medium devices (tablets, 768px and up) */
+/* cierre de media 768px */
+/* Large devices (desktops, 992px and up) */
+/* cierre de media 992px */
+/*# sourceMappingURL=styles.css.map */

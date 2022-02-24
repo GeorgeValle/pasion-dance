@@ -54,19 +54,19 @@ footer {
 
 /* ++++++++++++++++++++++++++++++++ */
 /* configuraciones manuales del nav */
-nav {
+.menu {
   border-bottom: 1px solid #fff;
   border-top: 1px solid #fff;
   padding: 0.5rem;
   margin-left: 0,5rem;
 }
 
-nav img {
+.menu .logo_nav {
   max-width: 12%;
   /* float: right; */
 }
 
-nav a.active_label, nav a:hover {
+.menu a.active_label, .menu a:hover {
   background-color: #42B881;
   -webkit-transition: .5;
   transition: .5;
@@ -104,8 +104,8 @@ nav a.active_label, nav a:hover {
 /* comienza el slider del index */
 /* *****inicio de la galeria de fotos****** */
 .title_galery {
-  color: #fff;
   /* background-color: dark; */
+  font-family: "Montserrat", sans-serif;
   font-weight: 700;
   /* text-align: center; */
   padding: 10px 0 10px 0;

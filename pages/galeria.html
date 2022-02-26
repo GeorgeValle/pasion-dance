@@ -106,240 +106,226 @@ crossorigin="anonymous" defer></script>
     <title>Galería</title>
   </head>
   <body>
-    
-
-    <main>
-
-
-      <header>
-        <!-- Imagen de logo - Imagen de banner, contenedor fluid de bootstraps -->
-        <div class="container-fluid" >
+    <header>
+      <!-- Imagen de logo - Imagen de banner, contenedor fluid de bootstraps -->
+      <div class="container-fluid" >
           
           
-          <img
-            class="logoHeader__banner img-fluid mx-auto d-block"
-            src="../assets/images/bannerheader.webp"
-            alt="Banner"
-          />
-        </div>
+        <img
+          class="logoHeader__banner img-fluid mx-auto d-block"
+          src="../assets/images/bannerheader.webp"
+          alt="Banner"
+        />
+      </div>
         
         <!-- ***** inicio del menu de navegación *****-->
   
-        <nav class="menu  navbar navbar-expand-lg navbar-dark bg-dark ">
-          <div class="container-fluid ">
+      <nav class="menu  navbar navbar-expand-lg navbar-dark bg-dark ">
+        <div class="container-fluid ">
           
-            <img
-              class="logo_nav navbar-brand"
-              src="../assets/images/logo-academia-webp.webp"
-              alt=" logo pasion dance"
-            />
-            <div class="offcanvas offcanvas-end navbar-dark bg-dark" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-              <div class="offcanvas-header">
-                <button type="button" class="btn-close text-reset btn-close" 
+          <img
+            class="logo_nav navbar-brand"
+            src="../assets/images/logo-academia-webp.webp"
+             alt=" logo pasion dance"
+          />
+          <div class="offcanvas offcanvas-end navbar-dark bg-dark" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <button type="button" class="btn-close text-reset btn-close" 
                 data-bs-dismiss="offcanvas" aria-label="Close"></button>
-              </div>
-                <div class="offcanvas-body">
-                  <ul class="menu-items  navbar-nav justify-content-end flex-grow-1 pe-3" >
-                    <li class="nav-item text-center"><a href="../index.html" class="nav-link " aria-current="page">Inicio</a></li>
-                    <li class="nav-item text-center"><a href="novedades.html" class="nav-link">Novedades</a></li>
-                    <li class="nav-item text-center"><a href="biografia.html" class="nav-link">Biografía</a></li>
-                    <li class="nav-item text-center"><a href="academia.html" class="nav-link">Academia</a></li>
-                    <li class="nav-item text-center"><a href="galeria.html" class="active_label nav-link active">Galería</a></li>
-                    <li class="nav-item text-center"><a href="contacto.html" class="nav-link">Contacto</a></li>
-                  </ul>
-                </div>
             </div>
+            <div class="offcanvas-body">
+              <ul class="menu-items  navbar-nav justify-content-end flex-grow-1 pe-3" >
+                <li class="nav-item text-center"><a href="../index.html" class="nav-link " aria-current="page">Inicio</a></li>
+                <li class="nav-item text-center"><a href="novedades.html" class="nav-link">Novedades</a></li>
+                <li class="nav-item text-center"><a href="biografia.html" class="nav-link">Biografía</a></li>
+                <li class="nav-item text-center"><a href="academia.html" class="nav-link">Academia</a></li>
+                <li class="nav-item text-center"><a href="galeria.html" class="active_label nav-link active">Galería</a></li>
+                <li class="nav-item text-center"><a href="contacto.html" class="nav-link">Contacto</a></li>
+              </ul>
+            </div>
+          </div>
             
               
-            <button class="navbar-toggler" type="button" 
+          <button class="navbar-toggler" type="button" 
             data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" 
             aria-controls="offcanvasNavbar">
 
-             <span class="navbar-toggler-icon"></span>
-            </button>
+            <span class="navbar-toggler-icon"></span>
+          </button>
             
+        </div>
+      </nav>
+    </header>
+    <main>
+
+          <!-- título retocado con bootstrap -->
+      <h1 class=" text-center bg-dark contenido 1">Galería de Imagenes</h1>
+          
+          
+      <section class="contenido2">
+        <article class="galery_grid"> 
+           
+          <a href="#foto1"><img src="../assets/images/foto1.jpg" alt="alumnas festejando"></a>
+          <a href="#foto2"><img src="../assets/images/foto2.jpg" alt="alumnas con trajes brillantes"></a>
+          <a href="#foto3"><img src="../assets/images/foto3.jpg" alt="alumnas con diplomas"></a>
+          <a href="#foto4"><img src="../assets/images/foto4.jpg" alt="profe y aluimnas con diplomas"></a>
+          <a href="#foto5"><img src="../assets/images/foto5.jpg" alt="brindis madres, alumnas y profe"></a>
+          <a href="#foto6"><img src="../assets/images/foto6.jpg" alt="alumnas con pose de baile"></a>
+          <a href="#foto7"><img src="../assets/images/foto7.jpg" alt="alumnas junto a profes invitadas"></a>
+          <a href="#foto8"><img src="../assets/images/foto8.jpg" alt="alumnas bailando en plaza"></a>
+          <a href="#foto9"><img src="../assets/images/foto9.jpg" alt="alumnas bailando enplaza 2"></a>
+          <a href="#foto10"><img src="../assets/images/foto10.jpg" alt="coreo de las pequeñas en la plaza"></a>
+          <a href="#foto11"><img src="../assets/images/foto11.jpg" alt="alumnas con trajes arabes y tiras"></a>
+          <a href="#foto12"><img src="../assets/images/foto12.jpg" alt="alumnas con traje de porristas"></a>
+
+        </article>
+      </section>
+
+      <section class="contenido3">
+        <article class="ligth-box" id=foto1>
+          <a href="#foto12" class="next">&#60;</a>
+          <img src="../assets/images/foto1.jpg" alt="alumnas festejando"></a>
+          <a href="#foto2" class="next">&#62;</a>
+          <a href="#" class="close">X</a>
+        </article>
+
+        <article class="ligth-box" id=foto2>
+          <a href="#foto1" class="next">&#60;</a>
+          <img src="../assets/images/foto2.jpg" alt="alumnas con trajes brillantes"></a>
+          <a href="#foto3" class="next">&#62;</a>
+          <a href="#" class="close">X</a>
+        </article>
+
+        <article class="ligth-box" id=foto3>
+          <a href="#foto2" class="next">&#60;</a>
+          <img src="../assets/images/foto3.jpg" alt="alumnas con diplomas"></a>
+          <a href="#foto4" class="next">&#62;</a>
+          <a href="#" class="close">X</a>
+        </article>
+
+        <article class="ligth-box" id=foto4>
+          <a href="#foto3" class="next">&#60;</a>
+          <img src="../assets/images/foto4.jpg" alt="profe y aluimnas con diplomas"></a>
+          <a href="#foto5" class="next">&#62;</a>
+          <a href="#" class="close">X</a>
+        </article>
+
+        <article class="ligth-box" id=foto5>
+          <a href="#foto4" class="next">&#60;</a>
+          <img src="../assets/images/foto5.jpg" alt="brindis madres, alumnas y profe"></a>
+          <a href="#foto6" class="next">&#62;</a>
+          <a href="#" class="close">X</a>
+        </article>
+
+        <article class="ligth-box" id=foto6>
+          <a href="#foto5" class="next">&#60;</a>
+          <img src="../assets/images/foto6.jpg" alt="alumnas con pose de baile"></a>
+          <a href="#foto7" class="next">&#62;</a>
+          <a href="#" class="close">X</a>
+        </article>
+
+
+        <article class="ligth-box" id=foto7>
+          <a href="#foto6" class="next">&#60;</a>
+          <img src="../assets/images/foto7.jpg" alt="alumnas junto a profes invitadas"></a>
+          <a href="#foto8" class="next">&#62;</a>
+          <a href="#" class="close">X</a>
+        </article>
+
+        <article class="ligth-box" id=foto8>
+          <a href="#foto7" class="next">&#60;</a>
+          <img src="../assets/images/foto8.jpg" alt="alumnas bailando en plaza"></a>
+          <a href="#foto9" class="next">&#62;</a>
+          <a href="#" class="close">X</a>
+        </article>
+
+        <article class="ligth-box" id=foto9>
+          <a href="#foto8" class="next">&#60;</a>
+          <img src="../assets/images/foto9.jpg" alt="alumnas bailando enplaza 2"></a>
+          <a href="#foto10" class="next">&#62;</a>
+          <a href="#" class="close">X</a>
+        </article>
+
+
+        <article class="ligth-box" id=foto10>
+          <a href="#foto9" class="next">&#60;</a>
+          <img src="../assets/images/foto10.jpg" alt="coreo de las pequeñas en la plaza"></a>
+          <a href="#foto11" class="next">&#62;</a>
+          <a href="#" class="close">X</a>
+        </article>
+
+
+        <article class="ligth-box" id=foto11>
+          <a href="#foto10" class="next">&#60;</a>
+          <img src="../assets/images/foto11.jpg" alt="alumnas con trajes arabes y tiras"></a>
+          <a href="#foto12" class="next">&#62;</a>
+          <a href="#" class="close">X</a>
+        </article>
+
+
+        <article class="ligth-box" id=foto12>
+          <a href="#foto11" class="next">&#60;</a>
+          <img src="../assets/images/foto12.jpg" alt="alumnas con traje de porristas"></a>
+          <a href="#foto1" class="next">&#62;</a>
+          <a href="#" class="close">X</a>
+        </article>
+           
+      </section>          
+    </main>
+          <!-- inicio footer -->
+    <footer class="bg-dark">
+      <div class="container-fluid pt-1 mt-1 mb-0">
+        <div class="group1 ">
+          <div class="footer_title  ">
+            <h4 class="text-center">Síguenos</h4>
           </div>
-        </nav>
-      </header>
-
-
-     <!-- título retocado con bootstrap -->
-          <h1 class="title_galery text-center bg-primary contenido 1">Galería de Imagenes</h1>
-          
-          
-          <section class="contenido2">
-            <article class="galery_grid"> 
-           
-             <a href="#foto1"><img src="../assets/images/foto1.jpg" alt="Foto 1"></a>
-             <a href="#foto2"><img src="../assets/images/foto2.jpg" alt="Foto 2"></a>
-             <a href="#foto3"><img src="../assets/images/foto3.jpg" alt="Foto 3"></a>
-             <a href="#foto4"><img src="../assets/images/foto4.jpg" alt="Foto 4"></a>
-             <a href="#foto5"><img src="../assets/images/foto5.jpg" alt="Foto 5"></a>
-             <a href="#foto6"><img src="../assets/images/foto6.jpg" alt="Foto 6"></a>
-             <a href="#foto7"><img src="../assets/images/foto7.jpg" alt="Foto 7"></a>
-             <a href="#foto8"><img src="../assets/images/foto8.jpg" alt="Foto 8"></a>
-             <a href="#foto9"><img src="../assets/images/foto9.jpg" alt="Foto 9"></a>
-             <a href="#foto10"><img src="../assets/images/foto10.jpg" alt="Foto 10"></a>
-             <a href="#foto11"><img src="../assets/images/foto11.jpg" alt="Foto 11"></a>
-             <a href="#foto12"><img src="../assets/images/foto12.jpg" alt="Foto 12"></a>
-
-            </article>
-          </section>
-
-          <section class="contenido3">
-              <article class="ligth-box" id=foto1>
-                <a href="#foto12" class="next">&#60;</a>
-                <img src="../assets/images/foto1.jpg" alt="Foto 1"></a>
-                <a href="#foto2" class="next">&#62;</a>
-                <a href="#" class="close">X</a>
-             </article>
-
-              <article class="ligth-box" id=foto2>
-                <a href="#foto1" class="next">&#60;</a>
-                <img src="../assets/images/foto2.jpg" alt="Foto 2"></a>
-                <a href="#foto3" class="next">&#62;</a>
-                <a href="#" class="close">X</a>
-              </article>
-
-              <article class="ligth-box" id=foto3>
-                <a href="#foto2" class="next">&#60;</a>
-                <img src="../assets/images/foto3.jpg" alt="Foto 3"></a>
-                <a href="#foto4" class="next">&#62;</a>
-                <a href="#" class="close">X</a>
-              </article>
-
-              <article class="ligth-box" id=foto4>
-                <a href="#foto3" class="next">&#60;</a>
-                <img src="../assets/images/foto4.jpg" alt="Foto 4"></a>
-                <a href="#foto5" class="next">&#62;</a>
-                <a href="#" class="close">X</a>
-              </article>
-
-              <article class="ligth-box" id=foto5>
-                <a href="#foto4" class="next">&#60;</a>
-                <img src="../assets/images/foto5.jpg" alt="Foto 5"></a>
-                <a href="#foto6" class="next">&#62;</a>
-                <a href="#" class="close">X</a>
-              </article>
-
-              <article class="ligth-box" id=foto6>
-                <a href="#foto5" class="next">&#60;</a>
-                <img src="../assets/images/foto6.jpg" alt="Foto 6"></a>
-                <a href="#foto7" class="next">&#62;</a>
-                <a href="#" class="close">X</a>
-              </article>
-
-
-              <article class="ligth-box" id=foto7>
-                <a href="#foto6" class="next">&#60;</a>
-                <img src="../assets/images/foto7.jpg" alt="Foto 7"></a>
-                <a href="#foto8" class="next">&#62;</a>
-                <a href="#" class="close">X</a>
-              </article>
-
-              <article class="ligth-box" id=foto8>
-                <a href="#foto7" class="next">&#60;</a>
-                <img src="../assets/images/foto8.jpg" alt="Foto 8"></a>
-                <a href="#foto9" class="next">&#62;</a>
-                <a href="#" class="close">X</a>
-              </article>
-
-              <article class="ligth-box" id=foto9>
-                <a href="#foto8" class="next">&#60;</a>
-                <img src="../assets/images/foto9.jpg" alt="Foto 9"></a>
-                <a href="#foto10" class="next">&#62;</a>
-                <a href="#" class="close">X</a>
-              </article>
-
-
-              <article class="ligth-box" id=foto10>
-                <a href="#foto9" class="next">&#60;</a>
-                <img src="../assets/images/foto10.jpg" alt="Foto 10"></a>
-                <a href="#foto11" class="next">&#62;</a>
-                <a href="#" class="close">X</a>
-              </article>
-
-
-              <article class="ligth-box" id=foto11>
-                <a href="#foto10" class="next">&#60;</a>
-                <img src="../assets/images/foto11.jpg" alt="Foto 11"></a>
-                <a href="#foto12" class="next">&#62;</a>
-                <a href="#" class="close">X</a>
-              </article>
-
-
-              <article class="ligth-box" id=foto12>
-                <a href="#foto11" class="next">&#60;</a>
-                <img src="../assets/images/foto12.jpg" alt="Foto 12"></a>
-                <a href="#foto1" class="next">&#62;</a>
-                <a href="#" class="close">X</a>
-              </article>
-           
-            </section>
-            
-
-            
-
-
-          <footer class="bg-dark">
-            <div class="container-fluid pt-1 mt-1 mb-0">
-              <div class="group1 ">
-                <div class="footer_title  ">
-                  <h4 class="text-center">Síguenos</h4>
-                </div>
             
       
-                <div class="footer_iconos d-flex justify-content-center px-2 mb-3 lh-1 mr-3 gx-1 text-center">
-                  <a
-                  href="https://www.facebook.com/Pasion-Dance-405170219929209"
-                  target="_blank"
-                 >
-                 <img
-                    src="../assets/iconos/facebook-icon.png"
-                    alt="Enlace a Facebook" 
-                  
-                   /></a>
+          <div class="footer_iconos d-flex justify-content-center px-2 mb-3 lh-1 mr-3 gx-1 text-center">
+            <a
+              href="https://www.facebook.com/Pasion-Dance-405170219929209"
+              target="_blank"
+            >
+              <img class="red-facebook"
+                src="../assets/iconos/facebook-icon.png"
+                alt="Enlace a Facebook" />
+            </a>
       
-                 <a
-                 href="https://www.instagram.com/academia_pasiondance/?hl=es-la"
-                 target="_blank"
-                 >
-                 <img
-                   src="../assets/iconos/instagram-icon.png" 
-                   alt="Enlace a Instagram"
-                  
-                 /></a>
+            <a
+              href="https://www.instagram.com/academia_pasiondance/?hl=es-la"
+              target="_blank"
+            >
+              <img class="red-instagram"
+                src="../assets/iconos/instagram-icon.png" 
+                alt="Enlace a Instagram"/>
+            </a>
       
-                   <a href="https://www.web.whatsapp.com" target="_blank">
-                 <img
-                    src="../assets/iconos/whatsapp-icon.png"
-                    alt="Enlace a whatsapp"
-                  
-                 /></a>
+            <a href="https://www.web.whatsapp.com" target="_blank">
+              <img   class="red-whatsapp"
+                src="../assets/iconos/whatsapp-icon.png"
+                alt="Enlace a whatsapp"/>
+            </a>
       
-                 <a href="https://www.youtube.com/watch?v" target="_blank">
-                  <img
-                   src="../assets/iconos/youtube-icon.png"
-                   alt="Enlace a YouTube"
-                  
-                 /></a>
+            <a href="https://www.youtube.com/watch?v" target="_blank">
+              <img class="red-youtube"
+                src="../assets/iconos/youtube-icon.png"
+                alt="Enlace a YouTube"/>
+            </a>
       
-                 <a href="https://www.tiktok.com/@aldanacastillo28" target="_blank">
-                 <img
-                   src="../assets/iconos/tiktok-icon.png"
-                   alt="Enlace a Tik Tok"
-                  
-                 /></a>
+            <a href="https://www.tiktok.com/@aldanacastillo28" target="_blank">
+               <img  class="red-tik-tok"
+                  src="../assets/iconos/tiktok-icon.png"
+                  alt="Enlace a Tik Tok"/>
+            </a>
       
               
-                 </div>
-                </div>
-                <div class="footer_copyright bg-dark text-center">
-                  <h5 class="text-center">Academia Pasion Dance 2022 &#169;</h5>
-                  <h5 class="text-center">Todos los derechos reservados</h5>
-                </div>
+          </div>
+        </div>
+            <div class="footer_copyright bg-dark text-center">
+              <h5 class="text-center">Academia Pasion Dance 2022 &#169;</h5>
+              <h5 class="text-center">Todos los derechos reservados</h5>
             </div>
-          </footer>       
-    </main> 
+      </div>
+    </footer>            
   </body>
 </html>

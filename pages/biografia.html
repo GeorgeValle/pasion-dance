@@ -108,101 +108,99 @@
   </head>
 
   <body>
-    <main>
-      <header>
-        <!-- Imagen de logo - Imagen de banner, contenedor fluid de bootstraps -->
+    <header>
+      <!-- Imagen de logo - Imagen de banner, contenedor fluid de bootstraps -->
+      <div class="container-fluid">
+        <img
+          class="logoHeader__banner img-fluid mx-auto d-block"
+          src="../assets/images/bannerheader.webp"
+          alt="Banner"
+        />
+      </div>
+
+      <!-- ***** inicio del menu de navegación *****-->
+
+      <nav class="menu navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
           <img
-            class="logoHeader__banner img-fluid mx-auto d-block"
-            src="../assets/images/bannerheader.webp"
-            alt="Banner"
+            class="logo_nav navbar-brand"
+            src="../assets/images/logo-academia-webp.webp"
+            alt=" logo pasion dance"
           />
-        </div>
-
-        <!-- ***** inicio del menu de navegación *****-->
-
-        <nav class="menu navbar navbar-expand-lg navbar-dark bg-dark">
-          <div class="container-fluid">
-            <img
-              class="logo_nav navbar-brand"
-              src="../assets/images/logo-academia-webp.webp"
-              alt=" logo pasion dance"
-            />
-            <div
-              class="offcanvas offcanvas-end navbar-dark bg-dark"
-              tabindex="-1"
-              id="offcanvasNavbar"
-              aria-labelledby="offcanvasNavbarLabel"
-            >
-              <div class="offcanvas-header">
-                <button
-                  type="button"
-                  class="btn-close text-reset btn-close"
-                  data-bs-dismiss="offcanvas"
-                  aria-label="Close"
-                ></button>
-              </div>
-              <div class="offcanvas-body">
-                <ul
-                  class="menu-items navbar-nav justify-content-end flex-grow-1 pe-3"
-                >
-                  <li class="nav-item text-center">
-                    <a href="../index.html" class="nav-link" aria-current="page"
-                      >Inicio</a
-                    >
-                  </li>
-                  <li class="nav-item text-center">
-                    <a href="novedades.html" class="nav-link">Novedades</a>
-                  </li>
-                  <li class="nav-item text-center">
-                    <a
-                      href="biografia.html"
-                      class="active_label nav-link active"
-                      >Biografía</a
-                    >
-                  </li>
-                  <li class="nav-item text-center">
-                    <a href="academia.html" class="nav-link">Academia</a>
-                  </li>
-                  <li class="nav-item text-center">
-                    <a href="galeria.html" class="nav-link">Galería</a>
-                  </li>
-                  <li class="nav-item text-center">
-                    <a href="contacto.html" class="nav-link">Contacto</a>
-                  </li>
-                </ul>
-              </div>
+          <div
+            class="offcanvas offcanvas-end navbar-dark bg-dark"
+            tabindex="-1"
+            id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel"
+          >
+            <div class="offcanvas-header">
+              <button
+                type="button"
+                class="btn-close text-reset btn-close"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
             </div>
-
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-bs-toggle="offcanvas"
-              data-bs-target="#offcanvasNavbar"
-              aria-controls="offcanvasNavbar"
-            >
-              <span class="navbar-toggler-icon"></span>
-            </button>
+            <div class="offcanvas-body">
+              <ul
+                class="menu-items navbar-nav justify-content-end flex-grow-1 pe-3"
+              >
+                <li class="nav-item text-center">
+                  <a href="../index.html" class="nav-link" aria-current="page"
+                    >Inicio</a
+                  >
+                </li>
+                <li class="nav-item text-center">
+                  <a href="novedades.html" class="nav-link">Novedades</a>
+                </li>
+                <li class="nav-item text-center">
+                  <a href="biografia.html" class="active_label nav-link active"
+                    >Biografía</a
+                  >
+                </li>
+                <li class="nav-item text-center">
+                  <a href="academia.html" class="nav-link">Academia</a>
+                </li>
+                <li class="nav-item text-center">
+                  <a href="galeria.html" class="nav-link">Galería</a>
+                </li>
+                <li class="nav-item text-center">
+                  <a href="contacto.html" class="nav-link">Contacto</a>
+                </li>
+              </ul>
+            </div>
           </div>
-        </nav>
-      </header>
 
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <h1 class="text-center bg-dark">Biografía</h1>
       <section class="section_conten">
         <article
           class="contenido1 card mb-3 bg-dark mx-auto"
-          style="max-width: 540px"
+          style="max-width: 60rem"
         >
           <div class="row g-0">
             <!-- <h2>Biografía de la profesora Aldana Castillo</h2> -->
-            <div class="col-md-4">
+            <div class="row-md-4">
               <img
                 src="../assets/images/profe_gitana.png"
                 class="img-fluid rounded-start"
-                alt="Foto Profesora"
+                alt="Profesora bailando"
               />
             </div>
-            <div class="col-md-8">
-              <div class="card-body">
+            <div class="row-md-8">
+              <div class="card-body  justify-content-center ">
                 <h5 class="card-title bg-primary text-center">
                   Biografía de la profesora Aldana Castillo
                 </h5>
@@ -232,63 +230,64 @@
           </div>
         </article>
       </section>
-
-      <footer class="bg-dark">
-        <div class="container-fluid  pt-1 mt-1 mb-0">
-          <div class="group1">
-            <div class="footer_title">
-              <h4 class="text-center">Síguenos</h4>
-            </div>
-
-            <div
-              class="footer_iconos d-flex justify-content-center px-2 mb-3 lh-1 mr-3 gx-1 text-center"
-            >
-              <a
-                href="https://www.facebook.com/Pasion-Dance-405170219929209"
-                target="_blank"
-              >
-                <img
-                  src="../assets/iconos/facebook-icon.png"
-                  alt="Enlace a Facebook"
-              /></a>
-
-              <a
-                href="https://www.instagram.com/academia_pasiondance/?hl=es-la"
-                target="_blank"
-              >
-                <img
-                  src="../assets/iconos/instagram-icon.png"
-                  alt="Enlace a Instagram"
-              /></a>
-
-              <a href="https://www.web.whatsapp.com" target="_blank">
-                <img
-                  src="../assets/iconos/whatsapp-icon.png"
-                  alt="Enlace a whatsapp"
-              /></a>
-
-              <a href="https://www.youtube.com/watch?v" target="_blank">
-                <img
-                  src="../assets/iconos/youtube-icon.png"
-                  alt="Enlace a YouTube"
-              /></a>
-
-              <a
-                href="https://www.tiktok.com/@aldanacastillo28"
-                target="_blank"
-              >
-                <img
-                  src="../assets/iconos/tiktok-icon.png"
-                  alt="Enlace a Tik Tok"
-              /></a>
-            </div>
+    </main>
+    <footer class="bg-dark">
+      <div class="container-fluid pt-1 mt-1 mb-0">
+        <div class="group1">
+          <div class="footer_title">
+            <h4 class="text-center">Síguenos</h4>
           </div>
-          <div class="footer_copyright text-center">
-            <h5 class="text-center">Academia Pasion Dance 2022 &#169;</h5>
-            <h5 class="text-center">Todos los derechos reservados</h5>
+
+          <div
+            class="footer_iconos d-flex justify-content-center px-2 mb-3 lh-1 mr-3 gx-1 text-center"
+          >
+            <a
+              href="https://www.facebook.com/Pasion-Dance-405170219929209"
+              target="_blank"
+            >
+              <img
+                class="red-facebook"
+                src="../assets/iconos/facebook-icon.png"
+                alt="Enlace a Facebook"
+            /></a>
+
+            <a
+              href="https://www.instagram.com/academia_pasiondance/?hl=es-la"
+              target="_blank"
+            >
+              <img
+                class="red-instagram"
+                src="../assets/iconos/instagram-icon.png"
+                alt="Enlace a Instagram"/>
+            </a>
+
+            <a href="https://www.web.whatsapp.com" target="_blank">
+              <img
+                class="red-whatsapp"
+                src="../assets/iconos/whatsapp-icon.png"
+                alt="Enlace a whatsapp"/>
+            </a>
+
+            <a href="https://www.youtube.com/watch?v" target="_blank">
+              <img
+                class="red-youtube"
+                src="../assets/iconos/youtube-icon.png"
+                alt="Enlace a YouTube"/>
+            </a>
+
+            <a href="https://www.tiktok.com/@aldanacastillo28" target="_blank">
+              <img
+                class="red-tik-tok"
+                src="../assets/iconos/tiktok-icon.png"
+                alt="Enlace a Tik Tok"/>
+            </a>
           </div>
         </div>
-      </footer>
-    </main>
+        <div class="footer_copyright text-center">
+          <h5 class="text-center">Academia Pasion Dance 2022 &#169;</h5>
+          <h5 class="text-center">Todos los derechos reservados</h5>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

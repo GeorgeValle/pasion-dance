@@ -108,188 +108,182 @@
   </head>
 
   <body>
-    <main>
-      <header>
-        <!-- Imagen de logo - Imagen de banner, contenedor fluid de bootstraps -->
+    <header>
+      <!-- Imagen de logo - Imagen de banner, contenedor fluid de bootstraps -->
+      <div class="container-fluid">
+        <img
+          class="logoHeader__banner img-fluid mx-auto d-block"
+          src="../assets/images/bannerheader.webp"
+          alt="Banner"
+        />
+      </div>
+
+      <!-- ***** inicio del menu de navegación *****-->
+
+      <nav class="menu navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
           <img
-            class="logoHeader__banner img-fluid mx-auto d-block"
-            src="../assets/images/bannerheader.webp"
-            alt="Banner"
+            class="logo_nav navbar-brand"
+            src="../assets/images/logo-academia-webp.webp"
+            alt=" logo pasion dance"
           />
-        </div>
-
-        <!-- ***** inicio del menu de navegación *****-->
-
-        <nav class="menu navbar navbar-expand-lg navbar-dark bg-dark">
-          <div class="container-fluid">
-            <img
-              class="logo_nav navbar-brand"
-              src="../assets/images/logo-academia-webp.webp"
-              alt=" logo pasion dance"
-            />
-            <div
-              class="offcanvas offcanvas-end navbar-dark bg-dark"
-              tabindex="-1"
-              id="offcanvasNavbar"
-              aria-labelledby="offcanvasNavbarLabel"
-            >
-              <div class="offcanvas-header">
-                <button
-                  type="button"
-                  class="btn-close text-reset btn-close"
-                  data-bs-dismiss="offcanvas"
-                  aria-label="Close"
-                ></button>
-              </div>
-              <div class="offcanvas-body">
-                <ul
-                  class="menu-items navbar-nav justify-content-end flex-grow-1 pe-3"
-                >
-                  <li class="nav-item text-center">
-                    <a href="../index.html" class="nav-link" aria-current="page"
-                      >Inicio</a
-                    >
-                  </li>
-                  <li class="nav-item text-center">
-                    <a href="novedades.html" class="nav-link">Novedades</a>
-                  </li>
-                  <li class="nav-item text-center">
-                    <a href="biografia.html" class="nav-link">Biografía</a>
-                  </li>
-                  <li class="nav-item text-center">
-                    <a href="academia.html" class="active_label nav-link active"
-                      >Academia</a
-                    >
-                  </li>
-                  <li class="nav-item text-center">
-                    <a href="galeria.html" class="nav-link">Galería</a>
-                  </li>
-                  <li class="nav-item text-center">
-                    <a href="contacto.html" class="nav-link">Contacto</a>
-                  </li>
-                </ul>
-              </div>
+          <div
+            class="offcanvas offcanvas-end navbar-dark bg-dark"
+            tabindex="-1"
+            id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel"
+          >
+            <div class="offcanvas-header">
+              <button
+                type="button"
+                class="btn-close text-reset btn-close"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
             </div>
-
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-bs-toggle="offcanvas"
-              data-bs-target="#offcanvasNavbar"
-              aria-controls="offcanvasNavbar"
-            >
-              <span class="navbar-toggler-icon"></span>
-            </button>
+            <div class="offcanvas-body">
+              <ul
+                class="menu-items navbar-nav justify-content-end flex-grow-1 pe-3"
+              >
+                <li class="nav-item text-center">
+                  <a href="../index.html" class="nav-link" aria-current="page"
+                    >Inicio</a
+                  >
+                </li>
+                <li class="nav-item text-center">
+                  <a href="novedades.html" class="nav-link">Novedades</a>
+                </li>
+                <li class="nav-item text-center">
+                  <a href="biografia.html" class="nav-link">Biografía</a>
+                </li>
+                <li class="nav-item text-center">
+                  <a href="academia.html" class="active_label nav-link active"
+                    >Academia</a
+                  >
+                </li>
+                <li class="nav-item text-center">
+                  <a href="galeria.html" class="nav-link">Galería</a>
+                </li>
+                <li class="nav-item text-center">
+                  <a href="contacto.html" class="nav-link">Contacto</a>
+                </li>
+              </ul>
+            </div>
           </div>
-        </nav>
-      </header>
-
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <h1 class="text-center bg-dark">Acerca de la Academia</h1>
       <section class="section_conten">
-        <article class="contenido1 card mb-3 bg-dark mx-auto" style="max-width: 540px">
-          <div class="row g-0">
-            <!-- <h2>Acerca de la academía</h2> -->
-            <div class="col-md-4">
-              <img
-                src="../assets/images/foto_academia.jpg"
-                class="img-fluid rounded-start"
-                alt="Foto academia"
-              />
-            </div>
+        <article
+          class="contenido1 card mb-3 bg-dark mx-auto"
+          style="max-width: 60rem"
+        >
+          <img
+            src="../assets/images/foto_academia.jpg"
+            class="img-fluid rounded-start"
+            alt="Foto de la academia"
+          />
+          <div class="row-md-8 justify-content-center">
+            <div class="card-body">
+              <h5 class="card-title bg-primary text-center">La Academía</h5>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing Lorem ipsum
+                dolor sit amet consectetur adipisicing elit. Illo ut itaque
+                nobis magni facere debitis esse accusantium qui, vel
+                repudiandae. Fugiat modi nam libero odio voluptas expedita
+                quidem unde dicta. Possimus nobis fugiat, iste in nostrum eaque
+                quidem voluptate asperiores, vel soluta sunt molestias id,
+                architecto officiis esse eveniet sapiente quos distinctio!
+                Explicabo quis eum voluptatibus aut perferendis iure et.
+                Possimus, dolorum. Nesciunt libero voluptatibus, delectus cumque
+                laborum architecto facere mollitia
+              </p>
 
-            <div class="col-md-8">
-              <div class="card-body ">
-                <h5 class="card-title bg-primary text-center">Acerca de la academía</h5>
-
-                <p class="card-text">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing Lorem
-                  ipsum dolor sit amet consectetur adipisicing elit. Illo ut
-                  itaque nobis magni facere debitis esse accusantium qui, vel
-                  repudiandae. Fugiat modi nam libero odio voluptas expedita
-                  quidem unde dicta. Possimus nobis fugiat, iste in nostrum
-                  eaque quidem voluptate asperiores, vel soluta sunt molestias
-                  id, architecto officiis esse eveniet sapiente quos distinctio!
-                  Explicabo quis eum voluptatibus aut perferendis iure et.
-                  Possimus, dolorum. Nesciunt libero voluptatibus, delectus
-                  cumque laborum architecto facere mollitia
-                </p>
-
-                <p class="card-text">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis
-                  recusandae eos cupiditate ullam amet id explicabo quia magni
-                  repellendus ea cumque qui necessitatibus nostrum esse,
-                  molestiae animi in saepe quibusdam. Lorem ipsum, dolor sit
-                  amet consectetur adipisicing elit. Impedit officia, ad iusto
-                  eligendi, hic eveniet nostrum, aliquam nam assumenda eaque non
-                  similique est! Cumque veritatis doloremque excepturi, optio
-                  recusandae eos. Inventore odit autem dignissimos, perspiciatis
-                  corrupti quibusdam. Autem suscipit animi fugiat itaque minus
-                  excepturi fugit consequuntur maiores sequi dignissimos vero
-                  voluptates, at quibusdam molestiae dolores enim voluptate
-                  magnam cupiditate sunt.
-                </p>
-              </div>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis
+                recusandae eos cupiditate ullam amet id explicabo quia magni
+                repellendus ea cumque qui necessitatibus nostrum esse, molestiae
+                animi in saepe quibusdam. Lorem ipsum, dolor sit amet
+                consectetur adipisicing elit. Impedit officia, ad iusto
+                eligendi, hic eveniet nostrum, aliquam nam assumenda eaque non
+                similique est! Cumque veritatis doloremque excepturi, optio
+                recusandae eos. Inventore odit autem dignissimos, perspiciatis
+                corrupti quibusdam. Autem suscipit animi fugiat itaque minus
+                excepturi fugit consequuntur maiores sequi dignissimos vero
+                voluptates, at quibusdam molestiae dolores enim voluptate magnam
+                cupiditate sunt.
+              </p>
             </div>
           </div>
         </article>
       </section>
-
-      <footer class="bg-dark">
-        <div class="container-fluid  pt-1 mt-1 mb-0">
-          <div class="group1">
-            <div class="footer_title">
-              <h4 class="text-center">Síguenos</h4>
-            </div>
-
-            <div
-              class="footer_iconos d-flex justify-content-center px-2 mb-3 lh-1 mr-3 gx-1 text-center"
-            >
-              <a
-                href="https://www.facebook.com/Pasion-Dance-405170219929209"
-                target="_blank"
-              >
-                <img
-                  src="../assets/iconos/facebook-icon.png"
-                  alt="Enlace a Facebook"
-              /></a>
-
-              <a
-                href="https://www.instagram.com/academia_pasiondance/?hl=es-la"
-                target="_blank"
-              >
-                <img
-                  src="../assets/iconos/instagram-icon.png"
-                  alt="Enlace a Instagram"
-              /></a>
-
-              <a href="https://www.web.whatsapp.com" target="_blank">
-                <img
-                  src="../assets/iconos/whatsapp-icon.png"
-                  alt="Enlace a whatsapp"
-              /></a>
-
-              <a href="https://www.youtube.com/watch?v" target="_blank">
-                <img
-                  src="../assets/iconos/youtube-icon.png"
-                  alt="Enlace a YouTube"
-              /></a>
-
-              <a
-                href="https://www.tiktok.com/@aldanacastillo28"
-                target="_blank"
-              >
-                <img
-                  src="../assets/iconos/tiktok-icon.png"
-                  alt="Enlace a Tik Tok"
-              /></a>
-            </div>
-          </div>
-          <div class="footer_copyright text-center">
-            <h5 class="text-center">Academia Pasion Dance 2022 &#169;</h5>
-            <h5 class="text-center">Todos los derechos reservados</h5>
-          </div>
-        </div>
-      </footer>
     </main>
+    <footer class="bg-dark">
+      <div class="container-fluid pt-1 mt-1 mb-0">
+          <div class="footer_title">
+            <h4 class="text-center pt-4">Síguenos</h4>
+          </div>
+
+          <div
+            class="footer_iconos d-flex justify-content-center px-2 mb-3 lh-1 mr-3 gx-1 text-center"
+          >
+            <a
+              href="https://www.facebook.com/Pasion-Dance-405170219929209"
+              target="_blank"
+            >
+              <img
+                class="red-facebook"
+                src="../assets/iconos/facebook-icon.png"
+                alt="Enlace a Facebook"
+            /></a>
+
+            <a
+              href="https://www.instagram.com/academia_pasiondance/?hl=es-la"
+              target="_blank"
+            >
+              <img
+                class="red-instagram"
+                src="../assets/iconos/instagram-icon.png"
+                alt="Enlace a Instagram"
+            /></a>
+
+            <a href="https://www.web.whatsapp.com" target="_blank">
+              <img
+                class="red-whatsapp"
+                src="../assets/iconos/whatsapp-icon.png"
+                alt="Enlace a whatsapp"
+            /></a>
+
+            <a href="https://www.youtube.com/watch?v" target="_blank">
+              <img
+                class="red-youtube"
+                src="../assets/iconos/youtube-icon.png"
+                alt="Enlace a YouTube"
+            /></a>
+
+            <a href="https://www.tiktok.com/@aldanacastillo28" target="_blank">
+              <img
+                class="red-tik-tok"
+                src="../assets/iconos/tiktok-icon.png"
+                alt="Enlace a Tik Tok"
+            /></a>
+          </div>
+        <div class="text-center">
+          <h5 class="text-center">Academia Pasion Dance 2022 &#169;</h5>
+          <h5 class="text-center pb-4">Todos los derechos reservados</h5>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

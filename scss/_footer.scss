@@ -6,11 +6,11 @@
 
     display: inline-block;
    
-   line-height: 32px;
+    line-height: 32px;
    
-   margin-right: 5px;
-   /* text-align: center;  */
-   transition: all 300ms ease;
+    margin-right: 5px;
+    /* text-align: center;  */
+    /* transition: all 300ms ease; */
   
   
    
@@ -26,5 +26,15 @@
    
   
   }
-  /* termina footer*/
+
+  @each $name, $value in $redes {
+      .red-#{$name}:hover{
+            background-color: map-get($redes, #{$name});
+            color: #fff;
+            transition: .5;
+      }
+
+
+  }
+  /*+++++ termina footer +++++*/
   

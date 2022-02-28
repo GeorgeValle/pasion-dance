@@ -1,193 +1,375 @@
 <!DOCTYPE html>
 <html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- comienza la linea de favicones -->
+    <link rel="shortcut icon" href="../assets/favicons/favicon.ico" />
+    <link
+      rel="apple-touch-icon"
+      sizes="57x57"
+      href="../assets/favicons/apple-icon-57x57.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="60x60"
+      href="../assets/favicons/apple-icon-60x60.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="../assets/favicons/apple-icon-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="../assets/favicons/apple-icon-76x76.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="../assets/favicons/apple-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="../assets/favicons/apple-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="../assets/favicons/apple-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="../assets/favicons/apple-icon-152x152.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="../assets/favicons/apple-icon-180x180.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="../assets/favicons/android-icon-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../assets/favicons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="../assets/favicons/favicon-96x96.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../assets/favicons/favicon-16x16.png"
+    />
+    <link rel="manifest" href="../assets/favicons/manifest.json" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta
+      name="msapplication-TileImage"
+      content="../assets/favicons/ms-icon-144x144.png"
+    />
+    <meta name="theme-color" content="#ffffff" />
+    <!-- termina la linea de favicones-->
 
-  <!-- comienza la linea de favicones -->
-  <link rel="shortcut icon" href="../assets/favicons/favicon.ico" />
-  <link rel="apple-touch-icon" sizes="57x57" href="../assets/favicons/apple-icon-57x57.png" />
-  <link rel="apple-touch-icon" sizes="60x60" href="../assets/favicons/apple-icon-60x60.png" />
-  <link rel="apple-touch-icon" sizes="72x72" href="../assets/favicons/apple-icon-72x72.png" />
-  <link rel="apple-touch-icon" sizes="76x76" href="../assets/favicons/apple-icon-76x76.png" />
-  <link rel="apple-touch-icon" sizes="114x114" href="../assets/favicons/apple-icon-114x114.png" />
-  <link rel="apple-touch-icon" sizes="120x120" href="../assets/favicons/apple-icon-120x120.png" />
-  <link rel="apple-touch-icon" sizes="144x144" href="../assets/favicons/apple-icon-144x144.png" />
-  <link rel="apple-touch-icon" sizes="152x152" href="../assets/favicons/apple-icon-152x152.png" />
-  <link rel="apple-touch-icon" sizes="180x180" href="../assets/favicons/apple-icon-180x180.png" />
-  <link rel="icon" type="image/png" sizes="192x192" href="../assets/favicons/android-icon-192x192.png" />
-  <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicons/favicon-32x32.png" />
-  <link rel="icon" type="image/png" sizes="96x96" href="../assets/favicons/favicon-96x96.png" />
-  <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicons/favicon-16x16.png" />
-  <link rel="manifest" href="../assets/favicons/manifest.json" />
-  <meta name="msapplication-TileColor" content="#ffffff" />
-  <meta name="msapplication-TileImage" content="../assets/favicons/ms-icon-144x144.png" />
-  <meta name="theme-color" content="#ffffff" />
-  <!-- termina la linea de favicones-->
+    <!--Importo el css normalizador para el reset-->
+    <link rel="stylesheet" href="../styles/normalize.css" />
 
-  <!--Importo el css normalizador para el reset-->
-  <link rel="stylesheet" href="../styles/normalize.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
 
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+      defer
+    ></script>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"
-    defer></script>
+    <link rel="stylesheet" href="../styles/styles.css" />
 
-  <link rel="stylesheet" href="../styles/styles.css" />
+    <title>Contacto</title>
 
-  <title>Contacto</title>
-</head>
+    <meta
+      name="description"
+      content="Información para contactarse con la academia Pasion Dance - Consultas - Ubicación - Redes Sociales "
+    />
 
-<body>
-  <header>
-    <!-- Imagen de logo - Imagen de banner, contenedor fluid de bootstraps -->
-    <div class="container-fluid">
-      <img class="logoHeader__banner img-fluid mx-auto d-block" src="../assets/images/bannerheader.webp" alt="Banner" />
-    </div>
+    <meta
+      name="keywords"
+      content="danzas, árabes, ubicación, academia, Aldana Castillo, Consultas, Redes, Pasion Dance "
+    />
+  </head>
 
-    <!-- ***** inicio del menu de navegación *****-->
-
-    <nav class="menu navbar navbar-expand-lg navbar-dark bg-dark">
+  <body>
+    <header>
+      <!-- Imagen de logo - Imagen de banner, contenedor fluid de bootstraps -->
       <div class="container-fluid">
-        <img class="logo_nav navbar-brand" src="../assets/images/logo-academia-webp.webp" alt=" logo pasion dance" />
-        <div class="offcanvas offcanvas-end navbar-dark bg-dark" tabindex="-1" id="offcanvasNavbar"
-          aria-labelledby="offcanvasNavbarLabel">
-          <div class="offcanvas-header">
-            <button type="button" class="btn-close text-reset btn-close" data-bs-dismiss="offcanvas"
-              aria-label="Close"></button>
+        <img
+          class="logoHeader__banner img-fluid mx-auto d-block"
+          src="../assets/images/bannerheader.webp"
+          alt="Banner"
+        />
+      </div>
+
+      <!-- ***** inicio del menu de navegación *****-->
+
+      <nav class="menu navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <img
+            class="logo_nav navbar-brand"
+            src="../assets/images/logo-academia-webp.webp"
+            alt=" logo pasion dance"
+          />
+          <div
+            class="offcanvas offcanvas-end navbar-dark bg-dark"
+            tabindex="-1"
+            id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel"
+          >
+            <div class="offcanvas-header">
+              <button
+                type="button"
+                class="btn-close text-reset btn-close"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul
+                class="menu-items navbar-nav justify-content-end flex-grow-1 pe-3"
+              >
+                <li class="nav-item text-center">
+                  <a href="../index.html" class="nav-link" aria-current="page"
+                    >Inicio</a
+                  >
+                </li>
+                <li class="nav-item text-center">
+                  <a href="novedades.html" class="nav-link">Novedades</a>
+                </li>
+                <li class="nav-item text-center">
+                  <a href="biografia.html" class="nav-link">Biografía</a>
+                </li>
+                <li class="nav-item text-center">
+                  <a href="academia.html" class="nav-link">Academia</a>
+                </li>
+                <li class="nav-item text-center">
+                  <a href="galeria.html" class="nav-link">Galería</a>
+                </li>
+                <li class="nav-item text-center">
+                  <a href="contacto.html" class="active_label nav-link active"
+                    >Contacto</a
+                  >
+                </li>
+              </ul>
+            </div>
           </div>
-          <div class="offcanvas-body">
-            <ul class="menu-items navbar-nav justify-content-end flex-grow-1 pe-3">
-              <li class="nav-item text-center">
-                <a href="../index.html" class="nav-link" aria-current="page">Inicio</a>
-              </li>
-              <li class="nav-item text-center">
-                <a href="novedades.html" class="nav-link">Novedades</a>
-              </li>
-              <li class="nav-item text-center">
-                <a href="biografia.html" class="nav-link">Biografía</a>
-              </li>
-              <li class="nav-item text-center">
-                <a href="academia.html" class="nav-link">Academia</a>
-              </li>
-              <li class="nav-item text-center">
-                <a href="galeria.html" class="nav-link">Galería</a>
-              </li>
-              <li class="nav-item text-center">
-                <a href="contacto.html" class="active_label nav-link active">Contacto</a>
-              </li>
-            </ul>
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+      </nav>
+      <h1 class="text-center bg-dark">Contacto</h1>
+    </header>
+
+    <main class="container-fluid">
+      <!-- +++ inicio main ++++ -->
+
+      <section class="row">
+        <section class="contenido1 col mt-4">
+          <form class="form bg-dark mb-4 card" style="width: 25rem">
+            <div class="form_container">
+              <h2 class="form_title text-center bg-primary">Consultas</h2>
+              <input type="text" class="form_input" placeholder="Nombre:" />
+              <input type="email" class="form_input" placeholder="Email:" />
+              <textarea
+                class="form_input form_input--message"
+                placeholder="Mensaje"
+              ></textarea>
+
+              <input type="submit" value="Enviar" class="form_cta bg-primary" />
+            </div>
+          </form>
+        </section>
+
+        <section class="contenido2 col mt-4">
+          <div class="mapa bg-dark mb-4 card" style="width: 25rem">
+            <div class="mapa_container">
+              <h2 class="mapa_title text-center bg-primary">Cómo Llegar</h2>
+              <iframe
+                class="mapa_iframe mx-auto"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d601.729311001263!2d-64.1288071181894!3d-31.44455720397585!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432bcdf3f96170b%3A0x4baa3e535a25c5c3!2zMzHCsDI2JzQwLjEiUyA2NMKwMDcnNDMuNCJX!5e0!3m2!1ses!2sar!4v1642726392776!5m2!1ses!2sar"
+                width="340"
+                height="275"
+                style="border: 0"
+                allowfullscreen="[ + ]"
+                loading="lazy"
+              >
+              </iframe>
+            </div>
           </div>
+        </section>
+
+        <section class="contenido3 col mt-4">
+          <div class="redes_sociales bg-dark mb-4 card" style="width: 25rem">
+            <h2 class="text-center bg-primary">Redes Sociales</h2>
+            <div>
+              <img
+                class="icono_red mt-2"
+                src="../assets/iconos/facebook-icon.png"
+                alt="icono Facebook"
+              />
+              <a
+                class="red-facebook mt-2"
+                href="https://www.facebook.com/Pasion-Dance-405170219929209"
+                target="_blank"
+              >
+                facebook/pasiondance</a
+              >
+            </div>
+            <div>
+              <img
+                class="icono_red mt-2"
+                src="../assets/iconos/instagram-icon.png"
+                alt="icono Instagram"
+              />
+              <a
+                class="red-instagram mt-2"
+                href="https://www.instagram.com/academia_pasiondance/?hl=es-la"
+                target="_blank"
+              >
+                pasiondanceok</a
+              >
+            </div>
+            <div>
+              <img
+                class="icono_red mt-2"
+                src="../assets/iconos/whatsapp-icon.png"
+                alt="icono whatsapp"
+              />
+              <a
+                class="mt-2 red-whatsapp"
+                href="https://www.web.whatsapp.com"
+                target="_blank"
+              >
+                3516-698890</a
+              >
+            </div>
+            <div>
+              <img
+                class="icono_red mt-2"
+                src="../assets/iconos/youtube-icon.png"
+                alt="icono YouTube"
+              />
+              <a
+                class="red-youtube mt-2"
+                href="https://www.youtube.com/channel/UCIEW56ynw2ZmlBcwmEhziUQ"
+                target="_blank"
+              >
+                Academia Pasion Dance</a
+              >
+            </div>
+            <div>
+              <img
+                class="icono_red mt-2"
+                src="../assets/iconos/tiktok-icon.png"
+                alt="icono Tik Tok"
+              />
+              <a
+                class="red-tik-tok mt-2"
+                href="https://www.tiktok.com/@aldanacastillo28"
+                target="_blank"
+              >
+                @aldanacastillo28</a
+              >
+            </div>
+          </div>
+        </section>
+      </section>
+    </main>
+    <footer class="bg-dark">
+      <div class="container-fluid pt-1 mt-1 mb-0">
+        <div class="footer_title">
+          <h4 class="text-center pt-4">Síguenos</h4>
         </div>
 
-        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
-          aria-controls="offcanvasNavbar">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-      </div>
-    </nav>
-    <h1 class="text-center bg-dark">Contacto</h1>
-  </header>
+        <div
+          class="footer_iconos d-flex justify-content-center px-2 mb-3 lh-1 mr-3 gx-1 text-center"
+        >
+          <a
+            href="https://www.facebook.com/Pasion-Dance-405170219929209"
+            target="_blank"
+          >
+            <img
+              class="red-facebook"
+              src="../assets/iconos/facebook-icon.png"
+              alt="Enlace a Facebook"
+            />
+          </a>
 
-  <main class="container-fluid">
-    <!-- +++ inicio main ++++ -->
+          <a
+            href="https://www.instagram.com/academia_pasiondance/?hl=es-la"
+            target="_blank"
+          >
+            <img
+              class="red-instagram"
+              src="../assets/iconos/instagram-icon.png"
+              alt="Enlace a Instagram"
+            />
+          </a>
 
-    <section class="row ">
-      <section class="contenido1 col mt-4">
-        <form class="form bg-dark mb-4 card" style="width: 25rem">
-          <div class="form_container">
-            <h2 class="form_title text-center bg-primary">Consultas</h2>
-            <input type="text" class="form_input" placeholder="Nombre:" />
-            <input type="email" class="form_input" placeholder="Email:" />
-            <textarea class="form_input form_input--message" placeholder="Mensaje"></textarea>
+          <a href="https://www.web.whatsapp.com" target="_blank">
+            <img
+              class="red-whatsapp"
+              src="../assets/iconos/whatsapp-icon.png"
+              alt="Enlace a whatsapp"
+            />
+          </a>
 
-            <input type="submit" value="Enviar" class="form_cta bg-primary" />
-          </div>
-        </form>
-      </section>
+          <a href="https://www.youtube.com/watch?v" target="_blank">
+            <img
+              class="red-youtube"
+              src="../assets/iconos/youtube-icon.png"
+              alt="Enlace a YouTube"
+            />
+          </a>
 
-      <section class="contenido2 col mt-4">
-        <div class="mapa bg-dark mb-4 card" style="width: 25rem">
-          <div class="mapa_container">
-            <h2 class="mapa_title text-center bg-primary">Cómo Llegar</h2>
-            <iframe class="mapa_iframe mx-auto"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d601.729311001263!2d-64.1288071181894!3d-31.44455720397585!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432bcdf3f96170b%3A0x4baa3e535a25c5c3!2zMzHCsDI2JzQwLjEiUyA2NMKwMDcnNDMuNCJX!5e0!3m2!1ses!2sar!4v1642726392776!5m2!1ses!2sar"
-              width="340" height="275" style="border: 0" allowfullscreen="[ + ]" loading="lazy">
-            </iframe>
-          </div>
+          <a href="https://www.tiktok.com/@aldanacastillo28" target="_blank">
+            <img
+              class="red-tik-tok"
+              src="../assets/iconos/tiktok-icon.png"
+              alt="Enlace a Tik Tok"
+            />
+          </a>
         </div>
-      </section>
-
-      <section class="contenido3 col mt-4">
-        <div class="redes_sociales bg-dark mb-4 card" style="width: 25rem">
-          <h2 class="text-center bg-primary">Redes Sociales</h2>
-          <div>
-            <img class="mt-2" src="../assets/iconos/facebook-icon.png" alt="icono Facebook" />
-            <a class="red-facebook mt-2" href="https://www.facebook.com/Pasion-Dance-405170219929209" target="_blank">
-              facebook/pasiondance</a>
-          </div>
-          <div>
-            <img class="mt-2" src="../assets/iconos/instagram-icon.png" alt="icono Instagram" />
-            <a class="red-instagram mt-2" href="https://www.instagram.com/academia_pasiondance/?hl=es-la"
-              target="_blank">
-              pasiondanceok</a>
-          </div>
-          <div>
-            <img class="mt-2" src="../assets/iconos/whatsapp-icon.png" alt="icono whatsapp" />
-            <a class="mt-2 red-whatsapp" href="https://www.web.whatsapp.com" target="_blank">
-              3516-698890</a>
-          </div>
-          <div>
-            <img class="mt-2" src="../assets/iconos/youtube-icon.png" alt="icono YouTube" />
-            <a class="red-youtube mt-2" href="https://www.youtube.com/channel/UCIEW56ynw2ZmlBcwmEhziUQ" target="_blank">
-              Academia Pasion Dance</a>
-          </div>
-          <div>
-            <img class="mt-2" src="../assets/iconos/tiktok-icon.png" alt="icono Tik Tok" />
-            <a class="red-tik-tok mt-2" href="https://www.tiktok.com/@aldanacastillo28" target="_blank">
-              @aldanacastillo28</a>
-          </div>
+        <div class="text-center">
+          <h5 class="text-center">Academia Pasion Dance 2022 &#169;</h5>
+          <h5 class="text-center pb-4">Todos los derechos reservados</h5>
         </div>
-      </section>
-    </section>
-  </main>
-  <footer class="bg-dark">
-    <div class="container-fluid  pt-1 mt-1 ">
-      <div class="footer_title">
-        <h4 class="text-center">Síguenos</h4>
       </div>
-
-      <div class="footer_iconos d-flex justify-content-center px-2 mb-3 lh-1 mr-3 gx-1 text-center">
-        <a href="https://www.facebook.com/Pasion-Dance-405170219929209" target="_blank">
-          <img class="red-facebook" src="../assets/iconos/facebook-icon.png" alt="Enlace a Facebook" />
-        </a>
-
-        <a href="https://www.instagram.com/academia_pasiondance/?hl=es-la" target="_blank">
-          <img class="red-instagram" src="../assets/iconos/instagram-icon.png" alt="Enlace a Instagram" />
-        </a>
-
-        <a href="https://www.web.whatsapp.com" target="_blank">
-          <img class="red-whatsapp" src="../assets/iconos/whatsapp-icon.png" alt="Enlace a whatsapp" />
-        </a>
-
-        <a href="https://www.youtube.com/watch?v" target="_blank">
-          <img class="red-youtube" src="../assets/iconos/youtube-icon.png" alt="Enlace a YouTube" />
-        </a>
-
-        <a href="https://www.tiktok.com/@aldanacastillo28" target="_blank">
-          <img class="red-tik-tok" src="../assets/iconos/tiktok-icon.png" alt="Enlace a Tik Tok" />
-        </a>
-      </div>
-      <div class=" text-center">
-        <h5 class="text-center">Academia Pasion Dance 2022 &#169;</h5>
-        <h5 class="text-center">Todos los derechos reservados</h5>
-      </div>
-    </div>
-  </footer>
-</body>
-
+    </footer>
+  </body>
 </html>

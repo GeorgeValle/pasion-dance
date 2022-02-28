@@ -3,48 +3,19 @@
 
 body{
   /* background-color: #4642B8; */
+  
+  font-family: Arial,sans-serif; 
+  color: white; 
   background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
   min-height: 100vh; /*para que no desconfigurar el gradient*/
-   font-family: Arial,sans-serif; 
-  color: white; 
+  
  } 
  
+
  
  @import "_variables";
 
-  /*se eligió como contenedor global a la etiqueta main, para realizar
-  el grid area padre*/
-  // main {
-  //   display: grid;
-  //   grid-gap: 10px;
-    
  
-  //   /*especifico la ubicacion de las grid areas vista desktop*/
-  //   grid-template-areas: 
-  //     "header"
-  //     "con1"
-  //     "con2"
-  //     "con3"
-  //     "footer";
-  //   }
-  // /*se nombra las grid areas*/
- 
-  // header{
-  //   grid-area: header;
-  // }
-  // .contenido1{
-  //   grid-area: con1;
-  // }
-  // .contenido2{
-  //   grid-area: con2;
-  // }
-  // .contenido3{
-  //   grid-area: con3;
-  // }
-  // footer{
-  //   grid-area:footer;
-  // }
-
 
 @import "_nav";
 

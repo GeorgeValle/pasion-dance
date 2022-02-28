@@ -1,32 +1,43 @@
 
 
 /*----------comienza el footer -------- */
+footer{
+    min-height: 30vh;
+    /*para que llegue al fondo de la página siempre*/
 
-.footer_iconos a{
+                .footer_iconos a{
 
-    display: inline-block;
-   
-    line-height: 32px;
-   
-    margin-right: 5px;
-    /* text-align: center;  */
-    /* transition: all 300ms ease; */
-  
-  
-   
-  }
-  
-  /* tamaño de los iconos del fototer y
-  de las redes sociales de contactos */
-  .footer_iconos a img, .redes_sociales img {
-   
-   width: 32px;
-   height: 32px;
-  
-   
-  
-  }
+                    display: inline-block;
+       
+                    line-height: 32px;
+       
+                    margin-right: 5px;
+                    /* text-align: center;  */
+                    /* transition: all 300ms ease; */
+       
+                }
 
+                                                 /* tamaño de los iconos del fototer y
+                                                de las redes sociales de contactos */
+                                                .footer_iconos a img{
+   
+                                                    @extend .iconos_tamanio;   
+                                                }
+
+
+
+
+}
+
+
+ 
+
+
+
+
+  
+  
+/* each para crear un hover personalizado para cada link o imagen de redes sociales */
   @each $name, $value in $redes {
       .red-#{$name}:hover{
             background-color: map-get($redes, #{$name});

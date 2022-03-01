@@ -1,41 +1,19 @@
 /* ++++++++++++++++++++++++++++++++ */
 /* configuraciones manuales del nav */
-// .menu{
- 
-//     border-bottom: 1px solid #fff;
-//     border-top: 1px solid #fff;
-    
-//     padding: 0.5rem;
-//     margin-left: 0,5rem; 
-//    } 
-   
-//    .logo_nav{
-//     max-width: 12%;
-//     /* float: right; */
-//    }
-//    a.active_label, a:hover{
-//     background-color: #42B881;
-//     transition: .5;
-//    }
-
 
 .menu{
     border-bottom: 1px solid #fff;
     border-top: 1px solid #fff;
-    
     padding: 0.5rem;
     margin-left: 0,5rem; 
 
-                        .logo_nav{
-                            max-width: 12%;
-                            /* float: right; */
-                        }
-                                            a.active_label, a:hover{
-                                            @include hover-green;
-                                                }                    
-
-
-
+        .logo_nav{
+        max-width: 12%;
+        }
+        
+            a.active_label, a:hover{
+            @include hover-green;
+            }                    
 }
 
 /*++++++ termino de navbar +++++*/

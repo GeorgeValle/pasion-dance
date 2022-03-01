@@ -2,120 +2,52 @@
 
 
 .form, .mapa, .redes_sociales {
+  @include card-contacto;
 
-    @include card-contacto;
-
-                          .icono_red{
-                            @extend .iconos_tamanio;
-                          }
+    .icono_red{
+      @extend .iconos_tamanio;
+    }
     
-                        .form_container, .redes_sociales, .mapa_container{
-                            width: 100%;
-                            display:flex;
-                            gap: 1em;
-                            flex-wrap: wrap;
-                            flex-direction: column;
-                            justify-content: center;
+    .form_container, .redes_sociales, .mapa_container{
+      width: 100%;
+      display:flex;
+      gap: 1em;
+      flex-wrap: wrap;
+      flex-direction: column;
+      justify-content: center;
 
+        /* titulos de los 3 recuadros de contacto */
+        .form_title, .mapa_title, .redes_sociales h2{
+        padding: 0.5em 1em;
+        color:white;     
+        }
+                                                                                                           
+        .form_input{
+          font-family: inherit; /*para que herede la fuente los inputs*/
+          padding: 0.8em 1em; /*padding arriba y a los lados*/
+          outline: none; /*no se va a remarcar*/
+          border: none; /*saco el border*/
+          border:1px solid #bbb0bb;
+          border-radius: 0.2em;
+        } 
 
+        .form_input--message{
+          resize: none; /*para que los usuarios no puedan redimensionar */
+          padding: 1.8em 1em; /*agrando el textarea */
+          margin-bottom: 5em; /*separado del submit*/
+        }
 
-                                    /* titulos de los 3 recuadros de contacto */
-                                    .form_title, .mapa_title, .redes_sociales h2{
-                                    padding: 0.5em 1em;
-                                    /* background-color:#262463; */
-                                    /* text-align: center; */
-                                    color:white;   
-                                        
-                                    
-                                    
-                                    }
-                                    
-                                    
-                                    
-
-                                    .form_input{
-                                        font-family: inherit; /*para que herede la fuente los inputs*/
-                                        padding: 0.8em 1em; /*padding arriba y a los lados*/
-                                        outline: none; /*no se va a remarcar*/
-                                        border: none; /*saco el border*/
-                                        border:1px solid #bbb0bb;
-                                        border-radius: 0.2em;
-                                    } 
-
-                                    .form_input--message{
-                                        resize: none; /*para que los usuarios no puedan redimensionar */
-                                        padding: 1.8em 1em; /*agrando el textarea */
-                                        margin-bottom: 5em; /*separado del submit*/
-                                    }
-
-
-                                    .form_cta{ 
-                                        font-family: inherit; /*para que herede la fuente el submit*/
-                                        font-size: 1rem; 
-                                        color: white;
-                                        /* background-color: #262463; */
-                                        border: none;
-                                         font-weight: 700;
-                                         padding: 1em 0;
-                                         border-radius: 1.2em;
-                                         cursor: pointer;
-                                    }
-
-                                    
-
-
-                                    
-                                    
-
-                        }
-
-
-
-   }
+        .form_cta{ 
+          font-family: inherit; /*para que herede la fuente el submit*/
+          font-size: 1rem; 
+          color: white;
+          border: none;
+          font-weight: 700;
+          padding: 1em 0;
+          border-radius: 1.2em;
+          cursor: pointer;
+        }                                                                                                       
+    }
+}
    
-   
- /*    .form_container, .redes_sociales, .mapa_container{
-     width: 100%;
-     display:flex;
-     gap: 1em;
-     flex-wrap: wrap;
-     flex-direction: column;
-     justify-content: center;
-    } /*
-   
-  /* titulos de los 3 recuadros de contacto 
-    .form_title, .mapa_title, .redes_sociales h2{
-     padding: 0.5em 1em;
-     /* background-color:#262463; 
-     /* text-align: center; 
-     color:white;
-    } */
-   
-   
-   
-    /*.form_input{
-      font-family: inherit; /*para que herede la fuente los inputs
-      padding: 0.8em 1em; /*padding arriba y a los lados
-        outline: none; /*no se va a remarcar
-      border: none; /*saco el border
-      border:1px solid #bbb0bb;
-      border-radius: 0.2em;
-    } /*
-   
-    /*.form_input--message{
-     resize: none; /*para que los usuarios no puedan redimensionar 
-     padding: 1.8em 1em; /*agrando el textarea 
-     margin-bottom: 5em; /*separado del submit
-    } */
-   
-   /* .form_cta{ 
-     font-family: inherit; /*para que herede la fuente el submit
-     font-size: 1rem; 
-     color: white;
-     /* background-color: #262463; 
-     border: none;
-      font-weight: 700;
-      padding: 1em 0;
-      border-radius: 1.2em;
-      cursor: pointer;
-        } */
+/* Fin de la página contacto */   

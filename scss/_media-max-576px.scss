@@ -4,18 +4,11 @@
     /*cambio de tamaño del logo del nav bar */
     .logo_nav{
         max-width: 20%;
-        }
-    
-    
-        // a.nav-link:hover{
-        //     color: #ff4136;
-        //     transition: .4s;
-        //     // background: none;
-        //   }
+    }
           
-        li.active_label{
-            @include hover-green;
-          }
+    li.active_label{
+      @include hover-green;
+    }
 
 
     /* cambio de la pagina novedades   */
@@ -23,25 +16,16 @@
       transform: rotate(2deg)
       scale(.9);
       transition: 0.5s;
-      
-     }
+    }
     /* inicio para cambiar tamaño de contacto */
     
     .form, .mapa{ /*, .redes_sociales { */
-     
-     
      max-width: 100%;
      border-radius: 1em; /*los bordes redondeados*/
      padding: 2.5em .5em;
-    
      margin-top: 20px;
-     margin-bottom: 20px;
-    
+     margin-bottom: 20px; 
     }
-    
-    
-    
-    
     
     .form_input{
       font-family: inherit; /*para que herede la fuente los inputs*/
@@ -53,18 +37,10 @@
     } 
     
     .form_input--message{
-     
-     margin-bottom: 4em; /*separado del submit*/
+      margin-bottom: 4em; /*separado del submit*/
     }
     
     
     
-    
-     
-     
-     
-    
-    
-    
-    } /*cierre del media query 576Px */
+  } /*cierre del media query 576Px */
     /*++++ termino del media query 576px ++++*/

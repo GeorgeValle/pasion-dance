@@ -4,21 +4,19 @@ $font-type: "Montserrat", sans-serif;
 
 /* variables de colores de redes */
 $face: #3b5998;
-$whats: #25d366;
+$whats:#25d366;
 $yout:#c4302b;
 $inst:#cd279d;
 $tik: #ff0050;
 
+/*mapa de redes, inicializado para luego 
+usarlo para implementar el get.map*/
 $redes: (
-    
-        "facebook": $face,
-        "whatsapp": $whats,
-        "youtube": $yout,
-        "instagram": $inst,
-        "tik-tok": $tik,
-    
-   
-
+    "facebook": $face,
+    "whatsapp": $whats,
+    "youtube": $yout,
+    "instagram": $inst,
+    "tik-tok": $tik,  
 );
 
 
@@ -28,12 +26,12 @@ $redes: (
     transition: .5;
 }
 
+
 @mixin card-contacto{
     font-family: $font-type;
-    /* background-color: #fff; */
     width: 90%;
     max-width: 400px;
-    border-radius: 1em; /*los bordes redondeados*/
+    border-radius: 1em;
     padding: 3.5em 1.5em;
     margin-left: auto;
     margin-right: auto;

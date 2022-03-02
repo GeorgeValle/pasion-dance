@@ -4,7 +4,8 @@
 /* variables de colores de redes */
 /*mapa de redes, inicializado para luego 
 usarlo para implementar el get.map*/
-/* clase creada para luego realizar extend */
+/* clase creada para luego realizar extend
+que cambie el tamaño de los iconos */
 .iconos_tamanio, footer .footer_iconos a img, .form .icono_red, .mapa .icono_red, .redes_sociales .icono_red {
   width: 32px;
   height: 32px;

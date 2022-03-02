@@ -136,8 +136,6 @@ footer .footer_iconos a {
 }
 
 .galery_grid a:hover {
-  -webkit-filter: blur(2px);
-          filter: blur(2px);
   -webkit-transform: rotate(5deg) scale(1.1);
           transform: rotate(5deg) scale(1.1);
 }

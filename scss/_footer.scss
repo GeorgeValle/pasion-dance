@@ -2,7 +2,7 @@
 
 /*----------comienza el footer -------- */
 footer{
-    min-height: 27vh;
+    min-height: 30vh;
     /*para que llegue al 
     fondo de la página siempre*/
 
@@ -21,15 +21,14 @@ footer{
 
 
 } 
-  
+
 /* each para crear un hover personalizado
  para cada link o imagen de redes sociales */
-  @each $name, $value in $redes {
-      .red-#{$name}:hover{
+    @each $name, $value in $redes {
+    .red-#{$name}:hover{
             background-color: map-get($redes, #{$name});
             color: #fff;
             transition: .5;
         }
     }
-  /*+++++ termina footer +++++*/
-  
+/*+++++ termina footer +++++*/

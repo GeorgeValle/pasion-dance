@@ -30,7 +30,7 @@ body {
 }
 
 .menu .logo_nav {
-  max-width: 12%;
+  max-width: 130px;
 }
 
 .menu a.active_label, .menu a:hover {
@@ -42,7 +42,7 @@ body {
 /*++++++ termino de navbar +++++*/
 /*----------comienza el footer -------- */
 footer {
-  min-height: 27vh;
+  min-height: 30vh;
   /*para que llegue al 
     fondo de la página siempre*/
   /*tamaño de los iconos del footer*/
@@ -167,8 +167,8 @@ footer .footer_iconos a {
 }
 
 .ligth-box img {
-  width: 75vw;
-  max-height: 75vh;
+  width: 85vw;
+  max-height: 85vh;
 }
 
 .ligth-box:target {
@@ -203,6 +203,15 @@ footer .footer_iconos a {
   width: 30px;
   line-height: 30px;
   text-decoration: none;
+  text-align: center;
+}
+
+.ligth-box .leyenda {
+  display: block;
+  position: absolute;
+  bottom: 40px;
+  color: #fff;
+  background-color: #262463;
   text-align: center;
 }
 
@@ -295,7 +304,25 @@ animacion a las cards de novedades */
   cursor: pointer;
 }
 
+.map {
+  display: none;
+}
+
 /* Fin de la página contacto */
+/* Medium devices (tablets, 768px and up) */
+@media (max-width: 768px) {
+  /*medida de tablet */
+  .ligth-box img {
+    width: 80vw;
+    max-height: 80vh;
+  }
+  .ligth-box .leyenda {
+    bottom: 70px;
+  }
+  /*medida de tabñeta*/
+}
+
+/* cierre de media 768px */
 @media (max-width: 576px) {
   /*medida de 576px fold */
   /*cambio de tamaño del logo del nav bar */
@@ -340,12 +367,15 @@ animacion a las cards de novedades */
     margin-bottom: 4em;
     /*separado del submit*/
   }
+  .ligth-box img {
+    width: 75vw;
+    max-height: 75vh;
+  }
+  .ligth-box .leyenda {
+    bottom: 90px;
+  }
 }
 
 /*cierre del media query 576Px */
 /*++++ termino del media query 576px ++++*/
-/* Medium devices (tablets, 768px and up) */
-/* cierre de media 768px */
-/* Large devices (desktops, 992px and up) */
-/* cierre de media 992px */
 /*# sourceMappingURL=styles.css.map */

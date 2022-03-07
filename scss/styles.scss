@@ -1,24 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
- 
+
 @import "_variables";
+
 body{
   font-family: $font-type; 
   color: white; 
   background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
   min-height: 100vh; /*para que no desconfigure el gradient*/
 } 
- 
 
- 
-
-
- 
 
 @import "_nav";
 
 @import "_footer";
- 
-@import "page-galery";
+
+@import "_page-galery";
 
 /* inicio de formato a las noticias de la seccion novedades */
 
@@ -27,8 +23,8 @@ body{
 /* con esta pseudo clase le doy 
 animacion a las cards de novedades */
 .roti:hover{
- transform: rotate(3deg);
- transition: transform 0.5s;
+  transform: rotate(3deg);
+  transition: transform 0.5s;
 }
 
 
@@ -36,37 +32,20 @@ animacion a las cards de novedades */
 
 .section_conten{
  /* para separar el section de otros componentes */
- margin-top: $section-gap;
+  margin-top: $section-gap;
 }
 
 @import "_page-contacto";
 
 
-@import "_media-max-576px";
 
 
- 
 /* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) { 
- 
+@import "_media-max-768px";
+/* cierre de media 768px */
 
 
-
-
-
-
-
-
-
- } /* cierre de media 768px */
-
- /* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {
- 
- 
-
-} /* cierre de media 992px */
-
+@import "_media-max-576px";
 
 
 

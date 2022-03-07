@@ -21,7 +21,7 @@
         padding: 0.5em 1em;
         color:white;     
         }
-                                                                                                           
+                                                                                                          
         .form_input{
           font-family: inherit; /*para que herede la fuente los inputs*/
           padding: 0.8em 1em; /*padding arriba y a los lados*/
@@ -49,5 +49,8 @@
         }                                                                                                       
     }
 }
-   
+  
+.map{
+  display:none;
+}
 /* Fin de la página contacto */   

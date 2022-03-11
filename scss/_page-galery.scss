@@ -30,12 +30,22 @@
                         object-fit: cover;
                         transition: transform 0.5s;
                         margin: 10px 20px 0 0;
-                        box-shadow: 0 4px 8px 0 lightskyblue, 0 6px 20px 0 rgba(0,0,0,.19);
+                        box-shadow: 0 4px 8px 0
+                        lightskyblue, 0 6px 20px 0 rgba(0,0,0,.19);
                         width:350px;
                     }
 
                     &:hover{
-                        transform: rotate(5deg) scale(1.1);
+                        transform: scale(1.1);
+                        box-shadow: 0 10px 16px 0
+                        lightskyblue, 0 6px 20px 0 rgba(0,0,0,.19);
+                    }
+
+                    /* .bio--modifed sobrescribe disminuyendo el scale 
+                    en la galeria de la biografia
+                    por ser fotos en verticales y tapar las que siguen */
+                    .bio--modifed{
+                        transform: scale(.9);
                     }
         }
     }
@@ -59,6 +69,14 @@
             width: 85vw;
             max-height: 85vh;    
         }
+
+        /* .bio sobrescribe el tamaño en la galeria de la biografia
+        por ser fotos en verticales */
+        .bio{
+            width: 50vw;
+            max-height: 80vh;    
+        }
+        
 
 
 

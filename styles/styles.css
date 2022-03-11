@@ -1,6 +1,7 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap");
 /* separacion entre sections */
+/* Variables globales de Bootstraps */
 /* variables de colores de redes */
 /*mapa de redes, inicializado para luego 
 usarlo para implementar el get.map*/
@@ -35,6 +36,7 @@ body {
 
 .menu a.active_label, .menu a:hover {
   background-color: #42B881;
+  border: .7px solid #fff;
   -webkit-transition: .5;
   transition: .5;
 }
@@ -118,6 +120,9 @@ footer .footer_iconos a {
   overflow: hidden;
   -webkit-box-shadow: 0 0 6xp rgba(0, 0, 0, 0.5);
           box-shadow: 0 0 6xp rgba(0, 0, 0, 0.5);
+  /* .bio--modifed sobrescribe disminuyendo el scale 
+                    en la galeria de la biografia
+                    por ser fotos en verticales y tapar las que siguen */
 }
 
 .galery_grid a img {
@@ -137,8 +142,15 @@ footer .footer_iconos a {
 }
 
 .galery_grid a:hover {
-  -webkit-transform: rotate(5deg) scale(1.1);
-          transform: rotate(5deg) scale(1.1);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-box-shadow: 0 10px 16px 0 lightskyblue, 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 10px 16px 0 lightskyblue, 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.galery_grid a .bio--modifed {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
 }
 
 .ligth-box {
@@ -164,11 +176,18 @@ footer .footer_iconos a {
           align-items: center;
   -webkit-transform: scale(0);
           transform: scale(0);
+  /* .bio sobrescribe el tamaño en la galeria de la biografia
+        por ser fotos en verticales */
 }
 
 .ligth-box img {
   width: 85vw;
   max-height: 85vh;
+}
+
+.ligth-box .bio {
+  width: 50vw;
+  max-height: 80vh;
 }
 
 .ligth-box:target {
@@ -331,6 +350,7 @@ animacion a las cards de novedades */
   }
   li.active_label {
     background-color: #42B881;
+    border: .7px solid #fff;
     -webkit-transition: .5;
     transition: .5;
   }

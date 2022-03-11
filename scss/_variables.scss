@@ -2,6 +2,10 @@
 $section-gap: 40px; /* separacion entre sections */
 $font-type: "Montserrat", sans-serif;
 
+/* Variables globales de Bootstraps */ 
+$enable-shadows: true;
+
+
 /* variables de colores de redes */
 $face: #3b5998;
 $whats:#25d366;
@@ -23,6 +27,7 @@ $redes: (
 
 @mixin hover-green{
     background-color: #42B881;
+    border: .7px solid #fff;
     transition: .5;
 }
 

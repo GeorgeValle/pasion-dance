@@ -113,30 +113,44 @@ crossorigin="anonymous" defer></script>
   </head>
   <body>
     <header>
+      <!-- ************************* -->
+      <!-- ***** Inicio Header ***** -->
+      <!-- ************************* -->
+
       <!-- Imagen de logo - Imagen de banner, contenedor fluid de bootstraps -->
       <div class="container-fluid" >
           
-          
-        <img
+        <picture>
+          <source
           class="logoHeader__banner img-fluid mx-auto d-block"
-          src="../assets/images/bannerheader.webp"
-          alt="Banner"
-        />
+          srcset="../assets/images/bannerheader.webp">
+          <img
+            class="logoHeader__banner img-fluid mx-auto d-block"
+            src="../assets/images/bannerheader.jpeg"
+            alt="Banner"
+          />
+        </picture>
       </div>
         
         <!-- ***** inicio del menu de navegación *****-->
   
-      <nav class="menu  navbar navbar-expand-lg navbar-dark bg-dark ">
+      <nav class="menu  navbar navbar-expand-lg navbar-dark glass-dark-nav ">
         <div class="container-fluid ">
           
-          <img
-            class="logo_nav navbar-brand"
-            src="../assets/images/logo-academia-webp.webp"
-            alt=" logo pasion dance"
-          />
-          <div class="offcanvas offcanvas-end navbar-dark bg-dark" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <picture>
+            <source
+              class="logo_nav navbar-brand"
+              srcset="../assets/images/logo-academia-webp.webp">
+            <img
+              class="logo_nav navbar-brand"
+              src="../assets/images/logo-academia.png"
+              alt=" logo pasion dance"
+            />
+          </picture>
+          
+          <div class="offcanvas offcanvas-end navbar-dark glass-dark-nav" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
             <div class="offcanvas-header">
-              <button type="button" class="btn-close text-reset btn-close" 
+              <button type="button" class="btn-close text-reset close" 
                 data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
             <div class="offcanvas-body">
@@ -161,6 +175,7 @@ crossorigin="anonymous" defer></script>
             
         </div>
       </nav>
+      <!-- +++++++++++ fin de menu de navegacion ++++++++++++ -->
     </header>
     <main>
       <!-- ***************************-->
@@ -168,11 +183,11 @@ crossorigin="anonymous" defer></script>
       <!-- ***************************-->
 
           
-      <h1 class=" text-center bg-dark contenido 1">Galería de Imagenes</h1>
+      <h1 class=" text-center glass-dark border-bottom border-white p-2">Galería de Imagenes</h1>
           
           
-      <section>
-        <h5 class="text-center" >
+      <section class="text-center">
+        <h5 class="p-3 mt-5 d-inline-block glass-snow">
           Presione las imagenes para expandirlas
         </h5>
         <article class="galery_grid"> 
@@ -195,11 +210,11 @@ crossorigin="anonymous" defer></script>
 
       <section>
         <article class="ligth-box" id=foto1>
-          <a href="#foto12" class="next">&#60;</a>
+          <a href="#foto12" class=" next">&#60;</a>
           <img src="../assets/images/foto1.jpg" alt="alumnas festejando"></a>
-          <a href="#foto2" class="next">&#62;</a>
-          <a href="#" class="close">X</a>
-          <p class="card-text p-2 leyenda">Alumnas festejando</p>
+          <a href="#foto2" class=" next">&#62;</a>
+          <a href="#" class="close ">X</a>
+          <p class="card-text p-2 leyenda ">Alumnas festejando</p>
         </article>
 
         <article class="ligth-box" id=foto2>
@@ -295,7 +310,7 @@ crossorigin="anonymous" defer></script>
     <!--******************-->
     <!-- Inicio de Footer -->
     <!--******************-->
-    <footer class="bg-dark">
+    <footer class="glass-dark-card">
       <div class="container-fluid pt-1 mt-1 mb-0">
         <div class="footer_title">
           <h4 class="text-center pt-4">Síguenos</h4>

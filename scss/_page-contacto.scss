@@ -21,7 +21,7 @@
         padding: 0.5em 1em;
         color:white;     
         }
-                                                                                                          
+
         .form_input{
           font-family: inherit; /*para que herede la fuente los inputs*/
           padding: 0.8em 1em; /*padding arriba y a los lados*/
@@ -33,10 +33,10 @@
 
         .form_input--message{
           resize: none; /*para que los usuarios no puedan redimensionar */
-          padding: 1.8em 1em; /*agrando el textarea */
-          margin-bottom: 5em; /*separado del submit*/
+          padding: 3em 1em; /*agrando el textarea */
+          margin-bottom: 3em; /*separado del submit*/
         }
-
+        /* submit buttom */
         .form_cta{ 
           font-family: inherit; /*para que herede la fuente el submit*/
           font-size: 1rem; 
@@ -46,7 +46,12 @@
           padding: 1em 0;
           border-radius: 1.2em;
           cursor: pointer;
-        }                                                                                                       
+        }
+        
+        /* boton submit sombra */
+        .box-shadow{
+          box-shadow: 2px 3px $purple;
+        }
     }
 }
   

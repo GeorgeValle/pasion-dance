@@ -117,28 +117,44 @@
     />
   </head>
 
-  <body class="mb-0">
+  <body>
     <header>
+      <!-- ************************* -->
+      <!-- ***** Inicio Header ***** -->
+      <!-- ************************* -->
+
       <!-- Imagen de logo - Imagen de banner, contenedor fluid de bootstraps -->
       <div class="container-fluid">
-        <img
-          class="logoHeader__banner img-fluid mx-auto d-block"
-          src="../assets/images/bannerheader.webp"
-          alt="Banner"
-        />
+        <picture>
+          <source
+            class="logoHeader__banner img-fluid mx-auto d-block"
+            srcset="../assets/images/bannerheader.webp">
+          <img
+            class="logoHeader__banner img-fluid mx-auto d-block"
+            src="../assets/images/bannerheader.jpeg"
+            alt="Banner"
+          />
+        </picture>
       </div>
 
       <!-- ***** inicio del menu de navegación *****-->
 
-      <nav class="menu navbar navbar-expand-lg navbar-dark bg-dark">
+      <nav class="menu navbar navbar-expand-lg navbar-dark glass-dark-nav">
         <div class="container-fluid">
-          <img
-            class="logo_nav navbar-brand"
-            src="../assets/images/logo-academia-webp.webp"
-            alt=" logo pasion dance"
-          />
+
+          <picture>
+            <source
+              class="logo_nav navbar-brand"
+              srcset="../assets/images/logo-academia-webp.webp">
+            <img
+              class="logo_nav navbar-brand"
+              src="../assets/images/logo-academia.png"
+              alt=" logo pasion dance"
+            />
+          </picture>
+
           <div
-            class="offcanvas offcanvas-end navbar-dark bg-dark"
+            class="offcanvas offcanvas-end navbar-dark glass-dark-nav"
             tabindex="-1"
             id="offcanvasNavbar"
             aria-labelledby="offcanvasNavbarLabel"
@@ -146,7 +162,7 @@
             <div class="offcanvas-header">
               <button
                 type="button"
-                class="btn-close text-reset btn-close"
+                class="btn-close text-reset close"
                 data-bs-dismiss="offcanvas"
                 aria-label="Close"
               ></button>
@@ -191,22 +207,24 @@
           </button>
         </div>
       </nav>
+      <!-- +++++++++++ fin de menu de navegacion ++++++++++++ -->
     </header>
     <main>
     <!-- ***************************-->
     <!-- ***** Inicio de Main ***** -->
     <!-- ***************************-->
     
-      <h1 class="text-center bg-dark">Acerca de la Academia</h1>
-      <section class="section_conten">
+      <h1 class="text-center glass-dark border-bottom border-white p-2">Acerca de la Academia</h1>
+      <section class="section_conten "> 
+        
         <article
-          class="contenido1 card mb-4 bg-dark mx-auto"
+          class="contenido1 card mb-4 glass-dark-card mx-auto"
           style="max-width: 60rem"
         >
           <!-- ***** tarjeta de biografía ******-->
           <div class="row-md-8 justify-content-center">
             <div class="card-body">
-              <h2 class="card-title bg-primary text-center">Pasion Dance</h2>
+              <h2 class="card-title bg-primary bg-gradients text-center">Pasion Dance</h2>
               <p class="card-text">
                 La academia fue fundada en el 2010 funciona en la calle
                 Eduardo Secchi 4550 de barrio Cooperativa los Andes.
@@ -233,13 +251,14 @@
             </div>
           </div>
         </article>
+        
       </section>
       <!-- galeria -->
-      <section>
-        <h5 class="text-center" >
+      <section class="text-center">
+        <h5 class="p-3 mt-3 d-inline-block glass-snow">
           Presione las imagenes para expandirlas
         </h5>
-        
+
         <article class="galery_grid"> 
           
           <a href="#foto1"><img src="../assets/images/foto-academia.jpg" alt="Baneer de la academia"></a>
@@ -282,7 +301,7 @@
     <!--******************-->
     <!-- Inicio de Footer -->
     <!--******************-->
-    <footer class="bg-dark">
+    <footer class="glass-dark-card">
       <div class="container-fluid pt-1 mt-1 mb-0">
         <div class="footer_title">
           <h4 class="text-center pt-4">Síguenos</h4>

@@ -1,20 +1,85 @@
 
 $section-gap: 40px; /* separacion entre sections */
 $font-type: "Montserrat", sans-serif;
+$font-legend: open sans;
 
 /* Variables globales de Bootstraps */ 
 $enable-shadows: true;
+$enable-gradients: true;
+
+/* variables de colores para bootstrap */
+$black: rgba( 30, 30, 30, 0.6 );
+$pinky: rgba(186, 47, 214,0.2);
+$snow:rgba( 239, 233, 233, 0.2 );
+
+/* blue que es primary en bootstrap */
+$blue:    #0d6efd;
+/*para usar en sombreados */
+$purple:  #6f42c1;
+/* para usar en gradientes */
+$indigo:  #6610f2;
 
 
-/* variables de colores de redes */
+@mixin glass{
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 8px );
+    
+
+}
+
+/* mixin para el box-light de las gallerys */
+@mixin glass-pink{
+    background-color:$pinky;
+    @include glass;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+
+}
+
+.glass-dark-nav{
+    background-color:$black;
+    
+}
+
+.glass-dark{
+    background-color:$black;
+    @include glass;
+}
+
+/* clase para las cards */
+.glass-dark-card{
+    background-color:$black;
+    @include glass;
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.12 );
+
+}
+
+
+/* color de fondo para los título que piden que "se presione la imagen" */
+.glass-snow{
+    background-color:$snow;
+    @include glass;
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+/* gradientes para los titulos de bootraps */
+.bg-gradients{
+    background-image: linear-gradient(to right, $blue, $indigo 100%);
+    
+}
+
+
+
+/* Variables de colores de redes */
 $face: #3b5998;
 $whats:#25d366;
 $yout:#c4302b;
 $inst:#cd279d;
 $tik: #ff0050;
 
-/*mapa de redes, inicializado para luego 
-usarlo para implementar el get.map*/
+/* mapa de redes, inicializado para luego 
+usarlo para implementar el get.map */
 $redes: (
     "facebook": $face,
     "whatsapp": $whats,
@@ -50,5 +115,5 @@ $redes: (
 que cambie el tamaño de los iconos */
 .iconos_tamanio{
     width: 32px;
-    height: 32px; 
+    height: 32px
 }

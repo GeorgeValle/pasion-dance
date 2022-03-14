@@ -115,29 +115,41 @@
     <meta name="keywords" content="danzas, árabes, biografía, academia, Aldana Castillo, profesora, certamenes, trajes, Pasion Dance ">
 
   </head>
-  <!-- ************ Inicio Body *************-->
   <body>
     <header>
+      <!-- ************************* -->
+      <!-- ***** Inicio Header ***** -->
+      <!-- ************************* -->
+
       <!-- Imagen de banner 1000px con contenedor fluid de bootstraps -->
       <div class="container-fluid">
-        <img
+        <picture>
+          <source
           class="logoHeader__banner img-fluid mx-auto d-block"
-          src="../assets/images/bannerheader.webp"
-          alt="Banner"
-        />
-      </div>
+          srcset="../assets/images/bannerheader.webp">
+          <img
+            class="logoHeader__banner img-fluid mx-auto d-block"
+            src="../assets/images/bannerheader.jpeg"
+            alt="Banner"
+          />
+        </picture>
 
       <!-- ***** inicio del menu de navegación *****-->
 
-      <nav class="menu navbar navbar-expand-lg navbar-dark bg-dark">
+      <nav class="menu navbar navbar-expand-lg navbar-dark  glass-dark-nav">
         <div class="container-fluid">
-          <img
-            class="logo_nav navbar-brand"
-            src="../assets/images/logo-academia-webp.webp"
-            alt=" logo pasion dance"
-          />
+          <picture>
+            <source
+              class="logo_nav navbar-brand"
+              srcset="../assets/images/logo-academia-webp.webp">
+            <img
+              class="logo_nav navbar-brand"
+              src="../assets/images/logo-academia.png"
+              alt=" logo pasion dance"
+            />
+          </picture>
           <div
-            class="offcanvas offcanvas-end navbar-dark bg-dark"
+            class="offcanvas offcanvas-end navbar-dark glass-dark-nav"
             tabindex="-1"
             id="offcanvasNavbar"
             aria-labelledby="offcanvasNavbarLabel"
@@ -145,7 +157,7 @@
             <div class="offcanvas-header">
               <button
                 type="button"
-                class="btn-close text-reset btn-close"
+                class="btn-close text-reset close"
                 data-bs-dismiss="offcanvas"
                 aria-label="Close"
               ></button>
@@ -197,10 +209,11 @@
     <!-- ***** Inicio de Main ***** -->
     <!-- ***************************-->
     <main>
-      <h1 class="text-center bg-dark">Biografía</h1>
+      <h1 class="text-center glass-dark border-bottom border-white p-2">Biografía</h1>
       <section class="section_conten">
+        
         <article
-          class=" card mb-3 bg-dark mx-auto"
+          class=" card mb-3 glass-dark-card mx-auto"
           style="max-width: 60rem"
         >
           <div class="row g-0">
@@ -213,7 +226,7 @@
             </div>
             <div class="col-md-6">
               <div class="card-body  justify-content-center ">
-                <h2 class="card-title  bg-primary text-center">
+                <h2 class="card-title  bg-primary bg-gradients text-center">
                   Biografía de la profesora Aldana Castillo
                 </h2>
                 <p class="card-text">
@@ -239,16 +252,17 @@
               </div>
             </div>
           </div>
+        
         </article>
       </section>
 
       <!-- galeria -->
-      <section>
-        <div class="box-shadow">
-          <h5 class="text-center box-shadow" >
+      <section class="text-center">
+        
+          <h5 class="p-3 d-inline-block glass-snow">
             Presione las imagenes para expandirlas
           </h5>
-        </div>
+        
         <article class="galery_grid"> 
           
           <a href="#foto1"><img src="../assets/images/biografia1.jpg" class="bio--modifed" alt="Aldana Castillo"></a>
@@ -344,7 +358,7 @@
     <!--******************-->
     <!-- Inicio de Footer -->
     <!--******************-->
-    <footer class="bg-dark">
+    <footer class="glass-dark-card">
       <div class="container-fluid pt-1 mt-1 mb-0">
         <div class="group1">
           <div class="footer_title">

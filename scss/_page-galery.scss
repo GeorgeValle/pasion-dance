@@ -32,6 +32,7 @@
                         margin: 10px 20px 0 0;
                         box-shadow: 0 4px 8px 0
                         lightskyblue, 0 6px 20px 0 rgba(0,0,0,.19);
+                        // box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
                         width:350px;
                     }
 
@@ -39,6 +40,7 @@
                         transform: scale(1.1);
                         box-shadow: 0 10px 16px 0
                         lightskyblue, 0 6px 20px 0 rgba(0,0,0,.19);
+                        // box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
                     }
 
                     /* .bio--modifed sobrescribe disminuyendo el scale 
@@ -88,39 +90,56 @@
         .close{
             display: block;
             position: absolute;
-            top: 40px;
-            right: 40px;
-            background:#262463;
+            top: 50px;
+            right: 50px;
+            @include glass-pink;
+            font-weight: bold;
             color: #fff;
             text-decoration: none;
             width: 40px;
             height: 40px;
             text-align: center;
             line-height: 40px;
-            border-radius: 50%
+            border-radius: 50%;
+            
         }
 
         .next{
             display: block;
-            background: #262463;
-            color: #fff;
-            height:30 px;
-            width:30px;
+            @include glass-pink;
+            color: #fff;            
+            font-weight: bold;
             line-height: 30px;
+            width: 30px;
+            height: 30px;
             text-decoration: none;
             text-align: center;
+            
         }
 
         .leyenda{
+            font-family:$font-legend;
+            font-weight: bold;
             display: block;
             position: absolute;
-            bottom: 40px;
+            bottom: 20px;
             color: #fff;
-            background-color: #262463;
+            border-radius: 10px;
+            @include glass-pink;
             text-align: center;
             
 
         }
+
+        &.next:hover{
+            background-color:black;
+        }
+
+        &.close:hover{
+            background-color:black;
+        }
+
+
                             
 }
 

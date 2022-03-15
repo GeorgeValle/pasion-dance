@@ -26,8 +26,13 @@ body{
 /* con esta pseudo clase le doy 
 animacion a las cards de novedades */
 .roti:hover{
-  transform: rotate(3deg);
+
+  
   transition: transform 0.5s;
+  box-shadow: 0 10px 16px 0
+  lightskyblue, 0 6px 20px 0 rgba(0,0,0,.19);
+  
+  
 }
 
 

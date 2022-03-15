@@ -5,7 +5,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- comienza la línea de favicones -->
+    
+    <!-- comienza la línea de favicones 
+    para todos los dispositivos y SO -->
     <link rel="shortcut icon" href="../assets/favicons/favicon.ico" />
     <link rel="apple-touch-icon" sizes="57x57" href="../assets/favicons/apple-icon-57x57.png" />
     <link rel="apple-touch-icon" sizes="60x60" href="../assets/favicons/apple-icon-60x60.png" />
@@ -25,12 +27,18 @@
     <meta name="msapplication-TileImage" content="../assets/favicons/ms-icon-144x144.png" />
     <meta name="theme-color" content="#ffffff" />
     <!-- termina la línea de favicones-->
+    
     <!--Importo el css normalizador para el reset-->
     <link rel="stylesheet" href="../styles/normalize.css" />
 
+    <!-- link de bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
 
+    <!-- link de Aos para las animaciones -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- script de bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous" defer>
     </script>
@@ -56,17 +64,18 @@
       <!-- ************************* -->
 
       <!-- Imagen de banner, contenedor fluid de bootstraps -->
-      <picture>
-        <source
-        class="logoHeader__banner img-fluid mx-auto d-block"
-        srcset="../assets/images/bannerheader.webp">
-        <img
-          class="logoHeader__banner img-fluid mx-auto d-block"
-          src="../assets/images/bannerheader.jpeg"
-          alt="Banner"
-        />
-      </picture>
-
+      <div class="container-fluid">
+        <picture>
+          <source
+            class="logoHeader__banner img-fluid mx-auto d-block"
+            srcset="../assets/images/bannerheader.webp">
+          <img
+            class="logoHeader__banner img-fluid mx-auto d-block"
+            src="../assets/images/bannerheader.jpeg"
+            alt="Banner"
+          />
+        </picture>
+      </div>
 
 
       <!-- ************************************** -->
@@ -130,25 +139,29 @@
       <h1 class="text-center glass-dark border-bottom border-white p-2">Noticias</h1>
       <section class=" mt-5 container-fluid">
         <div class="row">
+
           <!-- ***** tarjeta de noticia **** -->
           <article class="mt-4 col">
-            <div class=" roti noticia card mb-4 glass-dark-card mx-auto" style="width: 24rem; height: 46rem">
-              <img src="../assets/images/modo-nuevo-ciclo.jpg" class=" card-img-top  img-fluid "
+            <div data-aos="zoom-in"
+              class=" roti noticia card mb-4
+              glass-dark-card mx-auto" 
+              style="width: 24rem; height: 46rem">
+              <img src="../assets/images/modo-inicial.jpeg" class=" card-img-top  img-fluid "
                 alt="alumnas bailan al aire libre" />
               <div class="card-body">
                 <h5 class="card-title bg-primary bg-gradients p-2 text-center">
-                  Nuevo ciclo 2022
+                  Nivel Inicial 2022
                 </h5>
                 <p class="card-text">
                   <small>25-2-2022</small>
                 </p>
                 <p class="card-text">
-                  Las clases de verano se acaban, comienza el nuevo ciclo de coreografías
-                  en sus distintas categorias.
+                  Las clases de verano se acaban, comienza el nuevo ciclo de iniciación a la danza.
+                  donde aprenderas la base de distintos ritmos.
                 </p>
                 <p class="card-text">
-                  Anotate en alguno de los niveles de aprendizaje y sacá a lucir tu bailarina interior.
-                  Inicio el 14 de marzo. 
+                  comenzá a sacar tu bailarina interior.
+                  Inicio el 14 de marzo. Lunes y miercoles 18:30h
                 </p>
                 <p class="card-text">
                   Pedí más información en el formulario de consulta de la sección "Contacto".
@@ -156,37 +169,39 @@
               </div>
             </div>
           </article>
+
           <!-- ***** tarjeta de noticia **** -->
           <article class="mt-4 col">
-            <div class="roti noti1 card mb-4 glass-dark-card mx-auto" style="width: 24rem; height: 46rem">
+            <div data-aos="zoom-in" class="roti noti1 card mb-4 glass-dark-card mx-auto" style="width: 24rem; height: 46rem">
               <div class="row-md-4 ">
-                <img src="../assets/images/modo-profesorado.jpeg" class="img-fluid rounded-start"
+                <img src="../assets/images/modo-nivel-medio.jpg" class="img-fluid rounded-start"
                   alt="Alumnas con trajes de danza árabe" />
               </div>
               <div class="card-body ">
                 <h5 class="card-title p-2 bg-primary bg-gradients text-center">
-                  Nuevo ciclo profesorado
+                  Nivel Medio 2022
                 </h5>
                 <p class="card-text">
                   <small>25-2-2022</small>
                 </p>
                 <p class="card-text">
-                  Inicia el ciclo para la obtención del certificado en profesorado en danzas orientales. Comienza el 14 de marzo.
+                  Inicia el ciclo para las que quieran perfeccionar lo aprendido.
+                  Con posibilidad de obtener el certificado en profesorado en danzas orientales. 
                 </p>
                 <p class="card-text">
-                  Consta de una etapa practica para desarrollar las tecnicas de baile
-                  y otra teorica para acreditar los conocimientos necesarios en los ritmos.
+                  Comienza el 14 de marzo. Lunes y miercoles 19:30h
                 </p class="card-text">
                 <p>
-                  Sí queres desarrollar tu pasión a otro nivel, esta es tu opotunidad.
+                  Sí queres desarrollar tu pasión a otro nivel, esta es tu oportunidad.
                   Pedí más info en el formulario de consulta de la sección "Contacto".
                 </p>
               </div>
             </div>
           </article>
+
           <!-- ***** tarjeta de noticia **** -->
           <article class=" mt-4 col">
-            <div class="roti noti1 card mb-4 glass-dark-card mx-auto" style="width: 24rem; height: 46rem">
+            <div data-aos="zoom-in" class="roti noti1 card mb-4 glass-dark-card mx-auto" style="width: 24rem; height: 46rem">
               <div class="row-md-4 ">
                 <img src="../assets/images/modo-funcional.jpeg" class="img-fluid rounded-start noti3"
                   alt="mujer ejercitandose" />
@@ -200,7 +215,7 @@
                 </p>
                 <p class="card-text">
                   El verano tambien es un buen momento para estar en forma.
-                  Por eso estan abiertas las incripciones para los grupos de entrenamiento funcional.
+                  Por eso continuan abiertas las incripciones para los grupos de entrenamiento funcional.
                 </p>
                 <p class="card-text">
                   Vení a ejercitarte con buenos ritmos musicales que nos van a sumar una buena cuota de dinamismo y
@@ -209,13 +224,15 @@
                 </p class="card-text">
                 <p>
                   Tu salud te lo pide, hazle caso y poné en marcha tu energía.
+                  Martes y jueves a las 19:30h
                 </p>
               </div>
             </div>
           </article>
+
           <!-- ***** tarjeta de noticia **** -->
           <article class="mt-4 col">
-            <div class="roti noti1 card mb-4 glass-dark-card mx-auto" style="width: 24rem; height: 46rem">
+            <div data-aos="zoom-in" class="roti noti1 card mb-4 glass-dark-card mx-auto" style="width: 24rem; height: 46rem">
               <div class="row-md-4 ">
                 <img src="../assets/images/modo-presencial.jpg" class="img-fluid rounded-start noti3"
                   alt="foto show presencial" />
@@ -244,9 +261,10 @@
               </div>
             </div>
           </article>
+
           <!-- ***** tarjeta de noticia **** -->
           <article class="mt-4 col ">
-            <div class="card  roti noti2 mb-4 glass-dark-card mx-auto " style="width: 24rem; height: 46rem">
+            <div data-aos="zoom-in" class="card roti noti2 mb-4 glass-dark-card mx-auto " style="width: 24rem; height: 46rem">
               <img src="../assets/images/modo-tik-tok.jpg" class="card-img-top img-fluid" alt="alumnas en modo tik tok" />
               <div class="card-body">
                 <h5 class="card-title p-2 bg-primary bg-gradients text-center">
@@ -267,9 +285,10 @@
                 </p>
               </div>
           </article>
+
           <!-- ***** tarjeta de noticia **** -->
           <article class="mt-4 col">
-            <div class=" roti noticia card mb-4 glass-dark-card mx-auto" style="width: 24rem; height: 46rem">
+            <div data-aos="zoom-in" class=" roti noticia card mb-4 glass-dark-card mx-auto" style="width: 24rem; height: 46rem">
               <img src="../assets/images/modo-al-aire-libre.jpg" class=" card-img-top  img-fluid "
                 alt="alumnas bailan al aire libre" />
               <div class="card-body">
@@ -330,5 +349,13 @@
         </div>
       </div>
     </footer>
+    <!-- script del aos para las animaciones -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        easing: 'ease-out-back',
+        duration: 1000
+      });
+    </script>  
   </body>
 </html>

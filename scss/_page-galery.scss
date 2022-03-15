@@ -40,7 +40,7 @@
                         transform: scale(1.1);
                         box-shadow: 0 10px 16px 0
                         lightskyblue, 0 6px 20px 0 rgba(0,0,0,.19);
-                        // box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+                        
                     }
 
                     /* .bio--modifed sobrescribe disminuyendo el scale 
@@ -90,8 +90,8 @@
         .close{
             display: block;
             position: absolute;
-            top: 50px;
-            right: 50px;
+            top: 40px;
+            right: 40px;
             @include glass-pink;
             font-weight: bold;
             color: #fff;
@@ -101,7 +101,17 @@
             text-align: center;
             line-height: 40px;
             border-radius: 50%;
+
+                &:hover{
+                    background-color:black;
+                }
             
+        }
+        /* modifica la posicion del botón
+        close en la página de biografía */
+        .close--modified{
+            top: 40px;
+            right: 250px;
         }
 
         .next{
@@ -114,8 +124,15 @@
             height: 30px;
             text-decoration: none;
             text-align: center;
-            
+
+                &:hover{
+                    background-color:black;
+                }
         }
+
+        
+
+
 
         .leyenda{
             font-family:$font-legend;
@@ -130,16 +147,6 @@
             
 
         }
-
-        &.next:hover{
-            background-color:black;
-        }
-
-        &.close:hover{
-            background-color:black;
-        }
-
-
                             
 }
 

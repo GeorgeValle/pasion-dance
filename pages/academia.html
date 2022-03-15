@@ -95,6 +95,9 @@
       crossorigin="anonymous"
     />
 
+    <!-- link de Aos para las animaciones -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
@@ -261,9 +264,9 @@
 
         <article class="galery_grid"> 
           
-          <a href="#foto1"><img src="../assets/images/foto-academia.jpg" alt="Baneer de la academia"></a>
-          <a href="#foto2"><img src="../assets/images/foto-academia2.jpg" alt="repisa con trofeos"></a>
-          <a href="#foto3"><img src="../assets/images/foto-academia3.jpg" alt="Repisa con trofeos y adornos"></a>
+          <a data-aos="fade-down" href="#foto1"><img src="../assets/images/foto-academia.jpg" alt="Baneer de la academia"></a>
+          <a data-aos="fade-down" href="#foto2"><img src="../assets/images/foto-academia2.jpg" alt="repisa con trofeos"></a>
+          <a data-aos="fade-down" href="#foto3"><img src="../assets/images/foto-academia3.jpg" alt="Repisa con trofeos y adornos"></a>
           
         </article>
           
@@ -362,5 +365,13 @@
         </div>
       </div>
     </footer>
+        <!-- script del aos para las animaciones -->
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+          AOS.init({
+            easing: 'ease-out-back',
+            duration: 1000
+          });
+        </script>
   </body>
 </html>

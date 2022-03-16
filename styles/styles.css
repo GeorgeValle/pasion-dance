@@ -230,13 +230,13 @@ footer .footer_iconos a {
 }
 
 .ligth-box img {
-  width: 85vw;
-  max-height: 85vh;
+  width: 70vw;
+  max-height: 70vh;
 }
 
 .ligth-box .bio {
   width: 50vw;
-  max-height: 80vh;
+  max-height: 90vh;
 }
 
 .ligth-box:target {
@@ -274,8 +274,8 @@ footer .footer_iconos a {
 }
 
 .ligth-box .close--modified {
-  top: 40px;
-  right: 250px;
+  top: 30px;
+  right: 180px;
 }
 
 .ligth-box .next {
@@ -434,6 +434,10 @@ and tablests */
   .nav-item {
     background-color: rgba(30, 30, 30, 0.8);
   }
+  .close--modified {
+    top: 40px;
+    right: 250px;
+  }
 }
 
 /* +++++ fin medida de tableta ++++++*/
@@ -486,11 +490,15 @@ and tablests */
     /*separado del submit*/
   }
   .ligth-box img {
-    width: 75vw;
-    max-height: 75vh;
+    width: 80vw;
+    max-height: 80vh;
   }
   .ligth-box .leyenda {
     bottom: 90px;
+  }
+  .ligth-box .close--modified {
+    top: 120px;
+    right: 120px;
   }
 }
 

@@ -13,8 +13,9 @@
 
     /* cambio de la pagina novedades   */
     .roti:hover{
-      transform: rotate(2deg)
-      scale(.9);
+      box-shadow: 0 10px 16px 0
+      lightskyblue, 0 6px 20px 0 rgba(0,0,0,.19);
+      transform: scale (.9);
       transition: 0.5s;
     }
     /* inicio para cambiar tamaño de contacto */
@@ -43,14 +44,19 @@
     .ligth-box{
 
         img{
-          width: 75vw;
-          max-height: 75vh;    
+          width: 80vw;
+          max-height: 80vh;    
         }
 
         .leyenda{
           bottom: 90px;
           
         }
+
+        .close--modified{
+          top: 120px;
+          right: 120px;
+      }
 
       }
     

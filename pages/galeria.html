@@ -89,14 +89,17 @@
     <link rel="stylesheet" href="../styles/normalize.css" />
 
     
-
+    <!-- link de boostrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" 
-    rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" 
-    crossorigin="anonymous">
+      rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" 
+      crossorigin="anonymous">
+
+    <!-- link de Aos para las animaciones -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" 
-integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" 
-crossorigin="anonymous" defer></script>
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" 
+      crossorigin="anonymous" defer></script>
 
 
     
@@ -113,30 +116,44 @@ crossorigin="anonymous" defer></script>
   </head>
   <body>
     <header>
+      <!-- ************************* -->
+      <!-- ***** Inicio Header ***** -->
+      <!-- ************************* -->
+
       <!-- Imagen de logo - Imagen de banner, contenedor fluid de bootstraps -->
       <div class="container-fluid" >
           
-          
-        <img
+        <picture>
+          <source
           class="logoHeader__banner img-fluid mx-auto d-block"
-          src="../assets/images/bannerheader.webp"
-          alt="Banner"
-        />
+          srcset="../assets/images/bannerheader.webp">
+          <img
+            class="logoHeader__banner img-fluid mx-auto d-block"
+            src="../assets/images/bannerheader.jpeg"
+            alt="Banner"
+          />
+        </picture>
       </div>
         
         <!-- ***** inicio del menu de navegación *****-->
   
-      <nav class="menu  navbar navbar-expand-lg navbar-dark bg-dark ">
+      <nav class="menu  navbar navbar-expand-lg navbar-dark glass-dark-nav ">
         <div class="container-fluid ">
           
-          <img
-            class="logo_nav navbar-brand"
-            src="../assets/images/logo-academia-webp.webp"
-            alt=" logo pasion dance"
-          />
-          <div class="offcanvas offcanvas-end navbar-dark bg-dark" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <picture>
+            <source
+              class="logo_nav navbar-brand"
+              srcset="../assets/images/logo-academia-webp.webp">
+            <img
+              class="logo_nav navbar-brand"
+              src="../assets/images/logo-academia.png"
+              alt=" logo pasion dance"
+            />
+          </picture>
+          
+          <div class="offcanvas offcanvas-end navbar-dark glass-dark-nav" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
             <div class="offcanvas-header">
-              <button type="button" class="btn-close text-reset btn-close" 
+              <button type="button" class="btn-close text-reset close" 
                 data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
             <div class="offcanvas-body">
@@ -161,6 +178,7 @@ crossorigin="anonymous" defer></script>
             
         </div>
       </nav>
+      <!-- +++++++++++ fin de menu de navegacion ++++++++++++ -->
     </header>
     <main>
       <!-- ***************************-->
@@ -168,131 +186,138 @@ crossorigin="anonymous" defer></script>
       <!-- ***************************-->
 
           
-      <h1 class=" text-center bg-dark contenido 1">Galería de Imagenes</h1>
+      <h1 
+        data-aos="slide-up" class=" text-center
+        glass-dark border-bottom border-white p-2">
+        Galería de Imagenes
+      </h1>
           
           
-      <section>
+      <section class="text-center">
+        <h5 class="p-3 mt-5 d-inline-block glass-snow">
+          Presione las imagenes para expandirlas
+        </h5>
         <article class="galery_grid"> 
           
-          <a href="#foto1"><img src="../assets/images/foto1.jpg" alt="alumnas festejando"></a>
-          <a href="#foto2"><img src="../assets/images/foto2.jpg" alt="alumnas con trajes brillantes"></a>
-          <a href="#foto3"><img src="../assets/images/foto3.jpg" alt="alumnas con diplomas"></a>
-          <a href="#foto4"><img src="../assets/images/foto4.jpg" alt="profe y aluimnas con diplomas"></a>
-          <a href="#foto5"><img src="../assets/images/foto5.jpg" alt="brindis madres, alumnas y profe"></a>
-          <a href="#foto6"><img src="../assets/images/foto6.jpg" alt="alumnas con pose de baile"></a>
-          <a href="#foto7"><img src="../assets/images/foto7.jpg" alt="alumnas junto a profes invitadas"></a>
-          <a href="#foto8"><img src="../assets/images/foto8.jpg" alt="alumnas bailando en plaza"></a>
-          <a href="#foto9"><img src="../assets/images/foto9.jpg" alt="alumnas bailando enplaza 2"></a>
-          <a href="#foto10"><img src="../assets/images/foto10.jpg" alt="coreo de las pequeñas en la plaza"></a>
-          <a href="#foto11"><img src="../assets/images/foto11.jpg" alt="alumnas con trajes arabes y tiras"></a>
-          <a href="#foto12"><img src="../assets/images/foto12.jpg" alt="alumnas con traje de porristas"></a>
+          <a data-aos="fade-up" href="#foto1"><img src="../assets/images/foto1.jpg" alt="alumnas festejando"></a>
+          <a data-aos="fade-up" href="#foto2"><img src="../assets/images/foto2.jpg" alt="alumnas con trajes brillantes"></a>
+          <a data-aos="fade-up" href="#foto3"><img src="../assets/images/foto3.jpg" alt="alumnas con diplomas"></a>
+          <a data-aos="fade-up" href="#foto4"><img src="../assets/images/foto4.jpg" alt="profe y aluimnas con diplomas"></a>
+          <a data-aos="fade-up" href="#foto5"><img src="../assets/images/foto5.jpg" alt="brindis madres, alumnas y profe"></a>
+          <a data-aos="fade-up" href="#foto6"><img src="../assets/images/foto6.jpg" alt="alumnas con pose de baile"></a>
+          <a data-aos="fade-up" href="#foto7"><img src="../assets/images/foto7.jpg" alt="alumnas junto a profes invitadas"></a>
+          <a data-aos="fade-up" href="#foto8"><img src="../assets/images/foto8.jpg" alt="alumnas bailando en plaza"></a>
+          <a data-aos="fade-up" href="#foto9"><img src="../assets/images/foto9.jpg" alt="alumnas bailando enplaza 2"></a>
+          <a data-aos="fade-up" href="#foto10"><img src="../assets/images/foto10.jpg" alt="coreo de las pequeñas en la plaza"></a>
+          <a data-aos="fade-up" href="#foto11"><img src="../assets/images/foto11.jpg" alt="alumnas con trajes arabes y tiras"></a>
+          <a data-aos="fade-up" href="#foto12"><img src="../assets/images/foto12.jpg" alt="alumnas con traje de porristas"></a>
 
         </article>
       </section>
-
+      <!-- **** inicio del ligth box **** -->
       <section>
         <article class="ligth-box" id=foto1>
-          <a href="#foto12" class="next">&#60;</a>
-          <img src="../assets/images/foto1.jpg" alt="alumnas festejando"></a>
-          <a href="#foto2" class="next">&#62;</a>
-          <a href="#" class="close">X</a>
-          <p class="card-text leyenda">Alumnas festejando</p>
+          <a href="#foto12" class=" next">&#60;</a>
+          <img src="../assets/images/foto1.jpg" alt="Alumnas con diplomas"></a>
+          <a href="#foto2" class=" next">&#62;</a>
+          <a href="#" class="close ">X</a>
+          <p class="card-text p-2 leyenda ">Alumnas con diplomas</p>
         </article>
 
         <article class="ligth-box" id=foto2>
           <a href="#foto1" class="next">&#60;</a>
-          <img src="../assets/images/foto2.jpg" alt="alumnas con trajes brillantes"></a>
+          <img src="../assets/images/foto2.jpg" alt="Profe y las alumnas con sus diplomas"></a>
           <a href="#foto3" class="next">&#62;</a>
           <a href="#" class="close">X</a>
-          <p class="card-text leyenda">Alumnas con trajes brillantes</p>
+          <p class="card-text p-2 leyenda">Profe y las alumnas con sus diplomas</p>
         </article>
 
         <article class="ligth-box" id=foto3>
           <a href="#foto2" class="next">&#60;</a>
-          <img src="../assets/images/foto3.jpg" alt="alumnas con diplomas"></a>
+          <img src="../assets/images/foto3.jpg" alt="Alumnas danzando estilo brasilero"></a>
           <a href="#foto4" class="next">&#62;</a>
           <a href="#" class="close">X</a>
-          <p class="card-text leyenda">Alumnas con diplomas</p>
+          <p class="card-text p-2 leyenda">Alumnas danzando estilo brasilero</p>
         </article>
 
         <article class="ligth-box" id=foto4>
           <a href="#foto3" class="next">&#60;</a>
-          <img src="../assets/images/foto4.jpg" alt="profe y alumnas con diplomas"></a>
+          <img src="../assets/images/foto4.jpg" alt="Alumnas bailando música disco"></a>
           <a href="#foto5" class="next">&#62;</a>
           <a href="#" class="close">X</a>
-          <p class="card-text leyenda">Profe y las alumnas con sus diplomas</p>
+          <p class="card-text p-2 leyenda">Alumnas bailando música disco</p>
         </article>
 
         <article class="ligth-box" id=foto5>
           <a href="#foto4" class="next">&#60;</a>
-          <img src="../assets/images/foto5.jpg" alt="brindis madres, alumnas y profe"></a>
+          <img src="../assets/images/foto5.jpg" alt="Alumnas con cinta"></a>
           <a href="#foto6" class="next">&#62;</a>
           <a href="#" class="close">X</a>
-          <p class="card-text leyenda">Brindis de madres, alumnas y profe</p>
+          <p class="card-text p-2 leyenda">Alumnas con cinta</p>
         </article>
 
         <article class="ligth-box" id=foto6>
           <a href="#foto5" class="next">&#60;</a>
-          <img src="../assets/images/foto6.jpg" alt="alumnas con pose de baile"></a>
+          <img src="../assets/images/foto6.jpg" alt="alumnas despidiendo al público"></a>
           <a href="#foto7" class="next">&#62;</a>
           <a href="#" class="close">X</a>
-          <p class="card-text leyenda">Alumnas con pose de baile</p>
+          <p class="card-text p-2 leyenda">Alumnas despidiendo al público</p>
         </article>
 
         <article class="ligth-box" id=foto7>
           <a href="#foto6" class="next">&#60;</a>
-          <img src="../assets/images/foto7.jpg" alt="alumnas junto a profes invitadas"></a>
+          <img src="../assets/images/foto7.jpg" alt="Duo hip-Hop"></a>
           <a href="#foto8" class="next">&#62;</a>
           <a href="#" class="close">X</a>
-          <p class="card-text leyenda">Alumnas junto a profes invitadas</p>
+          <p class="card-text p-2 leyenda">Duo hip-Hop</p>
         </article>
 
         <article class="ligth-box" id=foto8>
           <a href="#foto7" class="next">&#60;</a>
-          <img src="../assets/images/foto8.jpg" alt="alumnas bailando en plaza"></a>
+          <img src="../assets/images/foto8.jpg" alt="alumnas bailando con trajes tradicionales"></a>
           <a href="#foto9" class="next">&#62;</a>
           <a href="#" class="close">X</a>
-          <p class="card-text leyenda">Alumnas danzando en la plaza</p>
+          <p class="card-text p-2 leyenda">alumnas bailando con trajes tradicionales</p>
         </article>
 
         <article class="ligth-box" id=foto9>
           <a href="#foto8" class="next">&#60;</a>
-          <img src="../assets/images/foto9.jpg" alt="alumnas bailando en plaza 2"></a>
+          <img src="../assets/images/foto9.jpg" alt="alumnas bailando con abanicos"></a>
           <a href="#foto10" class="next">&#62;</a>
           <a href="#" class="close">X</a>
-          <p class="card-text leyenda">Alumnas bailando en la plaza</p>
+          <p class="card-text p-2 leyenda"> Alumnas bailando con abanicos</p>
         </article>
 
         <article class="ligth-box" id=foto10>
           <a href="#foto9" class="next">&#60;</a>
-          <img src="../assets/images/foto10.jpg" alt="coreo de las pequeñas en la plaza"></a>
+          <img src="../assets/images/foto10.jpg" alt="pequeñas con trajes árabes "></a>
           <a href="#foto11" class="next">&#62;</a>
           <a href="#" class="close">X</a>
-          <p class="card-text leyenda">Coreo de las pequeñas en la plaza</p>
+          <p class="card-text p-2 leyenda">Las pequeñas en la plaza con trajes brillantes </p>
         </article>
 
         <article class="ligth-box" id=foto11>
           <a href="#foto10" class="next">&#60;</a>
-          <img src="../assets/images/foto11.jpg" alt="alumnas con trajes árabes y sus cintas"></a>
+          <img src="../assets/images/foto11.jpg" alt="Alumnas con conjunto de porrista"></a>
           <a href="#foto12" class="next">&#62;</a>
           <a href="#" class="close">X</a>
-          <p class="card-text leyenda">Alumnas con trajes árabes y sus cintas</p>
+          <p class="card-text p-2 leyenda">Alumnas con conjunto de porrista</p>
         </article>
 
         <article class="ligth-box" id=foto12>
           <a href="#foto11" class="next">&#60;</a>
-          <img src="../assets/images/foto12.jpg" alt="alumnas con traje de porristas"></a>
+          <img src="../assets/images/foto12.jpg" alt="alumnas con trajes color Salmon"></ . "></a>
           <a href="#foto1" class="next">&#62;</a>
           <a href="#" class="close">X</a>
-          <p class="card-text leyenda">Alumnas con traje de porristas</p>
+          <p class="card-text p-2 leyenda">Alumnas con trajes de porristas</p>
         </article>
-          
+        
       </section>          
     </main>
     <!--******************-->
     <!-- Inicio de Footer -->
     <!--******************-->
-    <footer class="bg-dark">
+    <footer class="glass-dark-card">
       <div class="container-fluid pt-1 mt-1 mb-0">
         <div class="footer_title">
           <h4 class="text-center pt-4">Síguenos</h4>
@@ -352,6 +377,14 @@ crossorigin="anonymous" defer></script>
           <h5 class="text-center pb-4">Todos los derechos reservados</h5>
         </div>
       </div>
-    </footer>         
+    </footer>
+    <!-- script del aos para las animaciones -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        easing: 'ease-out-back',
+        duration: 1000
+      });
+    </script>          
   </body>
 </html>

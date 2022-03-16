@@ -30,12 +30,24 @@
                         object-fit: cover;
                         transition: transform 0.5s;
                         margin: 10px 20px 0 0;
-                        box-shadow: 0 4px 8px 0 lightskyblue, 0 6px 20px 0 rgba(0,0,0,.19);
+                        box-shadow: 0 4px 8px 0
+                        lightskyblue, 0 6px 20px 0 rgba(0,0,0,.19);
+                        // box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
                         width:350px;
                     }
 
                     &:hover{
-                        transform: rotate(5deg) scale(1.1);
+                        transform: scale(1.1);
+                        box-shadow: 0 10px 16px 0
+                        lightskyblue, 0 6px 20px 0 rgba(0,0,0,.19);
+                        
+                    }
+
+                    /* .bio--modifed sobrescribe disminuyendo el scale 
+                    en la galeria de la biografia
+                    por ser fotos en verticales y tapar las que siguen */
+                    .bio--modifed{
+                        transform: scale(.9);
                     }
         }
     }
@@ -56,9 +68,17 @@
     transform: scale(0);
 
         img{
-            width: 85vw;
-            max-height: 85vh;    
+            width: 70vw;
+            max-height: 70vh;    
         }
+
+        /* .bio sobrescribe el tamaño en la galeria de la biografia
+        por ser fotos en verticales */
+        .bio{
+            width: 50vw;
+            max-height: 90vh;    
+        }
+        
 
 
 
@@ -72,33 +92,57 @@
             position: absolute;
             top: 40px;
             right: 40px;
-            background:#262463;
+            @include glass-pink;
+            font-weight: bold;
             color: #fff;
             text-decoration: none;
             width: 40px;
             height: 40px;
             text-align: center;
             line-height: 40px;
-            border-radius: 50%
+            border-radius: 50%;
+
+                &:hover{
+                    background-color:black;
+                }
+            
+        }
+        /* modifica la posicion del botón
+        close en la página de biografía */
+        .close--modified{
+            top: 30px;
+            right: 180px;
         }
 
         .next{
             display: block;
-            background: #262463;
-            color: #fff;
-            height:30 px;
-            width:30px;
+            @include glass-pink;
+            color: #fff;            
+            font-weight: bold;
             line-height: 30px;
+            width: 30px;
+            height: 30px;
             text-decoration: none;
             text-align: center;
+
+                &:hover{
+                    background-color:black;
+                }
         }
 
+        
+
+
+
         .leyenda{
+            font-family:$font-legend;
+            font-weight: bold;
             display: block;
             position: absolute;
-            bottom: 40px;
+            bottom: 20px;
             color: #fff;
-            background-color: #262463;
+            border-radius: 10px;
+            @include glass-pink;
             text-align: center;
             
 

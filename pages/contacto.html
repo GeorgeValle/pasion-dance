@@ -88,12 +88,16 @@
     <!--Importo el css normalizador para el reset-->
     <link rel="stylesheet" href="../styles/normalize.css" />
 
+    <!-- link de bootstrap -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
+
+    <!-- link de Aos para las animaciones -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
@@ -119,26 +123,39 @@
 
   <body>
     <header>
+      <!-- ************************* -->
+      <!-- ***** Inicio Header ***** -->
+      <!-- ************************* -->
+
       <!-- Imagen de banner, contenedor fluid de bootstraps -->
       <div class="container-fluid">
-        <img
+        <picture>
+          <source
           class="logoHeader__banner img-fluid mx-auto d-block"
-          src="../assets/images/bannerheader.webp"
-          alt="Banner"
-        />
+          srcset="../assets/images/bannerheader.webp">
+          <img
+            class="logoHeader__banner img-fluid mx-auto d-block"
+            src="../assets/images/bannerheader.jpeg"
+            alt="Banner"
+          />
+        </picture>
       </div>
-
       <!-- ***** inicio del menu de navegación *****-->
 
-      <nav class="menu navbar navbar-expand-lg navbar-dark bg-dark">
+      <nav class="menu navbar navbar-expand-lg navbar-dark glass-dark-nav">
         <div class="container-fluid">
-          <img
-            class="logo_nav navbar-brand"
-            src="../assets/images/logo-academia-webp.webp"
-            alt=" logo pasion dance"
-          />
+          <picture>
+            <source
+              class="logo_nav navbar-brand"
+              srcset="../assets/images/logo-academia-webp.webp">
+            <img
+              class="logo_nav navbar-brand"
+              src="../assets/images/logo-academia.png"
+              alt=" logo pasion dance"
+            />
+          </picture>
           <div
-            class="offcanvas offcanvas-end navbar-dark bg-dark"
+            class="offcanvas offcanvas-end navbar-dark glass-dark-nav"
             tabindex="-1"
             id="offcanvasNavbar"
             aria-labelledby="offcanvasNavbarLabel"
@@ -192,20 +209,29 @@
           </button>
         </div>
       </nav>
-      <h1 class="text-center bg-dark">Contacto</h1>
+      
     </header>
     <!-- ***************************-->
     <!-- ***** Inicio de Main ***** -->
     <!-- ***************************-->
-    <main class="container-fluid">
 
+    <h1 
+      data-aos="slide-up" class="text-center
+      glass-dark border-bottom border-white p-2">
+      Contacto
+    </h1>
+    
+    <main class="container-fluid">
+      
+      
+      
       <section class="row">
 
         <!-- ** formulario de consultas ** -->
         <section class="contenido1 col mt-4">
-          <form class="form bg-dark mb-4 card" style="width: 25rem; height: 36rem">
+          <form data-aos="fade-right" class="form glass-dark-card mb-4 card" style="width: 25rem; height: 36rem">
             <div class="form_container">
-              <h2 class="form_title text-center bg-primary">Consultas</h2>
+              <h2 class="form_title text-center bg-primary bg-gradients ">Consultas</h2>
               <input type="text" class="form_input" placeholder="Nombre:" />
               <input type="email" class="form_input" placeholder="Email:" />
               <textarea
@@ -213,15 +239,15 @@
                 placeholder="Mensaje"
               ></textarea>
 
-              <input type="submit" value="Enviar" class="form_cta bg-primary" />
+              <input type="submit" value="Enviar" class="form_cta bg-primary box-shadow bg-gradients" />
             </div>
           </form>
         </section>
 
         <!-- **** card Redes Sociales ****-->
         <section class="contenido3 col mt-4">
-          <div class="redes_sociales bg-dark mb-4 card" style="width: 25rem; height: 36rem">
-            <h2 class="text-center p-3 mb-5 bg-primary">Redes Sociales</h2>
+          <div data-aos="fade-up" class="redes_sociales glass-dark-card mb-4 card" style="width: 25rem; height: 36rem">
+            <h2 class="text-center p-3 mb-5 bg-primary bg-gradients">Redes Sociales</h2>
             <div>
               <img
                 class="icono_red mt-2"
@@ -294,11 +320,12 @@
             </div>
           </div>
         </section>
+
         <!-- **** inicio cards mapa **** -->
         <section class="  col mt-4 ">
-          <div class="mapa visualizer1 bg-dark mb-4 card" style="width: 25rem; height: 36rem">
+          <div data-aos="fade-left" class="mapa visualizer1 glass-dark-card mb-4 card" style="width: 25rem; height: 36rem">
             <div class="mapa_container">
-              <h2 class="mapa_title mb-5 text-center bg-primary">Cómo Llegar</h2>
+              <h2 class="mapa_title mb-5 text-center bg-primary bg-gradients">Cómo Llegar</h2>
               <iframe
                 class="mapa_iframe1 mx-auto"
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d601.729311001263!2d-64.1288071181894!3d-31.44455720397585!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432bcdf3f96170b%3A0x4baa3e535a25c5c3!2zMzHCsDI2JzQwLjEiUyA2NMKwMDcnNDMuNCJX!5e0!3m2!1ses!2sar!4v1642726392776!5m2!1ses!2sar"
@@ -319,7 +346,7 @@
     <!--******************-->
     <!-- Inicio de Footer -->
     <!--******************-->
-    <footer class="bg-dark">
+    <footer class="glass-dark-card">
       <div class="container-fluid pt-1 mt-1 mb-0">
         <div class="footer_title">
           <h4 class="text-center pt-4">Síguenos</h4>
@@ -380,5 +407,13 @@
         </div>
       </div>
     </footer>
+    <!-- script del aos para las animaciones -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        easing: 'ease-out-back',
+        duration: 1000
+      });
+    </script>
   </body>
 </html>

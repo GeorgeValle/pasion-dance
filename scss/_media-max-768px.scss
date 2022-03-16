@@ -14,6 +14,17 @@
         
     }
 
-
-/*medida de tabñeta*/
+/* agrea una capa de fondo trasparente a los 
+links del menu desplegable para tener un poco
+mas de contraste en dispositivos mobiles
+and tablests */
+.nav-item{
+    background-color:  rgba( 30, 30, 30, 0.8 );
 }
+
+.close--modified{
+    top: 40px;
+    right: 250px;
+}
+
+} /* +++++ fin medida de tableta ++++++*/

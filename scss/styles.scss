@@ -1,4 +1,6 @@
+/* google fuentes */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
 
 @import "_variables";
 
@@ -16,6 +18,7 @@ body{
 
 @import "_page-galery";
 
+
 /* inicio de formato a las noticias de la seccion novedades */
 
 
@@ -23,8 +26,13 @@ body{
 /* con esta pseudo clase le doy 
 animacion a las cards de novedades */
 .roti:hover{
-  transform: rotate(3deg);
+
+  
   transition: transform 0.5s;
+  box-shadow: 0 10px 16px 0
+  lightskyblue, 0 6px 20px 0 rgba(0,0,0,.19);
+  
+  
 }
 
 

@@ -24,17 +24,17 @@
 
         .form_input{
           font-family: inherit; /*para que herede la fuente los inputs*/
-          padding: 0.8em 1em; /*padding arriba y a los lados*/
+          padding: 0.7em 1em; /*padding arriba y a los lados*/
           outline: none; /*no se va a remarcar*/
-          border: none; /*saco el border*/
+          // border: none; /*saco el border*/
           border:1px solid #bbb0bb;
           border-radius: 0.2em;
         } 
 
         .form_input--message{
           resize: none; /*para que los usuarios no puedan redimensionar */
-          padding: 3em 1em; /*agrando el textarea */
-          margin-bottom: 3em; /*separado del submit*/
+          padding: 2em 1em; /*agrando el textarea */
+          margin-bottom: .5em; /*separado del submit*/
         }
         /* submit buttom */
         .form_cta{ 
@@ -51,11 +51,16 @@
         /* boton submit sombra */
         .box-shadow{
           box-shadow: 2px 3px $purple;
+          font-size: 1rem; 
+          color: white;
+          border: none;
+          font-weight: 700;
+          padding: 1em 0;
+          border-radius: 1.2em;
+          cursor: pointer;
         }
     }
 }
   
-.map{
-  display:none;
-}
+
 /* Fin de la página contacto */   

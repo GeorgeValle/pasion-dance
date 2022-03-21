@@ -127,7 +127,7 @@
       <!-- ***** Inicio Header ***** -->
       <!-- ************************* -->
 
-      <!-- Imagen de banner, contenedor fluid de bootstraps -->
+      <!-- Imagen de banner 1000px con contenedor fluid de bootstraps -->
       <div class="container-fluid">
         <picture>
           <source
@@ -142,7 +142,7 @@
       </div>
       <!-- ***** inicio del menu de navegación *****-->
 
-      <nav class="menu navbar navbar-expand-lg navbar-dark glass-dark-nav">
+      <nav class="menu navbar navbar-expand-lg navbar-dark  glass-dark-nav">
         <div class="container-fluid">
           <picture>
             <source
@@ -163,7 +163,7 @@
             <div class="offcanvas-header">
               <button
                 type="button"
-                class="btn-close text-reset btn-close"
+                class="btn-close text-reset close"
                 data-bs-dismiss="offcanvas"
                 aria-label="Close"
               ></button>
@@ -181,7 +181,9 @@
                   <a href="novedades.html" class="nav-link">Novedades</a>
                 </li>
                 <li class="nav-item p-2 text-center">
-                  <a href="biografia.html" class="nav-link">Biografía</a>
+                  <a href="biografia.html" class="active_label nav-link active"
+                    >Biografía</a
+                  >
                 </li>
                 <li class="nav-item p-2 text-center">
                   <a href="academia.html" class="nav-link">Academia</a>
@@ -190,9 +192,7 @@
                   <a href="galeria.html" class="nav-link">Galería</a>
                 </li>
                 <li class="nav-item p-2 text-center">
-                  <a href="contacto.html" class="active_label nav-link active"
-                    >Contacto</a
-                  >
+                  <a href="contacto.html" class="nav-link">Contacto</a>
                 </li>
               </ul>
             </div>
@@ -209,128 +209,140 @@
           </button>
         </div>
       </nav>
-      
+      <!-- +++++++++++ fin de menu de navegacion ++++++++++++ -->
     </header>
     <!-- ***************************-->
     <!-- ***** Inicio de Main ***** -->
     <!-- ***************************-->
 
-    <h1 
-      data-aos="slide-up" class="text-center
-      glass-dark border-bottom border-white p-2">
-      Contacto
-    </h1>
     
-    <main class="container-fluid">
+    <main>
+      <h1 
+        data-aos="slide-up" class="text-center
+        glass-dark border-bottom border-white p-2">
+      Contacto
+      </h1>
       
       
-      
-      <section class="row">
+      <section class="section_conten row">
 
         <!-- ** formulario de consultas ** -->
-        <section class="contenido1 col mt-4">
-          <form data-aos="fade-right" class="form glass-dark-card mb-4 card" style="width: 25rem; height: 36rem">
+        <section class="col mb-4">
+          <form data-aos="fade-right" class="form glass-dark-card mb-4 mx-auto card" style="width: 23rem; height: 36rem">
             <div class="form_container">
-              <h2 class="form_title text-center bg-primary bg-gradients ">Consultas</h2>
-              <input type="text" class="form_input" placeholder="Nombre:" />
-              <input type="email" class="form_input" placeholder="Email:" />
-              <textarea
-                class="form_input form_input--message"
-                placeholder="Mensaje"
-              ></textarea>
-
-              <input type="submit" value="Enviar" class="form_cta bg-primary box-shadow bg-gradients" />
+                <h2 class="form_title text-center bg-primary bg-gradients ">Consultas</h2>
+              
+                <input type="text" class= "form-control form_input" placeholder="Inserte nombre" />
+            
+                <input type="email" class="form_input" placeholder="Inserte Email" />
+                <textarea
+                  rows="3" class="form-control form_input form_input--message"
+                  placeholder="Mensaje"
+                ></textarea>
+              
+              
+                <input type="submit"  value="Enviar" class=" btn form_cta bg-primary box-shadow bg-gradients" />
+              
             </div>
           </form>
         </section>
 
         <!-- **** card Redes Sociales ****-->
-        <section class="contenido3 col mt-4">
-          <div data-aos="fade-up" class="redes_sociales glass-dark-card mb-4 card" style="width: 25rem; height: 36rem">
-            <h2 class="text-center p-3 mb-5 bg-primary bg-gradients">Redes Sociales</h2>
-            <div>
-              <img
-                class="icono_red mt-2"
-                src="../assets/iconos/facebook-icon.png"
-                alt="icono Facebook"
-              />
-              <a
-                class="red-facebook mt-2"
-                href="https://www.facebook.com/Pasion-Dance-405170219929209"
-                target="_blank"
-              >
-                facebook/pasiondance</a
-              >
-            </div>
-            <div>
-              <img
-                class="icono_red mt-2"
-                src="../assets/iconos/instagram-icon.png"
-                alt="icono Instagram"
-              />
-              <a
-                class="red-instagram mt-2"
-                href="https://www.instagram.com/academia_pasiondance/?hl=es-la"
-                target="_blank"
-              >
-                pasiondanceok</a
-              >
-            </div>
-            <div>
-              <img
-                class="icono_red mt-2"
-                src="../assets/iconos/whatsapp-icon.png"
-                alt="icono whatsapp"
-              />
-              <a
-                class="mt-2 red-whatsapp"
-                href="https://www.web.whatsapp.com"
-                target="_blank"
-              >
-                3516-698890</a
-              >
-            </div>
-            <div>
-              <img
-                class="icono_red mt-2"
-                src="../assets/iconos/youtube-icon.png"
-                alt="icono YouTube"
-              />
-              <a
-                class="red-youtube mt-2"
-                href="https://www.youtube.com/channel/UCIEW56ynw2ZmlBcwmEhziUQ"
-                target="_blank"
-              >
-                Academia Pasion Dance</a
-              >
-            </div>
-            <div>
-              <img
-                class="icono_red mt-2"
-                src="../assets/iconos/tiktok-icon.png"
-                alt="icono Tik Tok"
-              />
-              <a
-                class="red-tik-tok mt-2"
-                href="https://www.tiktok.com/@aldanacastillo28"
-                target="_blank"
-              >
-                @aldanacastillo28</a
-              >
+        <section class="col mb-4">
+          <div data-aos="fade-up" class="redes_sociales mx-auto glass-dark-card mb-4 card" style="width: 23rem; height: 36rem">
+          
+            <div class="redes_sociales">
+                <h2 class="text-center form_title bg-primary bg-gradients mb-3">Redes Sociales</h2>
+              <div>
+                <img
+                  class="icono_red mt-2"
+                  src="../assets/iconos/facebook-icon.png"
+                  alt="icono Facebook"
+                />
+                <a
+                  class="red-facebook mt-2"
+                  href="https://www.facebook.com/Pasion-Dance-405170219929209"
+                  target="_blank"
+                >
+                  facebook/pasiondance</a
+                >
+              </div>
+              <div>
+                <img
+                  class="icono_red mt-2"
+                  src="../assets/iconos/instagram-icon.png"
+                  alt="icono Instagram"
+                />
+                <a
+                  class="red-instagram mt-2"
+                  href="https://www.instagram.com/academia_pasiondance/?hl=es-la"
+                  target="_blank"
+                >
+                  pasiondanceok</a
+                >
+              </div>
+              <div>
+                <img
+                  class="icono_red mt-2"
+                  src="../assets/iconos/whatsapp-icon.png"
+                  alt="icono whatsapp"
+                />
+                <a
+                  class="mt-2 red-whatsapp"
+                  href="https://www.web.whatsapp.com"
+                  target="_blank"
+                >
+                  3516-698890</a
+                >
+              </div>
+              <div>
+                <img
+                  class="icono_red mt-2"
+                  src="../assets/iconos/youtube-icon.png"
+                  alt="icono YouTube"
+                />
+                <a
+                  class="red-youtube mt-2"
+                  href="https://www.youtube.com/channel/UCIEW56ynw2ZmlBcwmEhziUQ"
+                  target="_blank"
+                >
+                  Academia Pasion Dance</a
+                >
+              </div>
+              <div>
+                <img
+                  class="icono_red mt-2"
+                  src="../assets/iconos/tiktok-icon.png"
+                  alt="icono Tik Tok"
+                />
+                <a
+                  class="red-tik-tok mt-2"
+                  href="https://www.tiktok.com/@aldanacastillo28"
+                  target="_blank"
+                >
+                  @aldanacastillo28</a
+                >
+              </div>
             </div>
           </div>
         </section>
 
         <!-- **** inicio cards mapa **** -->
-        <section class="  col mt-4 ">
-          <div data-aos="fade-left" class="mapa visualizer1 glass-dark-card mb-4 card" style="width: 25rem; height: 36rem">
+        <section class="  col mb-4 ">
+          <div data-aos="fade-left" class="mapa glass-dark-card mx-auto mb-4 card" style="width: 23rem; height: 36rem">
             <div class="mapa_container">
               <h2 class="mapa_title mb-5 text-center bg-primary bg-gradients">Cómo Llegar</h2>
               <iframe
                 class="mapa_iframe1 mx-auto"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d601.729311001263!2d-64.1288071181894!3d-31.44455720397585!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432bcdf3f96170b%3A0x4baa3e535a25c5c3!2zMzHCsDI2JzQwLjEiUyA2NMKwMDcnNDMuNCJX!5e0!3m2!1ses!2sar!4v1642726392776!5m2!1ses!2sar"
-                width="340"
-                height="340"
+                src=
+                  "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d601.
+                  729311001263!2d-64.1288071181894!3d-31.
+                  44455720397585!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.
+                  1!3m3!1m2!1s0x9432bcdf3f96170b%3A0x4baa3e535a25c5c3!2zMzHCs
+                  DI2JzQwLjEiUyA2NMKwMDcnNDMuNCJX!5e0!3m2!1ses!2sar!
+                  4v1642726392776!5m2!1ses!2sar"
+                width="300"
+                height="300"
 
                 style="border: 0"
                 allowfullscreen="[ + ]"
@@ -348,62 +360,58 @@
     <!--******************-->
     <footer class="glass-dark-card">
       <div class="container-fluid pt-1 mt-1 mb-0">
-        <div class="footer_title">
-          <h4 class="text-center pt-4">Síguenos</h4>
-        </div>
-
-        <div
-          class="footer_iconos d-flex justify-content-center px-2 mb-3 lh-1 mr-3 gx-1 text-center"
-        >
-          <a
-            href="https://www.facebook.com/Pasion-Dance-405170219929209"
-            target="_blank"
+        <div class="group1">
+          <div class="footer_title">
+            <h4 class="text-center pt-4">Síguenos</h4>
+          </div>         
+          <div
+            class="footer_iconos d-flex justify-content-center px-2 mb-3 lh-1 mr-3 gx-1 text-center"
           >
-            <img
-              class="red-facebook"
-              src="../assets/iconos/facebook-icon.png"
-              alt="Enlace a Facebook"
-            />
-          </a>
+            <a
+              href="https://www.facebook.com/Pasion-Dance-405170219929209"
+              target="_blank"
+            >
+              <img
+                class="red-facebook"
+                src="../assets/iconos/facebook-icon.png"
+                alt="Enlace a Facebook"
+            /></a>
 
-          <a
-            href="https://www.instagram.com/academia_pasiondance/?hl=es-la"
-            target="_blank"
-          >
-            <img
-              class="red-instagram"
-              src="../assets/iconos/instagram-icon.png"
-              alt="Enlace a Instagram"
-            />
-          </a>
+            <a
+              href="https://www.instagram.com/academia_pasiondance/?hl=es-la"
+              target="_blank"
+            >
+              <img
+                class="red-instagram"
+                src="../assets/iconos/instagram-icon.png"
+                alt="Enlace a Instagram"/>
+            </a>
 
-          <a href="https://www.web.whatsapp.com" target="_blank">
-            <img
-              class="red-whatsapp"
-              src="../assets/iconos/whatsapp-icon.png"
-              alt="Enlace a whatsapp"
-            />
-          </a>
+            <a href="https://www.web.whatsapp.com" target="_blank">
+              <img
+                class="red-whatsapp"
+                src="../assets/iconos/whatsapp-icon.png"
+                alt="Enlace a whatsapp"/>
+            </a>
 
-          <a href="https://www.youtube.com/watch?v" target="_blank">
-            <img
-              class="red-youtube"
-              src="../assets/iconos/youtube-icon.png"
-              alt="Enlace a YouTube"
-            />
-          </a>
+            <a href="https://www.youtube.com/watch?v" target="_blank">
+              <img
+                class="red-youtube"
+                src="../assets/iconos/youtube-icon.png"
+                alt="Enlace a YouTube"/>
+            </a>
 
-          <a href="https://www.tiktok.com/@aldanacastillo28" target="_blank">
-            <img
-              class="red-tik-tok"
-              src="../assets/iconos/tiktok-icon.png"
-              alt="Enlace a Tik Tok"
-            />
-          </a>
+            <a href="https://www.tiktok.com/@aldanacastillo28" target="_blank">
+              <img
+                class="red-tik-tok"
+                src="../assets/iconos/tiktok-icon.png"
+                alt="Enlace a Tik Tok"/>
+            </a>
+          </div>
         </div>
-        <div class="text-center">
+        <div class="footer_copyright text-center">
           <h5 class="text-center">Academia Pasion Dance 2022 &#169;</h5>
-          <h5 class="text-center pb-4">Todos los derechos reservados</h5>
+          <h5 class="text-center">Todos los derechos reservados</h5>
         </div>
       </div>
     </footer>

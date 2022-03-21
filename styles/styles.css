@@ -342,8 +342,6 @@ animacion a las cards de novedades */
   max-width: 400px;
   border-radius: 1em;
   padding: 3.5em 1.5em;
-  margin-left: auto;
-  margin-right: auto;
   margin-top: 30px;
   margin-bottom: 30px;
 }
@@ -376,12 +374,10 @@ animacion a las cards de novedades */
 .form .form_container .form_input, .form .redes_sociales .form_input, .form .mapa_container .form_input, .mapa .form_container .form_input, .mapa .redes_sociales .form_input, .mapa .mapa_container .form_input, .redes_sociales .form_container .form_input, .redes_sociales .redes_sociales .form_input, .redes_sociales .mapa_container .form_input {
   font-family: inherit;
   /*para que herede la fuente los inputs*/
-  padding: 0.8em 1em;
+  padding: 0.7em 1em;
   /*padding arriba y a los lados*/
   outline: none;
   /*no se va a remarcar*/
-  border: none;
-  /*saco el border*/
   border: 1px solid #bbb0bb;
   border-radius: 0.2em;
 }
@@ -389,9 +385,9 @@ animacion a las cards de novedades */
 .form .form_container .form_input--message, .form .redes_sociales .form_input--message, .form .mapa_container .form_input--message, .mapa .form_container .form_input--message, .mapa .redes_sociales .form_input--message, .mapa .mapa_container .form_input--message, .redes_sociales .form_container .form_input--message, .redes_sociales .redes_sociales .form_input--message, .redes_sociales .mapa_container .form_input--message {
   resize: none;
   /*para que los usuarios no puedan redimensionar */
-  padding: 3em 1em;
+  padding: 2em 1em;
   /*agrando el textarea */
-  margin-bottom: 3em;
+  margin-bottom: .5em;
   /*separado del submit*/
 }
 
@@ -410,10 +406,13 @@ animacion a las cards de novedades */
 .form .form_container .box-shadow, .form .redes_sociales .box-shadow, .form .mapa_container .box-shadow, .mapa .form_container .box-shadow, .mapa .redes_sociales .box-shadow, .mapa .mapa_container .box-shadow, .redes_sociales .form_container .box-shadow, .redes_sociales .redes_sociales .box-shadow, .redes_sociales .mapa_container .box-shadow {
   -webkit-box-shadow: 2px 3px #6f42c1;
           box-shadow: 2px 3px #6f42c1;
-}
-
-.map {
-  display: none;
+  font-size: 1rem;
+  color: white;
+  border: none;
+  font-weight: 700;
+  padding: 1em 0;
+  border-radius: 1.2em;
+  cursor: pointer;
 }
 
 /* Fin de la página contacto */

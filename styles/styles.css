@@ -8,7 +8,7 @@
 /* blue que es primary en bootstrap */
 /*para usar en sombreados */
 /* para usar en gradientes */
-/* mixin para el box-light de las gallerys */
+/* mixin para el box-light de las galeries */
 .glass-dark-nav {
   background-color: rgba(30, 30, 30, 0.6);
 }
@@ -32,7 +32,7 @@
   border: 1px solid rgba(255, 255, 255, 0.12);
 }
 
-/* color de fondo para los título que piden que "se presione la imagen" */
+/* color de fondo para los títulos que piden que "se presione la imagen" */
 .glass-snow {
   background-color: rgba(239, 233, 233, 0.2);
   -webkit-box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
@@ -104,7 +104,7 @@ footer .footer_iconos a {
 }
 
 /* each para crear un hover personalizado
- para cada link o imagen de redes sociales */
+    sobre cada link o imagen de redes sociales */
 .red-facebook:hover {
   background-color: #3b5998;
   color: #fff;
@@ -142,12 +142,6 @@ footer .footer_iconos a {
 
 /*+++++ termina footer +++++*/
 /* *****inicio de la galeria de fotos****** */
-.title_galery {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 700;
-  padding: 10px 0 10px 0;
-}
-
 .galery_grid {
   display: -ms-grid;
   display: grid;
@@ -437,9 +431,9 @@ animacion a las cards de novedades */
     right: 250px;
   }
   /* agrea una capa de fondo trasparente a los 
-links del menu desplegable para tener un poco
-mas de contraste en dispositivos mobiles
-and tablests */
+    links del menu desplegable para tener un poco
+    mas de contraste en dispositivos mobiles
+    and tablests */
   .nav-item {
     background-color: rgba(30, 30, 30, 0.8);
   }
@@ -462,7 +456,7 @@ and tablests */
   .overflox_x {
     overflow-x: hidden;
   }
-  /* cambio de la pagina novedades   */
+  /* cambio de la página novedades   */
   .roti:hover {
     -webkit-box-shadow: 0 10px 16px 0 lightskyblue, 0 6px 20px 0 rgba(0, 0, 0, 0.19);
             box-shadow: 0 10px 16px 0 lightskyblue, 0 6px 20px 0 rgba(0, 0, 0, 0.19);

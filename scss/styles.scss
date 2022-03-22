@@ -25,35 +25,33 @@ body{
 
 /* con esta pseudo clase le doy 
 animacion a las cards de novedades */
-.roti:hover{
-
-  
+  .roti:hover{
   transition: transform 0.5s;
   box-shadow: 0 10px 16px 0
   lightskyblue, 0 6px 20px 0 rgba(0,0,0,.19);
   
   
-}
+  }
 
 
 /*inicio de formato de biografía y academía*/
 
-.section_conten{
- /* para separar el section de otros componentes */
-  margin-top: $section-gap;
-}
+  .section_conten{
+  /* para separar el section de otros componentes */
+    margin-top: $section-gap;
+  }
 
-@import "_page-contacto";
-
-
+  @import "_page-contacto";
 
 
-/* Medium devices (tablets, 768px and up) */
-@import "_media-max-768px";
-/* cierre de media 768px */
 
 
-@import "_media-max-576px";
+  /* Medium devices (tablets, 768px and up) */
+  @import "_media-max-768px";
+  /* cierre de media 768px */
+
+
+  @import "_media-max-576px";
 
 
 

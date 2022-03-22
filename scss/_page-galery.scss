@@ -1,11 +1,4 @@
 /* *****inicio de la galeria de fotos****** */
-
-.title_galery{
-    font-family: $font-type;
-    font-weight: 700;
-    padding: 10px 0 10px 0;
-    
-}
     
 .galery_grid{
     display: grid;
@@ -75,8 +68,8 @@
         /* .bio sobrescribe el tamaño en la galeria de la biografia
         por ser fotos en verticales */
         .bio{
-            width: 50vw;
-            max-height: 90vh;    
+            width: 70vw;
+            max-height: 80vh;    
         }
         
 

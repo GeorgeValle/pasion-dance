@@ -27,7 +27,7 @@ $indigo:  #6610f2;
 
 }
 
-/* mixin para el box-light de las gallerys */
+/* mixin para el box-light de las galeries */
 @mixin glass-pink{
     background-color:$pinky;
     @include glass;
@@ -55,7 +55,7 @@ $indigo:  #6610f2;
 }
 
 
-/* color de fondo para los título que piden que "se presione la imagen" */
+/* color de fondo para los títulos que piden que "se presione la imagen" */
 .glass-snow{
     background-color:$snow;
     @include glass;
@@ -103,10 +103,7 @@ $redes: (
     max-width: 400px;
     border-radius: 1em;
     padding: 3.5em 1.5em;
-    // margin-left: auto;
-    // margin-right: auto;
-    margin-top: 30px;
-    margin-bottom: 30px;
+    overflow-x: hidden;
     
     
 }

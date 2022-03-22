@@ -22,8 +22,8 @@ footer{
 
 } 
 
-/* each para crear un hover personalizado
- para cada link o imagen de redes sociales */
+    /* each para crear un hover personalizado
+    sobre cada link o imagen de redes sociales */
     @each $name, $value in $redes {
     .red-#{$name}:hover{
             background-color: map-get($redes, #{$name});

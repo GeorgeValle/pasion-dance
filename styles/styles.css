@@ -235,8 +235,8 @@ footer .footer_iconos a {
 }
 
 .ligth-box .bio {
-  width: 50vw;
-  max-height: 90vh;
+  width: 70vw;
+  max-height: 80vh;
 }
 
 .ligth-box:target {
@@ -342,8 +342,7 @@ animacion a las cards de novedades */
   max-width: 400px;
   border-radius: 1em;
   padding: 3.5em 1.5em;
-  margin-top: 30px;
-  margin-bottom: 30px;
+  overflow-x: hidden;
 }
 
 .form .form_container, .form .redes_sociales, .form .mapa_container, .mapa .form_container, .mapa .redes_sociales, .mapa .mapa_container, .redes_sociales .form_container, .redes_sociales .redes_sociales, .redes_sociales .mapa_container {
@@ -366,7 +365,7 @@ animacion a las cards de novedades */
   /* boton submit sombra */
 }
 
-.form .form_container .form_title, .form .form_container .mapa_title, .form .form_container .redes_sociales h2, .form .redes_sociales .form_title, .form .redes_sociales .mapa_title, .form .redes_sociales .redes_sociales h2, .form .mapa_container .form_title, .form .mapa_container .mapa_title, .form .mapa_container .redes_sociales h2, .mapa .form_container .form_title, .mapa .form_container .mapa_title, .mapa .form_container .redes_sociales h2, .mapa .redes_sociales .form_title, .mapa .redes_sociales .mapa_title, .mapa .redes_sociales .redes_sociales h2, .mapa .mapa_container .form_title, .mapa .mapa_container .mapa_title, .mapa .mapa_container .redes_sociales h2, .redes_sociales .form_container .form_title, .redes_sociales .form_container .mapa_title, .redes_sociales .form_container .redes_sociales h2, .redes_sociales .redes_sociales .form_title, .redes_sociales .redes_sociales .mapa_title, .redes_sociales .redes_sociales .redes_sociales h2, .redes_sociales .mapa_container .form_title, .redes_sociales .mapa_container .mapa_title, .redes_sociales .mapa_container .redes_sociales h2 {
+.form .form_container .card_title, .form .redes_sociales .card_title, .form .mapa_container .card_title, .mapa .form_container .card_title, .mapa .redes_sociales .card_title, .mapa .mapa_container .card_title, .redes_sociales .form_container .card_title, .redes_sociales .redes_sociales .card_title, .redes_sociales .mapa_container .card_title {
   padding: 0.5em 1em;
   color: white;
 }
@@ -426,16 +425,23 @@ animacion a las cards de novedades */
   .ligth-box .leyenda {
     bottom: 70px;
   }
+  .ligth-box .leyenda--modified {
+    bottom: 10px;
+  }
+  .ligth-box .close {
+    top: 140px;
+    right: 80px;
+  }
+  .ligth-box .close--modified {
+    top: 30px;
+    right: 250px;
+  }
   /* agrea una capa de fondo trasparente a los 
 links del menu desplegable para tener un poco
 mas de contraste en dispositivos mobiles
 and tablests */
   .nav-item {
     background-color: rgba(30, 30, 30, 0.8);
-  }
-  .close--modified {
-    top: 40px;
-    right: 250px;
   }
 }
 
@@ -453,6 +459,9 @@ and tablests */
     -webkit-transition: .5;
     transition: .5;
   }
+  .overflox_x {
+    overflow-x: hidden;
+  }
   /* cambio de la pagina novedades   */
   .roti:hover {
     -webkit-box-shadow: 0 10px 16px 0 lightskyblue, 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -463,8 +472,7 @@ and tablests */
     transition: 0.5s;
   }
   /* inicio para cambiar tamaño de contacto */
-  .form, .mapa {
-    /*, .redes_sociales { */
+  .form, .mapa, .redes_sociales {
     max-width: 100%;
     border-radius: 1em;
     /*los bordes redondeados*/
@@ -493,10 +501,17 @@ and tablests */
     max-height: 80vh;
   }
   .ligth-box .leyenda {
-    bottom: 90px;
+    bottom: 180px;
+  }
+  .ligth-box .close {
+    top: 160px;
+    right: 80px;
+  }
+  .ligth-box .leyenda--modified {
+    bottom: 60px;
   }
   .ligth-box .close--modified {
-    top: 120px;
+    top: 40px;
     right: 120px;
   }
 }

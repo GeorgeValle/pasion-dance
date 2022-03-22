@@ -10,6 +10,10 @@
       @include hover-green;
     }
 
+    .overflox_x {
+      overflow-x: hidden;
+    }
+
 
     /* cambio de la pagina novedades   */
     .roti:hover{
@@ -20,7 +24,7 @@
     }
     /* inicio para cambiar tamaño de contacto */
     
-    .form, .mapa{ /*, .redes_sociales { */
+    .form, .mapa, .redes_sociales { 
       max-width: 100%;
       border-radius: 1em; /*los bordes redondeados*/
       padding: 2.5em .5em;
@@ -49,16 +53,26 @@
         }
 
         .leyenda{
-          bottom: 90px;
+          bottom: 180px;
           
         }
 
+        .close{
+          top: 160px;
+          right: 80px;
+        }
+        
+
+        .leyenda--modified{
+          bottom: 60px;
+        }
+
         .close--modified{
-          top: 120px;
+          top: 40px;
           right: 120px;
       }
 
-      }
+    }
     
     
     

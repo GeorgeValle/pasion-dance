@@ -11,6 +11,20 @@
         .leyenda{
             bottom: 70px;
         }
+
+        .leyenda--modified{
+            bottom: 10px;
+        }
+
+        .close{
+            top: 140px;
+            right: 80px;
+        }
+
+        .close--modified{
+            top: 30px;
+            right: 250px;
+        }
         
     }
 
@@ -22,9 +36,8 @@ and tablests */
     background-color:  rgba( 30, 30, 30, 0.8 );
 }
 
-.close--modified{
-    top: 40px;
-    right: 250px;
-}
+
+
+
 
 } /* +++++ fin medida de tableta ++++++*/

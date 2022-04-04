@@ -1,0 +1,523 @@
+@charset "UTF-8";
+/* google fuentes */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
+/* separacion entre sections */
+/* Variables globales de Bootstraps */
+/* variables de colores para bootstrap */
+/* blue que es primary en bootstrap */
+/*para usar en sombreados */
+/* para usar en gradientes */
+/* mixin para el box-light de las galeries */
+.glass-dark-nav {
+  background-color: rgba(30, 30, 30, 0.6);
+}
+
+.glass-dark {
+  background-color: rgba(30, 30, 30, 0.6);
+  -webkit-box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+          box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  -webkit-backdrop-filter: blur(8px);
+          backdrop-filter: blur(8px);
+}
+
+/* clase para las cards */
+.glass-dark-card {
+  background-color: rgba(30, 30, 30, 0.6);
+  -webkit-box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+          box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  -webkit-backdrop-filter: blur(8px);
+          backdrop-filter: blur(8px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+/* color de fondo para los títulos que piden que "se presione la imagen" */
+.glass-snow {
+  background-color: rgba(239, 233, 233, 0.2);
+  -webkit-box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+          box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  -webkit-backdrop-filter: blur(8px);
+          backdrop-filter: blur(8px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+/* gradientes para los titulos de bootraps */
+.bg-gradients {
+  background-image: -webkit-gradient(linear, left top, right top, from(#0d6efd), to(#6610f2));
+  background-image: linear-gradient(to right, #0d6efd, #6610f2 100%);
+}
+
+/* Variables de colores de redes */
+/* mapa de redes, inicializado para luego 
+usarlo para implementar el get.map */
+/* clase creada para luego realizar extend
+que cambie el tamaño de los iconos */
+.iconos_tamanio, footer .footer_iconos a img, .form .icono_red, .mapa .icono_red, .redes_sociales .icono_red {
+  width: 32px;
+  height: 32px;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  color: white;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#30cfd0), to(#330867));
+  background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+  min-height: 100vh;
+  /*para que no desconfigure el gradient*/
+}
+
+/* ++++++++++++++++++++++++++++++++ */
+/* configuraciones manuales del nav */
+.menu {
+  border-bottom: 1px solid #fff;
+  border-top: 1px solid #fff;
+  padding: 0.5rem;
+  margin-left: 0,5rem;
+}
+
+.menu .logo_nav {
+  max-width: 130px;
+}
+
+.menu a.active_label, .menu a:hover {
+  background-color: #42B881;
+  border: .7px solid #fff;
+  -webkit-transition: .5;
+  transition: .5;
+}
+
+/*++++++ termino de navbar +++++*/
+/*----------comienza el footer -------- */
+footer {
+  min-height: 30vh;
+  /*para que llegue al 
+    fondo de la página siempre*/
+  /*tamaño de los iconos del footer*/
+}
+
+footer .footer_iconos a {
+  display: inline-block;
+  line-height: 32px;
+  margin-right: 5px;
+}
+
+/* each para crear un hover personalizado
+    sobre cada link o imagen de redes sociales */
+.red-facebook:hover {
+  background-color: #3b5998;
+  color: #fff;
+  -webkit-transition: .5;
+  transition: .5;
+}
+
+.red-whatsapp:hover {
+  background-color: #25d366;
+  color: #fff;
+  -webkit-transition: .5;
+  transition: .5;
+}
+
+.red-youtube:hover {
+  background-color: #c4302b;
+  color: #fff;
+  -webkit-transition: .5;
+  transition: .5;
+}
+
+.red-instagram:hover {
+  background-color: #cd279d;
+  color: #fff;
+  -webkit-transition: .5;
+  transition: .5;
+}
+
+.red-tik-tok:hover {
+  background-color: #ff0050;
+  color: #fff;
+  -webkit-transition: .5;
+  transition: .5;
+}
+
+/*+++++ termina footer +++++*/
+/* *****inicio de la galeria de fotos****** */
+.galery_grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(350px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  justify-items: center;
+  width: 95%;
+  margin: auto;
+  grid-gap: 10px;
+  padding: 40px 0;
+  overflow: hidden;
+}
+
+.galery_grid a {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  -webkit-box-shadow: 0 0 6xp rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 6xp rgba(0, 0, 0, 0.5);
+  /* .bio--modifed sobrescribe  el scale del sombreado
+                    en la galeria de la biografia
+                    por ser fotos en verticales y tapar las que siguen */
+}
+
+.galery_grid a img {
+  width: 50%;
+  vertical-align: top;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
+  margin: 10px 20px 0 0;
+  -webkit-box-shadow: 0 4px 8px 0 lightskyblue, 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 4px 8px 0 lightskyblue, 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  width: 350px;
+}
+
+.galery_grid a:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-box-shadow: 0 10px 16px 0 lightskyblue, 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 10px 16px 0 lightskyblue, 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.galery_grid a .bio--modifed {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
+
+.ligth-box {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+  -webkit-transition: -webkit-transform .5s ease-in-out;
+  transition: -webkit-transform .5s ease-in-out;
+  transition: transform .5s ease-in-out;
+  transition: transform .5s ease-in-out, -webkit-transform .5s ease-in-out;
+  width: 100%;
+  height: 100vh;
+  z-index: 1000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  /* .bio sobrescribe el tamaño en la galeria de la biografia
+        por ser fotos en verticales */
+  /* modifica la posicion del botón
+        close en la página de biografía */
+}
+
+.ligth-box img {
+  width: 70vw;
+  max-height: 70vh;
+}
+
+.ligth-box .bio {
+  width: 50vw;
+  max-height: 90vh;
+}
+
+.ligth-box:target {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: -webkit-transform .5s;
+  transition: -webkit-transform .5s;
+  transition: transform .5s;
+  transition: transform .5s, -webkit-transform .5s;
+}
+
+.ligth-box .close {
+  display: block;
+  position: absolute;
+  top: 40px;
+  right: 40px;
+  background-color: rgba(186, 47, 214, 0.2);
+  -webkit-box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+          box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  -webkit-backdrop-filter: blur(8px);
+          backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  font-weight: bold;
+  color: #fff;
+  text-decoration: none;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+}
+
+.ligth-box .close:hover {
+  background-color: black;
+}
+
+.ligth-box .close--modified {
+  top: 30px;
+  right: 146px;
+}
+
+.ligth-box .next {
+  display: block;
+  background-color: rgba(186, 47, 214, 0.2);
+  -webkit-box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+          box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  -webkit-backdrop-filter: blur(8px);
+          backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  color: #fff;
+  font-weight: bold;
+  line-height: 30px;
+  width: 30px;
+  height: 30px;
+  text-decoration: none;
+  text-align: center;
+}
+
+.ligth-box .next:hover {
+  background-color: black;
+}
+
+.ligth-box .leyenda {
+  font-family: open sans;
+  font-weight: bold;
+  display: block;
+  position: absolute;
+  bottom: 20px;
+  color: #fff;
+  border-radius: 10px;
+  background-color: rgba(186, 47, 214, 0.2);
+  -webkit-box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+          box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  -webkit-backdrop-filter: blur(8px);
+          backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  text-align: center;
+}
+
+/* ++++ fin de la pagina Galeria ++++ */
+/* inicio de formato a las noticias de la seccion novedades */
+/* con esta pseudo clase le doy 
+animacion a las cards de novedades */
+.roti:hover {
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
+  -webkit-box-shadow: 0 10px 16px 0 lightskyblue, 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 10px 16px 0 lightskyblue, 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/*inicio de formato de biografía y academía*/
+.section_conten {
+  /* para separar el section de otros componentes */
+  margin-top: 40px;
+}
+
+/* inicio de form de contacto - mapa - redes sociales*/
+.form, .mapa, .redes_sociales {
+  font-family: "Montserrat", sans-serif;
+  width: 90%;
+  max-width: 400px;
+  border-radius: 1em;
+  padding: 3.5em 1.5em;
+  overflow-x: hidden;
+}
+
+.form .form_container, .form .redes_sociales, .form .mapa_container, .mapa .form_container, .mapa .redes_sociales, .mapa .mapa_container, .redes_sociales .form_container, .redes_sociales .redes_sociales, .redes_sociales .mapa_container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1em;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  /* titulos de los 3 recuadros de contacto */
+  /* submit buttom */
+  /* boton submit sombra */
+}
+
+.form .form_container .card_title, .form .redes_sociales .card_title, .form .mapa_container .card_title, .mapa .form_container .card_title, .mapa .redes_sociales .card_title, .mapa .mapa_container .card_title, .redes_sociales .form_container .card_title, .redes_sociales .redes_sociales .card_title, .redes_sociales .mapa_container .card_title {
+  padding: 0.5em 1em;
+  color: white;
+}
+
+.form .form_container .form_input, .form .redes_sociales .form_input, .form .mapa_container .form_input, .mapa .form_container .form_input, .mapa .redes_sociales .form_input, .mapa .mapa_container .form_input, .redes_sociales .form_container .form_input, .redes_sociales .redes_sociales .form_input, .redes_sociales .mapa_container .form_input {
+  font-family: inherit;
+  /*para que herede la fuente los inputs*/
+  padding: 0.7em 1em;
+  /*padding arriba y a los lados*/
+  outline: none;
+  /*no se va a remarcar*/
+  border: 1px solid #bbb0bb;
+  border-radius: 0.2em;
+}
+
+.form .form_container .form_input--message, .form .redes_sociales .form_input--message, .form .mapa_container .form_input--message, .mapa .form_container .form_input--message, .mapa .redes_sociales .form_input--message, .mapa .mapa_container .form_input--message, .redes_sociales .form_container .form_input--message, .redes_sociales .redes_sociales .form_input--message, .redes_sociales .mapa_container .form_input--message {
+  resize: none;
+  /*para que los usuarios no puedan redimensionar */
+  padding: 2em 1em;
+  /*agrando el textarea */
+  margin-bottom: .5em;
+  /*separado del submit*/
+}
+
+.form .form_container .form_cta, .form .redes_sociales .form_cta, .form .mapa_container .form_cta, .mapa .form_container .form_cta, .mapa .redes_sociales .form_cta, .mapa .mapa_container .form_cta, .redes_sociales .form_container .form_cta, .redes_sociales .redes_sociales .form_cta, .redes_sociales .mapa_container .form_cta {
+  font-family: inherit;
+  /*para que herede la fuente el submit*/
+  font-size: 1rem;
+  color: white;
+  border: none;
+  font-weight: 700;
+  padding: 1em 0;
+  border-radius: 1.2em;
+  cursor: pointer;
+}
+
+.form .form_container .box-shadow, .form .redes_sociales .box-shadow, .form .mapa_container .box-shadow, .mapa .form_container .box-shadow, .mapa .redes_sociales .box-shadow, .mapa .mapa_container .box-shadow, .redes_sociales .form_container .box-shadow, .redes_sociales .redes_sociales .box-shadow, .redes_sociales .mapa_container .box-shadow {
+  -webkit-box-shadow: 2px 3px #6f42c1;
+          box-shadow: 2px 3px #6f42c1;
+  font-size: 1rem;
+  color: white;
+  border: none;
+  font-weight: 700;
+  padding: 1em 0;
+  border-radius: 1.2em;
+  cursor: pointer;
+}
+
+/* Fin de la página contacto */
+/* Medium devices (tablets, 768px and up) */
+@media (max-width: 768px) {
+  /*medida de tablet */
+  .ligth-box img {
+    width: 80vw;
+    max-height: 80vh;
+  }
+  .ligth-box .bio {
+    width: 60vw;
+    max-height: 70vh;
+  }
+  .ligth-box .leyenda {
+    bottom: 70px;
+  }
+  .ligth-box .leyenda--modified {
+    bottom: 10px;
+  }
+  .ligth-box .close {
+    top: 140px;
+    right: 80px;
+  }
+  .ligth-box .close--modified {
+    top: 20px;
+    right: 130px;
+  }
+  /* agrea una capa de fondo trasparente a los 
+    links del menu desplegable para tener un poco
+    mas de contraste en dispositivos mobiles
+    and tablests */
+  .nav-item {
+    background-color: rgba(30, 30, 30, 0.8);
+  }
+}
+
+/* +++++ fin medida de tableta ++++++*/
+/* cierre de media 768px */
+@media (max-width: 576px) {
+  /*medida de 576px fold */
+  /*cambio de tamaño del logo del nav bar */
+  .logo_nav {
+    max-width: 20%;
+  }
+  li.active_label {
+    background-color: #42B881;
+    border: .7px solid #fff;
+    -webkit-transition: .5;
+    transition: .5;
+  }
+  .overflox_x {
+    overflow-x: hidden;
+  }
+  /* cambio de la página novedades   */
+  .roti:hover {
+    -webkit-box-shadow: 0 10px 16px 0 lightskyblue, 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            box-shadow: 0 10px 16px 0 lightskyblue, 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -webkit-transform: scale 0.9;
+            transform: scale 0.9;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+  /* inicio para cambiar tamaño de contacto */
+  .form, .mapa, .redes_sociales {
+    max-width: 100%;
+    border-radius: 1em;
+    /*los bordes redondeados*/
+    padding: 2.5em .5em;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .form_input {
+    font-family: inherit;
+    /*para que herede la fuente los inputs*/
+    padding: 0.8em 1em;
+    /*padding arriba y a los lados*/
+    outline: none;
+    /*no se va a remarcar*/
+    border: none;
+    /*saco el border*/
+    border: 1px solid #bbb0bb;
+    border-radius: 0.2em;
+  }
+  .form_input--message {
+    margin-bottom: 4em;
+    /*separado del submit*/
+  }
+  .ligth-box img {
+    width: 80vw;
+    max-height: 80vh;
+  }
+  .ligth-box .bio {
+    width: 50vw;
+    max-height: 80vh;
+  }
+  .ligth-box .leyenda {
+    bottom: 180px;
+  }
+  .ligth-box .close {
+    top: 160px;
+    right: 80px;
+  }
+  .ligth-box .leyenda--modified {
+    bottom: 25px;
+  }
+  .ligth-box .close--modified {
+    top: 40px;
+    right: 70px;
+  }
+}
+
+/*cierre del media query 576Px */
+/*++++ termino del media query 576px ++++*/
+/*# sourceMappingURL=styles.css.map */

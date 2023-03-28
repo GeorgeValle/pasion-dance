@@ -71,12 +71,15 @@ $indigo:  #6610f2;
 
 
 
+
+
 /* Variables de colores de redes */
 $face: #3b5998;
 $whats:#25d366;
 $yout:#c4302b;
 $inst:#cd279d;
 $tik: #ff0050;
+$out:#0072c6;
 
 /* mapa de redes, inicializado para luego 
 usarlo para implementar el get.map */
@@ -85,9 +88,9 @@ $redes: (
     "whatsapp": $whats,
     "youtube": $yout,
     "instagram": $inst,
-    "tik-tok": $tik,  
+    "tik-tok": $tik,
+    "outlook": $out, 
 );
-
 
 
 @mixin hover-green{
@@ -97,9 +100,10 @@ $redes: (
 }
 
 
+
 @mixin card-contacto{
     font-family: $font-type;
-    width: 90%;
+    width: 92%;
     max-width: 400px;
     border-radius: 1em;
     padding: 3.5em 1.5em;

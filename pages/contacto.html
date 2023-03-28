@@ -183,7 +183,7 @@
                   <a href="novedades.html" class="nav-link">Novedades</a>
                 </li>
                 <li class="nav-item p-2 text-center">
-                  <a href="biografia.html" class="active_label nav-link active"
+                  <a href="biografia.html" class=" nav-link"
                     >Biografía</a
                   >
                 </li>
@@ -194,7 +194,7 @@
                   <a href="galeria.html" class="nav-link">Galería</a>
                 </li>
                 <li class="nav-item p-2 text-center">
-                  <a href="contacto.html" class="nav-link">Contacto</a>
+                  <a href="contacto.html" class="active_label nav-link  active">Contacto</a>
                 </li>
               </ul>
             </div>
@@ -232,8 +232,11 @@
           <section class="col mb-4 d-flex justify-content-center">
             <form
               data-aos="fade-right"
-              class="form glass-dark-card mb-4"
-              style="max-width: 23rem; width: 100%; height: 38rem"
+              class="form glass-dark-card mb-2"
+              style="max-width: 23rem; width: 100%; height: 44rem"
+              action="https://formsubmit.co/academiapasiondance@outlook.com.ar"
+              method="POST"
+
             >
               <div class="form_container">
                 <h2 class="card_title text-center bg-primary bg-gradients">
@@ -242,19 +245,22 @@
 
                 <input
                   type="text"
-                  class="form-control form_input"
+                  name="name"
+                  class="form-control form_input mt-2"
                   placeholder="Inserte nombre"
                 />
 
                 <input
                   type="email"
-                  class="form_input"
+                  name="email"
+                  class="form_input mt-2"
                   placeholder="Inserte Email"
                 />
                 <textarea
                   rows="3"
-                  class="form-control form_input form_input--message"
+                  class="form-control form_input form_input--message mt-4"
                   placeholder="Mensaje"
+                  name="message"
                 ></textarea>
 
                 <input
@@ -270,11 +276,11 @@
           <section class="col mb-4 d-flex justify-content-center">
             <div
               data-aos="slide-up"
-              class="redes_sociales glass-dark-card mb-4 card"
-              style="width: 23rem; height: 38rem"
+              class="redes_sociales glass-dark-card mb-2 card"
+              style="width: 23rem; height: 44rem"
             >
               <h2
-                class="text-center card_title bg-primary bg-gradients pt-3 pb-3 px-2 mb-3"
+                class="text-center card_title bg-primary bg-gradients pt-3 pb-3 px-3 "
               >
                 Redes
               </h2>
@@ -334,7 +340,7 @@
                   >
                     Academia Pasion Dance</a
                   >
-                </div>
+                </div>              
                 <div>
                   <img
                     class="icono_red mt-2"
@@ -349,6 +355,21 @@
                     @aldanacastillo28</a
                   >
                 </div>
+                <div>
+                  <img
+                    class="icono_red mt-2"
+                    src="../assets/iconos/outlook-icon.png"
+                    alt="icono mail outlook"
+                  />
+                  <a
+                    class="red-outlook mt-2"
+                    href="mailto:academiapasiondance@outlook.com.ar"
+                    target="_blank"
+                  >
+                    academiapasiondance
+                    @outlook.com.ar
+                    </a>
+                </div>
               </div>
             </div>
           </section>
@@ -358,7 +379,7 @@
             <div
               data-aos="slide-up"
               class="mapa glass-dark-card mb-4 card"
-              style="width: 23rem; height: 38rem"
+              style="width: 23rem; height: 44rem"
             >
               <div class="mapa_container">
                 <h2 class="card_title mb-5 text-center bg-primary bg-gradients">
@@ -373,7 +394,7 @@
                   DI2JzQwLjEiUyA2NMKwMDcnNDMuNCJX!5e0!3m2!1ses!2sar!
                   4v1642726392776!5m2!1ses!2sar"
                   width="300"
-                  height="300"
+                  height="400"
                   style="border: 0"
                   allowfullscreen="[ + ]"
                   loading="lazy"
@@ -439,6 +460,13 @@
                 class="red-tik-tok"
                 src="../assets/iconos/tiktok-icon.png"
                 alt="Enlace a Tik Tok"
+              />
+            </a>
+            <a href="mailto:academiapasiondance@outlook.com.ar" target="_blank">
+              <img
+              class="red-facebook"
+              src="../assets/iconos/outlook-icon.png"
+              alt="icono mail outlook"
               />
             </a>
           </div>
